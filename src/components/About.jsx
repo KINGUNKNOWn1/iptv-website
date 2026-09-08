@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaShieldAlt, FaUsers, FaClock, FaWhatsapp, FaCheckCircle } from 'react-icons/fa';
 
@@ -96,10 +97,10 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-3xl font-bold text-white mb-4">
-              Zes redenen om IPTV kopen bij IPTV4K te doen
+              Zes redenen om <Link to="/iptv-kopen" className="text-blue-400 hover:text-blue-300 underline">IPTV kopen</Link> bij IPTV4K te doen
             </h3>
             <p className="text-gray-400 text-lg mb-6">
-              Niet wat elke aanbieder belooft. Wat wij concreet anders doen.
+              Niet wat elke aanbieder belooft. Wat wij concreet anders doen. Bekijk onze <Link to="/prijzen" className="text-blue-400 hover:text-blue-300 underline">transparante prijzen</Link> zonder verborgen kosten.
             </p>
 
             {/* Features List */}
@@ -161,14 +162,14 @@ const About = () => {
             Klaar om te starten met IPTV4K?
           </h3>
           <p className="text-gray-400 mb-6">
-            Actief binnen 5 minuten. Geen automatische verlenging.
+            Actief binnen 5 minuten. Geen automatische verlenging. <Link to="/contact" className="text-blue-400 hover:text-blue-300 underline">Bestel nu via WhatsApp</Link>.
           </p>
-          <a
-            href="#pricing"
+          <Link
+            to="/prijzen"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg shadow-blue-600/30"
           >
-            Bekijk Abonnementen
-          </a>
+            Bekijk IPTV Abonnement Prijzen
+          </Link>
         </motion.div>
       </div>
     </section>

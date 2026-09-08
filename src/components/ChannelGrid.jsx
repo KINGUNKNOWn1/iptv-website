@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTv, FaFootballBall, FaFilm, FaGlobeEurope, FaPlay } from 'react-icons/fa';
 
@@ -67,7 +68,7 @@ const ChannelGrid = () => {
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Bekijk al jouw favoriete kanalen in kristalheldere HD, UHD en 4K kwaliteit.
-            Sport, films, series, nieuws en entertainment - allemaal in één abonnement.
+            Sport, films, series, nieuws en entertainment - allemaal in één <Link to="/iptv-abonnement" className="text-blue-400 hover:text-blue-300 underline">IPTV abonnement</Link>.
           </p>
         </motion.div>
 
@@ -199,14 +200,15 @@ const ChannelGrid = () => {
         >
           <p className="text-gray-400 mb-6">
             En nog {(30500 - filteredChannels.length).toLocaleString()} meer kanalen beschikbaar...
+            <Link to="/iptv-kopen" className="text-blue-400 hover:text-blue-300 underline ml-2">Lees meer over IPTV kopen</Link>
           </p>
-          <a
-            href="#pricing"
+          <Link
+            to="/prijzen"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50"
           >
             <FaTv />
-            Bekijk Alle Abonnementen
-          </a>
+            Bekijk IPTV Abonnement Prijzen
+          </Link>
         </motion.div>
       </div>
     </section>

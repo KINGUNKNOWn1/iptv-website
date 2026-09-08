@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -91,18 +92,18 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 1.2 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a
-              href="#pricing"
+            <Link
+              to="/prijzen"
               className="btn-primary text-center"
             >
-              Bekijk Abonnementen
-            </a>
-            <a
-              href="#contact"
+              Bekijk IPTV Abonnement Prijzen
+            </Link>
+            <Link
+              to="/contact"
               className="btn-secondary text-center"
             >
-              Contact
-            </a>
+              Bestel via WhatsApp
+            </Link>
           </motion.div>
         </div>
       </div>

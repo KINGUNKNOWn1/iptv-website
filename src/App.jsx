@@ -1,23 +1,29 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
 import SEO from './components/SEO';
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import Interactive3DTV from './components/Interactive3DTV';
-import ChannelGrid from './components/ChannelGrid';
-import DeviceCompatibility from './components/DeviceCompatibility';
-import SocialProof from './components/SocialProof';
-import LimitedOfferBanner from './components/CountdownTimer';
-import Pricing from './components/Pricing';
-import ComparisonTable from './components/ComparisonTable';
-import Testimonials from './components/Testimonials';
-import Blog from './components/Blog';
-import About from './components/About';
-import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import StickyWhatsAppCTA from './components/StickyWhatsAppCTA';
 
-function App() {
+// Pages
+import Home from './pages/Home';
+import IPTVKopen from './pages/IPTVKopen';
+import Prijzen from './pages/Prijzen';
+import Contact from './pages/Contact';
+
+// Scroll to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+function AppContent() {
   useEffect(() => {
     // Initialize Lenis smooth scroll
     const lenis = new Lenis({
@@ -54,26 +60,27 @@ function App() {
   }, []);
 
   return (
-    <>
-      <SEO />
-      <div className="min-h-screen bg-slate-900">
-        <Navigation />
-        <Hero />
-        <SocialProof />
-        <Interactive3DTV />
-        <ChannelGrid />
-        <DeviceCompatibility />
-        <LimitedOfferBanner />
-        <Pricing />
-        <ComparisonTable />
-        <Testimonials />
-        <Blog />
-        <About />
-        <FAQ />
-        <Footer />
-        <StickyWhatsAppCTA />
-      </div>
-    </>
+    <div className="min-h-screen bg-slate-900">
+      <Navigation />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/iptv-kopen" element={<IPTVKopen />} />
+        <Route path="/prijzen" element={<Prijzen />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Add more routes as pages are created */}
+      </Routes>
+      <Footer />
+      <StickyWhatsAppCTA />
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
