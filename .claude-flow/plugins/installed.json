@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-09-08T17:04:39.457Z",
+  "plugins": {
+    "@claude-flow/neural": {
+      "name": "@claude-flow/neural",
+      "version": "3.0.0-alpha.9",
+      "installedAt": "2026-09-08T17:04:05.576Z",
+      "enabled": true,
+      "source": "npm",
+      "path": "/Users/anassouani/Desktop/iptvholland/iptv-website/.claude-flow/plugins/node_modules/@claude-flow/neural",
+      "commands": [],
+      "hooks": []
+    },
+    "@claude-flow/embeddings": {
+      "name": "@claude-flow/embeddings",
+      "version": "3.0.0-alpha.45",
+      "installedAt": "2026-09-08T17:04:22.676Z",
+      "enabled": true,
+      "source": "npm",
+      "path": "/Users/anassouani/Desktop/iptvholland/iptv-website/.claude-flow/plugins/node_modules/@claude-flow/embeddings",
+      "commands": [],
+      "hooks": []
+    },
+    "@claude-flow/security": {
+      "name": "@claude-flow/security",
+      "version": "3.0.0-alpha.12",
+      "installedAt": "2026-09-08T17:04:29.855Z",
+      "enabled": true,
+      "source": "npm",
+      "path": "/Users/anassouani/Desktop/iptvholland/iptv-website/.claude-flow/plugins/node_modules/@claude-flow/security",
+      "commands": [],
+      "hooks": []
+    },
+    "@claude-flow/performance": {
+      "name": "@claude-flow/performance",
+      "version": "3.0.0-alpha.6",
+      "installedAt": "2026-09-08T17:04:39.457Z",
+      "enabled": true,
+      "source": "npm",
+      "path": "/Users/anassouani/Desktop/iptvholland/iptv-website/.claude-flow/plugins/node_modules/@claude-flow/performance",
+      "commands": [],
+      "hooks": []
+    }
+  }
+}

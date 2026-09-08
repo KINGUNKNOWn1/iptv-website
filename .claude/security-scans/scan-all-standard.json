@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-09-08T17:07:54.190Z",
+  "target": ".",
+  "depth": "standard",
+  "type": "all",
+  "summary": {
+    "critical": 0,
+    "high": 4,
+    "medium": 1,
+    "low": 0,
+    "total": 5
+  },
+  "findings": [
+    {
+      "severity": "MEDIUM",
+      "type": "Dependency CVE",
+      "location": "package.json:esbuild",
+      "description": "esbuild enables any website to send"
+    },
+    {
+      "severity": "HIGH",
+      "type": "Dependency CVE",
+      "location": "package.json:vite",
+      "description": "Vite Vulnerable to Path Traversal i"
+    },
+    {
+      "severity": "HIGH",
+      "type": "Hardcoded Secret",
+      "location": "analytics-backend/server-simple.js:13",
+      "description": "Hardcoded Password"
+    },
+    {
+      "severity": "HIGH",
+      "type": "Hardcoded Secret",
+      "location": "ruflo/ruflo/docker-compose.public.yml:21",
+      "description": "Hardcoded Password"
+    },
+    {
+      "severity": "HIGH",
+      "type": "Hardcoded Secret",
+      "location": "ruflo/ruflo/docker-compose.yml:112",
+      "description": "API Key (Stripe/OpenAI)"
+    }
+  ]
+}
