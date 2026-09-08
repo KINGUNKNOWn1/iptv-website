@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  const ANALYTICS_URL = 'http://localhost:3002';
+  const ANALYTICS_URL = 'https://analytics-backend-ten.vercel.app';
 
   // Get or create visitor ID
   function getVisitorId() {

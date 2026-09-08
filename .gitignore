@@ -36,3 +36,4 @@ analytics-backend/data/
 
 # Claude SEO
 claude-seo/
+.vercel
