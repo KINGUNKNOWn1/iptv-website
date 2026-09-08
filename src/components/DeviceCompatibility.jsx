@@ -80,27 +80,27 @@ const DeviceCompatibility = () => {
               className="inline-block mb-4"
             >
               <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">
-                Pas de Matériel Supplémentaire
+                Geen Extra Hardware Nodig
               </span>
             </motion.div>
 
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Aucun boîtier IPTV supplémentaire n'est nécessaire.
+              Geen extra IPTV box nodig.
               <br />
               <span className="bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">
-                Compatible avec votre équipement actuel.
+                Compatibel met je huidige apparaten.
               </span>
             </h2>
 
             <div className="space-y-5 text-gray-600 text-lg mb-10 leading-relaxed">
               <p>
-                Avec un abonnement Holland IPTV, vous choisissez l'appareil sur lequel vous regardez vos programmes : votre Smart TV Samsung ou LG, votre iPhone ou téléphone Android, votre ordinateur portable ou votre clé Amazon Fire TV. <span className="font-semibold text-gray-800">Aucun matériel supplémentaire ni aucune connaissance technique ne sont nécessaires.</span>
+                Met een IPTV4K abonnement kies je zelf op welk apparaat je kijkt: je Samsung of LG Smart TV, je iPhone of Android telefoon, je laptop of Amazon Fire TV Stick. <span className="font-semibold text-gray-800">Geen extra hardware of technische kennis nodig.</span>
               </p>
               <p>
-                Installez IPTV Smarters Pro ou SS IPTV, saisissez vos identifiants et c'est parti ! <span className="font-semibold text-gray-800">En moyenne, cinq minutes suffisent</span> entre la commande et l'affichage de la première chaîne.
+                Installeer IPTV Smarters Pro of SS IPTV, voer je inloggegevens in en klaar! <span className="font-semibold text-gray-800">Gemiddeld ben je binnen vijf minuten</span> aan het kijken naar je eerste kanaal.
               </p>
               <p>
-                Vous préférez acheter un abonnement IPTV avec un décodeur externe pour une connexion 4K plus stable ? C'est possible. Les boîtiers Amazon Fire TV Stick, Formuler Z11 et Xsarius sont compatibles. <span className="font-semibold text-gray-800">Nous vous indiquerons par WhatsApp</span> lequel est le mieux adapté à votre téléviseur et à votre connexion internet, et ce, gratuitement.
+                Wil je liever een IPTV abonnement kopen met een externe box voor een stabielere 4K verbinding? Dat kan. Amazon Fire TV Stick, Formuler Z11 en Xsarius zijn compatibel. <span className="font-semibold text-gray-800">We adviseren je gratis via WhatsApp</span> welke het beste past bij jouw televisie en internetverbinding.
               </p>
             </div>
 
@@ -108,7 +108,7 @@ const DeviceCompatibility = () => {
             <div className="mb-10">
               <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-5 flex items-center gap-2">
                 <div className="w-8 h-0.5 bg-gradient-to-r from-blue-600 to-orange-500" />
-                Appareils Compatibles
+                Compatibele Apparaten
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {devices.map((device, index) => (
@@ -150,8 +150,8 @@ const DeviceCompatibility = () => {
                 <FaCheckCircle className="text-white text-2xl" />
               </div>
               <div>
-                <p className="font-bold text-gray-900 text-lg">Actif en moins de 5 minutes</p>
-                <p className="text-sm text-gray-600">Aucun matériel supplémentaire n'est nécessaire.</p>
+                <p className="font-bold text-gray-900 text-lg">Actief binnen 5 minuten</p>
+                <p className="text-sm text-gray-600">Geen extra hardware nodig</p>
               </div>
             </motion.div>
           </motion.div>
@@ -174,7 +174,7 @@ const DeviceCompatibility = () => {
             >
               <div className="text-center">
                 <p className="text-5xl font-bold mb-1">8+</p>
-                <p className="text-sm font-semibold opacity-90">Appareils compatibles</p>
+                <p className="text-sm font-semibold opacity-90">Compatibele apparaten</p>
               </div>
             </motion.div>
 
