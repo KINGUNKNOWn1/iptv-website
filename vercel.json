@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "streamholland",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install",
@@ -47,7 +46,7 @@
       ]
     },
     {
-      "source": "/(.*).(?:jpg|jpeg|png|gif|svg|webp|avif)",
+      "source": "/.*\\.(jpg|jpeg|png|gif|svg|webp|avif)$",
       "headers": [
         {
           "key": "Cache-Control",
