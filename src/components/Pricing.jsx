@@ -49,28 +49,6 @@ const Pricing = () => {
     },
     {
       name: 'IPTV Premium',
-      duration: '6 maanden',
-      price: '32',
-      period: '/ 6 maanden',
-      popular: false,
-      savings: 'Bespaar €14',
-      features: [
-        '24 uur gratis proefperiode',
-        'HD - UHD - SHD',
-        'Meer dan 30.500 kanalen live',
-        'Meer dan 150.000 films en series',
-        'Compatibel met alle apparaten',
-        'Toegang tot alle sportkanalen',
-        'TV-gids met EPG-ondersteuning',
-        'Uitgesteld kijken via Replay en Catchup',
-        'Betrouwbare beschikbaarheid van 99,9%',
-        'Automatische software-updates',
-        'Klantenservice 24/7',
-      ],
-      whatsapp: 'Ik wil het IPTV Premium 6 maanden abonnement bestellen',
-    },
-    {
-      name: 'IPTV Premium',
       duration: '12 maanden',
       price: '48',
       period: '/ 12 maanden',
@@ -90,6 +68,28 @@ const Pricing = () => {
         'Prioriteit klantenservice 24/7',
       ],
       whatsapp: 'Ik wil het IPTV Premium 12 maanden abonnement bestellen',
+    },
+    {
+      name: 'IPTV Premium',
+      duration: '6 maanden',
+      price: '32',
+      period: '/ 6 maanden',
+      popular: false,
+      savings: 'Bespaar €14',
+      features: [
+        '24 uur gratis proefperiode',
+        'HD - UHD - SHD',
+        'Meer dan 30.500 kanalen live',
+        'Meer dan 150.000 films en series',
+        'Compatibel met alle apparaten',
+        'Toegang tot alle sportkanalen',
+        'TV-gids met EPG-ondersteuning',
+        'Uitgesteld kijken via Replay en Catchup',
+        'Betrouwbare beschikbaarheid van 99,9%',
+        'Automatische software-updates',
+        'Klantenservice 24/7',
+      ],
+      whatsapp: 'Ik wil het IPTV Premium 6 maanden abonnement bestellen',
     },
   ];
 
@@ -181,7 +181,7 @@ const Pricing = () => {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12 items-center">
           {plans.map((plan, index) => (
             <motion.div
               key={index}
@@ -192,7 +192,7 @@ const Pricing = () => {
               whileHover={{ scale: 1.03, y: -10 }}
               className={`relative p-8 rounded-2xl shadow-xl transition-all duration-300 ${
                 plan.popular
-                  ? 'bg-gradient-to-b from-brand-orange via-[#E85D00] to-brand-orange border-2 border-brand-orange'
+                  ? 'bg-gradient-to-b from-brand-orange via-[#E85D00] to-brand-orange border-2 border-brand-orange md:scale-110 md:-mt-8 z-10'
                   : 'bg-brand-offwhite border border-brand-gray-border'
               }`}
             >
