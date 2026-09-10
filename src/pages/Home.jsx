@@ -22,6 +22,10 @@ const Home = () => {
       <Hero />
       <SocialProof />
 
+      {/* Pricing Section - Moved Up for Better Conversion */}
+      <Pricing />
+      <TrustBadges />
+
       {/* TV Showcase */}
       <section className="py-20 bg-brand-black relative overflow-hidden">
         <div className="container mx-auto px-4">
@@ -38,14 +42,12 @@ const Home = () => {
         </div>
       </section>
 
-      <Interactive3DTV />
       <ChannelGrid />
       <DeviceCompatibility />
-      <LimitedOfferBanner />
-      <Pricing />
-      <ComparisonTable />
       <Testimonials />
-      <TrustBadges />
+      <ComparisonTable />
+      <LimitedOfferBanner />
+      <Interactive3DTV />
       <Blog />
       <CEOSection />
       <About />
