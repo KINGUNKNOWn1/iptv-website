@@ -258,7 +258,7 @@ const Pricing = () => {
                     : 'border-2 border-brand-orange text-brand-orange hover:bg-brand-offwhite'
                 }`}
               >
-                Passer la commande
+                Nu bestellen
               </button>
             </motion.div>
           ))}
