@@ -5,10 +5,10 @@ const SEO = () => {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'IPTV4K - Beste IPTV Aanbieder Nederland',
-    url: 'https://iptv4k.nl',
-    logo: 'https://iptv4k.nl/logo.png',
-    description: 'IPTV4K is de beste IPTV aanbieder in Nederland. IPTV kopen vanaf 23€. Legaal IPTV abonnement met 30.500+ kanalen en 150.000+ films en series. Nederlandse IPTV met 24/7 support.',
+    name: 'Stream Holland - Beste IPTV Aanbieder Nederland',
+    url: 'https://streamholland.com',
+    logo: 'https://streamholland.com/logo.png',
+    description: 'Stream Holland is de beste IPTV aanbieder in Nederland. IPTV kopen vanaf 23€. Legaal IPTV abonnement met 30.500+ kanalen en 150.000+ films en series. Nederlandse IPTV met 24/7 support.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Rotterdam',
@@ -31,11 +31,11 @@ const SEO = () => {
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: 'IPTV4K Premium Abonnement',
+    name: 'Stream Holland Premium Abonnement',
     description: '30.500+ live zenders, 150.000+ VOD titels, HD/UHD/4K kwaliteit, Nederlandse support 24/7',
     brand: {
       '@type': 'Brand',
-      name: 'IPTV4K'
+      name: 'Stream Holland'
     },
     offers: [
       {
@@ -44,7 +44,7 @@ const SEO = () => {
         price: '23',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
-        url: 'https://iptv4k.nl/#pricing',
+        url: 'https://streamholland.com/#pricing',
         priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
       },
       {
@@ -53,7 +53,7 @@ const SEO = () => {
         price: '32',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
-        url: 'https://iptv4k.nl/#pricing',
+        url: 'https://streamholland.com/#pricing',
         priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
       },
       {
@@ -62,7 +62,7 @@ const SEO = () => {
         price: '48',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
-        url: 'https://iptv4k.nl/#pricing',
+        url: 'https://streamholland.com/#pricing',
         priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
       }
     ],
@@ -79,7 +79,7 @@ const SEO = () => {
     serviceType: 'IPTV Streaming Service',
     provider: {
       '@type': 'Organization',
-      name: 'IPTV4K'
+      name: 'Stream Holland'
     },
     areaServed: {
       '@type': 'Country',
@@ -123,15 +123,15 @@ const SEO = () => {
         name: 'Waar kan ik IPTV kopen in Nederland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'IPTV kopen in Nederland kan bij IPTV4K, de beste IPTV aanbieder. We bieden IPTV abonnementen vanaf 23€ met 30.500+ kanalen. Je kunt direct online een IPTV abonnement kopen en bent binnen 5 minuten actief.'
+          text: 'IPTV kopen in Nederland kan bij Stream Holland, de beste IPTV aanbieder. We bieden IPTV abonnementen vanaf 23€ met 30.500+ kanalen. Je kunt direct online een IPTV abonnement kopen en bent binnen 5 minuten actief.'
         }
       },
       {
         '@type': 'Question',
-        name: 'Is IPTV4K legaal?',
+        name: 'Is Stream Holland legaal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'IPTV4K is een legale IPTV aanbieder. We leveren een betrouwbare service met officiële content en volledige klantenondersteuning. IPTV legaal kopen betekent kiezen voor een vertrouwde aanbieder zoals IPTV4K.'
+          text: 'Stream Holland is een legale IPTV aanbieder. We leveren een betrouwbare service met officiële content en volledige klantenondersteuning. IPTV legaal kopen betekent kiezen voor een vertrouwde aanbieder zoals Stream Holland.'
         }
       },
       {
@@ -139,15 +139,15 @@ const SEO = () => {
         name: 'Wat is de beste IPTV app voor Nederland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'De beste IPTV app voor Nederlandse gebruikers zijn IPTV Smarters Pro en SS IPTV. Deze apps werken perfect met uw IPTV4K abonnement op alle apparaten: Smart TV, Android, iOS, en meer.'
+          text: 'De beste IPTV app voor Nederlandse gebruikers zijn IPTV Smarters Pro en SS IPTV. Deze apps werken perfect met uw Stream Holland abonnement op alle apparaten: Smart TV, Android, iOS, en meer.'
         }
       },
       {
         '@type': 'Question',
-        name: 'Hoeveel kanalen biedt IPTV4K?',
+        name: 'Hoeveel kanalen biedt Stream Holland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'IPTV4K biedt meer dan 30.500 live zenders in verschillende talen, waaronder Nederlandse, Arabische, Turkse, en internationale kanalen. Daarnaast hebben we 150.000+ films en series on-demand.'
+          text: 'Stream Holland biedt meer dan 30.500 live zenders in verschillende talen, waaronder Nederlandse, Arabische, Turkse, en internationale kanalen. Daarnaast hebben we 150.000+ films en series on-demand.'
         }
       },
       {
@@ -155,15 +155,15 @@ const SEO = () => {
         name: 'Hoe snel is mijn IPTV abonnement actief?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Je IPTV4K abonnement is binnen 5 minuten actief na betaling via iDEAL. Je ontvangt direct je toegangsgegevens via email en kunt meteen beginnen met kijken.'
+          text: 'Je Stream Holland abonnement is binnen 5 minuten actief na betaling via iDEAL. Je ontvangt direct je toegangsgegevens via email en kunt meteen beginnen met kijken.'
         }
       },
       {
         '@type': 'Question',
-        name: 'Wat kost een IPTV abonnement bij IPTV4K?',
+        name: 'Wat kost een IPTV abonnement bij Stream Holland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'IPTV abonnement kopen bij IPTV4K start vanaf 23€ voor 3 maanden, 32€ voor 6 maanden, of 48€ voor 12 maanden. Geen verborgen kosten, geen automatische verlenging.'
+          text: 'IPTV abonnement kopen bij Stream Holland start vanaf 23€ voor 3 maanden, 32€ voor 6 maanden, of 48€ voor 12 maanden. Geen verborgen kosten, geen automatische verlenging.'
         }
       },
       {
@@ -171,7 +171,7 @@ const SEO = () => {
         name: 'Verlengd het abonnement automatisch?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Nee, bij IPTV4K is er geen automatische verlenging. Je hebt volledige controle over je abonnement. Dit maakt ons een van de beste IPTV aanbieders in Nederland.'
+          text: 'Nee, bij Stream Holland is er geen automatische verlenging. Je hebt volledige controle over je abonnement. Dit maakt ons een van de beste IPTV aanbieders in Nederland.'
         }
       }
     ]
@@ -185,19 +185,19 @@ const SEO = () => {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://iptv4k.nl'
+        item: 'https://streamholland.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Prijzen',
-        item: 'https://iptv4k.nl/#pricing'
+        item: 'https://streamholland.com/#pricing'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Vergelijking',
-        item: 'https://iptv4k.nl/#comparison'
+        item: 'https://streamholland.com/#comparison'
       }
     ]
   };
@@ -205,37 +205,37 @@ const SEO = () => {
   return (
     <Helmet>
       {/* Primary Meta Tags */}
-      <title>IPTV Kopen Nederland - Beste IPTV Aanbieders | IPTV Abonnement vanaf 23€</title>
+      <title>Stream Holland - Premium Streaming Service Nederland | 30.500+ Kanalen vanaf 23€</title>
       <meta
         name="description"
-        content="IPTV kopen in Nederland? IPTV4K is de beste IPTV aanbieder met 30.500+ kanalen. IPTV abonnement kopen vanaf 23€. Nederlandse IPTV, legaal & betrouwbaar. Actief binnen 5 min."
+        content="Stream Holland - Premium streaming service met 30.500+ kanalen. Betrouwbaar IPTV abonnement vanaf 23€. Nederlandse service, legaal & veilig. Actief binnen 5 min."
       />
       <meta
         name="keywords"
         content="iptv kopen, iptv abonnement kopen, iptv aanbieders, iptv nederland, beste iptv app, nederlandse iptv, iptv aanbieder, iptv legaal, iptv abbonement, nederland iptv, dutch iptv, iptv proefabonnement, iptv abonnement, ip tv"
       />
-      <link rel="canonical" href="https://iptv4k.nl" />
+      <link rel="canonical" href="https://streamholland.com" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://iptv4k.nl" />
-      <meta property="og:title" content="IPTV Kopen Nederland - Beste IPTV Aanbieders | Vanaf 23€" />
+      <meta property="og:url" content="https://streamholland.com" />
+      <meta property="og:title" content="Stream Holland - Premium Streaming Service | 30.500+ Kanalen" />
       <meta
         property="og:description"
-        content="IPTV kopen in Nederland? Beste IPTV aanbieder met 30.500+ kanalen, legaal & betrouwbaar. IPTV abonnement vanaf 23€. Actief binnen 5 min. 24/7 support."
+        content="Stream Holland - Premium streaming service met 30.500+ kanalen, legaal & betrouwbaar. Abonnement vanaf 23€. Actief binnen 5 min. 24/7 support."
       />
-      <meta property="og:image" content="https://iptv4k.nl/og-image.jpg" />
+      <meta property="og:image" content="https://streamholland.com/og-image.jpg" />
       <meta property="og:locale" content="nl_NL" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://iptv4k.nl" />
-      <meta property="twitter:title" content="IPTV Kopen Nederland - Beste IPTV Aanbieders" />
+      <meta property="twitter:url" content="https://streamholland.com" />
+      <meta property="twitter:title" content="Stream Holland - Premium Streaming Service Nederland" />
       <meta
         property="twitter:description"
-        content="IPTV kopen in Nederland? IPTV4K is de beste IPTV aanbieder. Vanaf 23€. 30.500+ kanalen, legaal & betrouwbaar."
+        content="Stream Holland - Premium streaming service. Vanaf 23€. 30.500+ kanalen, legaal & betrouwbaar."
       />
-      <meta property="twitter:image" content="https://iptv4k.nl/twitter-image.jpg" />
+      <meta property="twitter:image" content="https://streamholland.com/twitter-image.jpg" />
 
       {/* Structured Data */}
       <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
@@ -248,7 +248,7 @@ const SEO = () => {
       <meta name="robots" content="index, follow" />
       <meta name="language" content="Dutch" />
       <meta name="revisit-after" content="7 days" />
-      <meta name="author" content="IPTV4K" />
+      <meta name="author" content="Stream Holland" />
 
       {/* Geo Tags for Netherlands */}
       <meta name="geo.region" content="NL" />

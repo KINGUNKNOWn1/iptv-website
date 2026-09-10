@@ -14,7 +14,7 @@ const HowItWorks = () => {
       icon: FaCreditCard,
       title: 'Stap 2: Betaal Veilig',
       description: 'Betaal eenvoudig via iDEAL of Bancontact. Uw betaalgegevens zijn 100% veilig en beschermd.',
-      color: 'from-blue-500 to-blue-600',
+      color: 'from-blue-500 to-brand-orange',
     },
     {
       icon: FaRocket,

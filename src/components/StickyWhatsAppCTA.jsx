@@ -30,7 +30,7 @@ const StickyWhatsAppCTA = () => {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      'Hoi! Ik ben geïnteresseerd in een IPTV4K abonnement. Kan ik meer informatie krijgen?'
+      'Hoi! Ik ben geïnteresseerd in een Stream Holland abonnement. Kan ik meer informatie krijgen?'
     );
     window.open(`https://wa.me/31612345678?text=${message}`, '_blank');
   };
@@ -69,7 +69,7 @@ const StickyWhatsAppCTA = () => {
                         <FaWhatsapp className="text-white text-xl" />
                       </div>
                       <div>
-                        <p className="font-bold text-gray-900 text-sm">IPTV4K Support</p>
+                        <p className="font-bold text-gray-900 text-sm">Stream Holland Support</p>
                         <div className="flex items-center gap-1">
                           <div className="w-2 h-2 bg-green-500 rounded-full" />
                           <span className="text-xs text-gray-600">Online nu</span>

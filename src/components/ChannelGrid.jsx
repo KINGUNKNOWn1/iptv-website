@@ -54,7 +54,7 @@ const ChannelGrid = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
+    <section className="py-20 bg-gradient-to-b from-brand-black via-slate-800 to-brand-black">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
@@ -68,7 +68,7 @@ const ChannelGrid = () => {
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Bekijk al jouw favoriete kanalen in kristalheldere HD, UHD en 4K kwaliteit.
-            Sport, films, series, nieuws en entertainment - allemaal in één <Link to="/iptv-abonnement" className="text-blue-400 hover:text-blue-300 underline">IPTV abonnement</Link>.
+            Sport, films, series, nieuws en entertainment - allemaal in één <Link to="/iptv-abonnement" className="text-brand-orange hover:text-[#E85D00] underline">IPTV abonnement</Link>.
           </p>
         </motion.div>
 
@@ -86,8 +86,8 @@ const ChannelGrid = () => {
               onClick={() => setSelectedCategory(category.id)}
               className={`group relative px-6 py-4 rounded-xl font-semibold transition-all duration-300 ${
                 selectedCategory === category.id
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-600/50'
-                  : 'bg-slate-800/50 text-gray-300 hover:bg-slate-700/50'
+                  ? 'bg-gradient-to-r from-brand-orange to-[#E85D00] text-white shadow-lg shadow-blue-600/50'
+                  : 'bg-brand-black/90/50 text-gray-300 hover:bg-slate-700/50'
               }`}
             >
               <div className="flex items-center gap-3">
@@ -136,9 +136,9 @@ const ChannelGrid = () => {
                 className="relative group cursor-pointer"
               >
                 {/* Channel Card */}
-                <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-4 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 overflow-hidden">
+                <div className="relative bg-gradient-to-br from-brand-black/90 to-brand-black rounded-xl p-4 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 overflow-hidden">
                   {/* Background Glow */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/20 group-hover:to-purple-600/20 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-orange/0 to-purple-600/0 group-hover:from-brand-orange/20 group-hover:to-purple-600/20 transition-all duration-500" />
 
                   {/* Channel Logo */}
                   <div className="relative text-5xl mb-3 flex items-center justify-center h-16">
@@ -200,11 +200,11 @@ const ChannelGrid = () => {
         >
           <p className="text-gray-400 mb-6">
             En nog {(30500 - filteredChannels.length).toLocaleString()} meer kanalen beschikbaar...
-            <Link to="/iptv-kopen" className="text-blue-400 hover:text-blue-300 underline ml-2">Lees meer over IPTV kopen</Link>
+            <Link to="/iptv-kopen" className="text-brand-orange hover:text-[#E85D00] underline ml-2">Lees meer over IPTV kopen</Link>
           </p>
           <Link
             to="/prijzen"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-orange to-[#E85D00] text-white font-bold rounded-xl hover:from-[#E85D00] hover:to-blue-800 transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50"
           >
             <FaTv />
             Bekijk IPTV Abonnement Prijzen

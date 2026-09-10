@@ -4,44 +4,61 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Premium IPTV service met 30.500+ kanalen en 150.000+ films en series. 99.9% uptime garantie. Nederlandse support 24/7." />
-    <title>IPTV4K - Premium IPTV Service | 30.500+ Kanalen | 4K Kwaliteit</title>
+    <meta name="description" content="Stream Holland - Premium streaming service met 30.500+ kanalen en 150.000+ films en series. 99.9% uptime garantie. Nederlandse support 24/7." />
+    <title>Stream Holland - Premium Streaming Service | 30.500+ Kanalen | 4K Kwaliteit</title>
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://iptv-website-phi.vercel.app/" />
+    <link rel="canonical" href="https://streamholland.com/" />
 
     <!-- Alternate languages -->
-    <link rel="alternate" hreflang="nl" href="https://iptv-website-phi.vercel.app/" />
-    <link rel="alternate" hreflang="nl-NL" href="https://iptv-website-phi.vercel.app/" />
-    <link rel="alternate" hreflang="x-default" href="https://iptv-website-phi.vercel.app/" />
+    <link rel="alternate" hreflang="nl" href="https://streamholland.com/" />
+    <link rel="alternate" hreflang="nl-NL" href="https://streamholland.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://streamholland.com/" />
 
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
-    <!-- DNS Prefetch for performance -->
+    <!-- DNS Prefetch & Preconnect for performance -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="dns-prefetch" href="https://analytics-backend-ten.vercel.app" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+    <!-- Optimized font loading with display=swap for faster rendering -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&family=Righteous&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&family=Righteous&display=swap" rel="stylesheet"></noscript>
 
-    <!-- Google verification (add your code later) -->
+    <!-- Google Analytics 4 (GA4) - Replace G-XXXXXXXXXX with your Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Google Search Console verification - Replace with your verification code -->
     <meta name="google-site-verification" content="your-verification-code-here" />
 
     <!-- Open Graph for social sharing -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://iptv-website-phi.vercel.app/" />
-    <meta property="og:title" content="IPTV4K - Premium IPTV Service | 30.500+ Kanalen" />
-    <meta property="og:description" content="Premium IPTV service met 30.500+ kanalen en 150.000+ films en series. 99.9% uptime garantie. Nederlandse support 24/7." />
+    <meta property="og:url" content="https://streamholland.com/" />
+    <meta property="og:title" content="Stream Holland - Premium Streaming Service | 30.500+ Kanalen" />
+    <meta property="og:description" content="Stream Holland - Premium streaming service met 30.500+ kanalen en 150.000+ films en series. 99.9% uptime garantie. Nederlandse support 24/7." />
+    <meta property="og:image" content="https://streamholland.com/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="nl_NL" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="IPTV4K - Premium IPTV Service | 30.500+ Kanalen" />
-    <meta name="twitter:description" content="Premium IPTV service met 30.500+ kanalen en 150.000+ films en series." />
+    <meta name="twitter:title" content="Stream Holland - Premium Streaming Service | 30.500+ Kanalen" />
+    <meta name="twitter:description" content="Stream Holland - Premium streaming service met 30.500+ kanalen en 150.000+ films en series." />
+    <meta name="twitter:image" content="https://streamholland.com/og-image.svg" />
   </head>
   <body>
     <div id="root"></div>

@@ -8,7 +8,7 @@ const DeviceCompatibility = () => {
     {
       icon: SiSamsung,
       name: 'Samsung TV',
-      color: 'from-blue-500 to-blue-600',
+      color: 'from-blue-500 to-brand-orange',
       bgColor: 'bg-blue-50'
     },
     {
@@ -87,14 +87,14 @@ const DeviceCompatibility = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Geen extra IPTV box nodig.
               <br />
-              <span className="bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-orange to-orange-500 bg-clip-text text-transparent">
                 Compatibel met je huidige apparaten.
               </span>
             </h2>
 
             <div className="space-y-5 text-gray-600 text-lg mb-10 leading-relaxed">
               <p>
-                Met een IPTV4K abonnement kies je zelf op welk apparaat je kijkt: je Samsung of LG Smart TV, je iPhone of Android telefoon, je laptop of Amazon Fire TV Stick. <span className="font-semibold text-gray-800">Geen extra hardware of technische kennis nodig.</span>
+                Met een Stream Holland abonnement kies je zelf op welk apparaat je kijkt: je Samsung of LG Smart TV, je iPhone of Android telefoon, je laptop of Amazon Fire TV Stick. <span className="font-semibold text-gray-800">Geen extra hardware of technische kennis nodig.</span>
               </p>
               <p>
                 Installeer IPTV Smarters Pro of SS IPTV, voer je inloggegevens in en klaar! <span className="font-semibold text-gray-800">Gemiddeld ben je binnen vijf minuten</span> aan het kijken naar je eerste kanaal.
@@ -107,7 +107,7 @@ const DeviceCompatibility = () => {
             {/* Devices Grid */}
             <div className="mb-10">
               <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-5 flex items-center gap-2">
-                <div className="w-8 h-0.5 bg-gradient-to-r from-blue-600 to-orange-500" />
+                <div className="w-8 h-0.5 bg-gradient-to-r from-brand-orange to-orange-500" />
                 Compatibele Apparaten
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -170,7 +170,7 @@ const DeviceCompatibility = () => {
               whileInView={{ scale: 1, rotate: 0 }}
               viewport={{ once: true }}
               transition={{ type: 'spring', stiffness: 200, delay: 0.3 }}
-              className="absolute -top-6 -right-6 z-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white rounded-3xl px-8 py-6 shadow-2xl border-4 border-white"
+              className="absolute -top-6 -right-6 z-20 bg-gradient-to-br from-brand-orange via-blue-700 to-blue-800 text-white rounded-3xl px-8 py-6 shadow-2xl border-4 border-white"
             >
               <div className="text-center">
                 <p className="text-5xl font-bold mb-1">8+</p>
@@ -182,7 +182,7 @@ const DeviceCompatibility = () => {
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
-              className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-10 shadow-2xl"
+              className="relative bg-gradient-to-br from-brand-black via-slate-800 to-brand-black rounded-3xl p-10 shadow-2xl"
             >
               {/* TV Screen */}
               <motion.div
@@ -227,12 +227,12 @@ const DeviceCompatibility = () => {
                   viewport={{ once: true }}
                   transition={{ delay: 0.5 }}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden border-4 border-gray-700 shadow-xl"
+                  className="bg-black rounded-2xl overflow-hidden border-4 border-gray-700 shadow-xl"
                 >
                   <img
                     src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&q=80"
                     alt="Phone"
-                    className="w-full aspect-[9/16] object-cover"
+                    className="w-full h-full aspect-[9/16] object-cover"
                   />
                 </motion.div>
 
@@ -243,12 +243,12 @@ const DeviceCompatibility = () => {
                   viewport={{ once: true }}
                   transition={{ delay: 0.6 }}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden border-4 border-gray-700 col-span-2 shadow-xl"
+                  className="bg-black rounded-2xl overflow-hidden border-4 border-gray-700 col-span-2 shadow-xl"
                 >
                   <img
                     src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80"
                     alt="Tablet"
-                    className="w-full aspect-video object-cover"
+                    className="w-full h-full aspect-video object-cover"
                   />
                 </motion.div>
               </div>

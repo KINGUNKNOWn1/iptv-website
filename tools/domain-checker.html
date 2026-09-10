@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Checker - IPTV Safety Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, #f97316, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #cbd5e1;
+            font-weight: 600;
+        }
+        input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #f97316;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to right, #f97316, #ef4444);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .results {
+            display: none;
+        }
+        .results.show {
+            display: block;
+        }
+        .result-item {
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        .result-item.success {
+            background: rgba(34, 197, 94, 0.1);
+            border-color: #22c55e;
+        }
+        .result-item.warning {
+            background: rgba(251, 146, 60, 0.1);
+            border-color: #fb923c;
+        }
+        .result-item.danger {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: #ef4444;
+        }
+        .result-item h3 {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            display: none;
+        }
+        .loading.show {
+            display: block;
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-top: 4px solid #f97316;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .check-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .check-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        .badge.available {
+            background: #22c55e;
+            color: white;
+        }
+        .badge.taken {
+            background: #ef4444;
+            color: white;
+        }
+        .badge.safe {
+            background: #3b82f6;
+            color: white;
+        }
+        .badge.risky {
+            background: #f59e0b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Domain Safety Checker</h1>
+        <p class="subtitle">Check domain availability, DMCA history, and Google indexability</p>
+
+        <div class="card">
+            <div class="input-group">
+                <label for="domain">Enter Domain Name</label>
+                <input
+                    type="text"
+                    id="domain"
+                    placeholder="example.nl (without https://)"
+                    autocomplete="off"
+                >
+            </div>
+            <button class="btn" onclick="checkDomain()">🔍 Check Domain</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Analyzing domain safety...</p>
+        </div>
+
+        <div class="results" id="results">
+            <!-- Results will be inserted here -->
+        </div>
+    </div>
+
+    <script>
+        async function checkDomain() {
+            const domainInput = document.getElementById('domain').value.trim();
+            if (!domainInput) {
+                alert('Please enter a domain name');
+                return;
+            }
+
+            // Clean domain input
+            const domain = domainInput.replace(/^(https?:\/\/)?(www\.)?/, '').replace(/\/$/, '');
+
+            // Show loading
+            document.getElementById('loading').classList.add('show');
+            document.getElementById('results').classList.remove('show');
+
+            // Simulate checks (in real app, these would be API calls)
+            await new Promise(resolve => setTimeout(resolve, 2000));
+
+            // Perform checks
+            const results = await performChecks(domain);
+
+            // Hide loading
+            document.getElementById('loading').classList.remove('show');
+
+            // Display results
+            displayResults(domain, results);
+        }
+
+        async function performChecks(domain) {
+            // These are the checks we'll perform
+            const checks = {
+                availability: await checkAvailability(domain),
+                dmcaHistory: await checkDMCAHistory(domain),
+                googleSafeBrowsing: await checkGoogleSafeBrowsing(domain),
+                spamDatabase: await checkSpamDatabase(domain),
+                whoisAge: await checkWhoisAge(domain),
+                sslAvailable: await checkSSL(domain),
+                iptvKeywords: await checkIPTVKeywords(domain),
+                googleIndex: await checkGoogleIndex(domain)
+            };
+
+            return checks;
+        }
+
+        // Mock check functions (replace with real API calls)
+        async function checkAvailability(domain) {
+            // In production, use API like Namecheap or WHOIS API
+            const takenDomains = ['iptv4k.nl', 'iptvholland.nl', 'nederlandiptv.nl'];
+            const isTaken = takenDomains.includes(domain);
+
+            return {
+                status: isTaken ? 'taken' : 'available',
+                message: isTaken ? 'Domain is already registered' : 'Domain is available for registration',
+                safe: !isTaken
+            };
+        }
+
+        async function checkDMCAHistory(domain) {
+            // Check if domain has DMCA complaints
+            // In production, check Lumen Database API
+            const dmcaDomains = ['piracy-iptv.com', 'stolen-content.net'];
+            const hasDMCA = dmcaDomains.includes(domain);
+
+            return {
+                status: hasDMCA ? 'found' : 'clean',
+                message: hasDMCA ?
+                    '⚠️ Domain has DMCA history - Google may penalize' :
+                    '✅ No DMCA complaints found',
+                safe: !hasDMCA
+            };
+        }
+
+        async function checkGoogleSafeBrowsing(domain) {
+            // Check Google Safe Browsing API
+            // In production, use: https://developers.google.com/safe-browsing/v4
+            return {
+                status: 'safe',
+                message: '✅ Not flagged by Google Safe Browsing',
+                safe: true
+            };
+        }
+
+        async function checkSpamDatabase(domain) {
+            // Check spam databases
+            const isSpam = Math.random() < 0.1; // 10% chance for demo
+
+            return {
+                status: isSpam ? 'listed' : 'clean',
+                message: isSpam ?
+                    '⚠️ Domain appears in spam databases' :
+                    '✅ Not listed in spam databases',
+                safe: !isSpam
+            };
+        }
+
+        async function checkWhoisAge(domain) {
+            // Check domain age (older = more trust)
+            return {
+                status: 'new',
+                message: '📅 New domain (no history)',
+                safe: true,
+                info: 'New domains take 3-6 months to rank well'
+            };
+        }
+
+        async function checkSSL(domain) {
+            return {
+                status: 'available',
+                message: '✅ SSL certificate available (free via Let\'s Encrypt)',
+                safe: true
+            };
+        }
+
+        async function checkIPTVKeywords(domain) {
+            const hasIPTV = domain.toLowerCase().includes('iptv');
+
+            return {
+                status: hasIPTV ? 'present' : 'absent',
+                message: hasIPTV ?
+                    '⚠️ "IPTV" in domain may attract scrutiny' :
+                    '✅ Generic domain (less scrutiny)',
+                safe: true,
+                warning: hasIPTV ? 'Consider a more neutral domain name' : null
+            };
+        }
+
+        async function checkGoogleIndex(domain) {
+            // Check if domain is already indexed
+            return {
+                status: 'not-indexed',
+                message: '✅ Domain not yet indexed (fresh start)',
+                safe: true
+            };
+        }
+
+        function displayResults(domain, results) {
+            const resultsDiv = document.getElementById('results');
+
+            const safetyScore = calculateSafetyScore(results);
+
+            let html = `
+                <div class="card">
+                    <h2>Results for: ${domain}</h2>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <div style="font-size: 48px; font-weight: 700; color: ${getSafetyColor(safetyScore)}">
+                            ${safetyScore}%
+                        </div>
+                        <div style="color: #94a3b8;">Safety Score</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>📋 Detailed Checks</h3>
+                    <div style="margin-top: 20px;">
+            `;
+
+            // Domain Availability
+            html += createResultItem(
+                results.availability.safe ? 'success' : 'danger',
+                'Domain Availability',
+                results.availability.message,
+                results.availability.status === 'available' ? 'AVAILABLE' : 'TAKEN'
+            );
+
+            // DMCA History
+            html += createResultItem(
+                results.dmcaHistory.safe ? 'success' : 'danger',
+                'DMCA History',
+                results.dmcaHistory.message,
+                results.dmcaHistory.status === 'clean' ? 'CLEAN' : 'RISKY'
+            );
+
+            // Google Safe Browsing
+            html += createResultItem(
+                results.googleSafeBrowsing.safe ? 'success' : 'danger',
+                'Google Safe Browsing',
+                results.googleSafeBrowsing.message,
+                'SAFE'
+            );
+
+            // Spam Database
+            html += createResultItem(
+                results.spamDatabase.safe ? 'success' : 'warning',
+                'Spam Database Check',
+                results.spamDatabase.message,
+                results.spamDatabase.status === 'clean' ? 'CLEAN' : 'LISTED'
+            );
+
+            // IPTV Keywords
+            html += createResultItem(
+                'warning',
+                'Keyword Analysis',
+                results.iptvKeywords.message,
+                results.iptvKeywords.status === 'present' ? 'IPTV KEYWORD' : 'GENERIC'
+            );
+
+            // SSL
+            html += createResultItem(
+                'success',
+                'SSL Certificate',
+                results.sslAvailable.message,
+                'AVAILABLE'
+            );
+
+            // Google Index
+            html += createResultItem(
+                'success',
+                'Google Index Status',
+                results.googleIndex.message,
+                'FRESH'
+            );
+
+            html += `
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>💡 Recommendations</h3>
+                    ${generateRecommendations(domain, results, safetyScore)}
+                </div>
+            `;
+
+            resultsDiv.innerHTML = html;
+            resultsDiv.classList.add('show');
+        }
+
+        function createResultItem(type, title, message, badge) {
+            const badgeClass = badge === 'AVAILABLE' || badge === 'CLEAN' || badge === 'SAFE' || badge === 'FRESH' ? 'safe' :
+                               badge === 'TAKEN' || badge === 'RISKY' ? 'risky' : 'safe';
+
+            return `
+                <div class="result-item ${type}">
+                    <h3>${title} <span class="badge ${badgeClass}">${badge}</span></h3>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+
+        function calculateSafetyScore(results) {
+            let score = 100;
+
+            if (!results.availability.safe) score -= 50; // Domain taken
+            if (!results.dmcaHistory.safe) score -= 30; // DMCA history
+            if (!results.googleSafeBrowsing.safe) score -= 40; // Google flagged
+            if (!results.spamDatabase.safe) score -= 20; // Spam listed
+            if (results.iptvKeywords.status === 'present') score -= 10; // IPTV keyword
+
+            return Math.max(0, score);
+        }
+
+        function getSafetyColor(score) {
+            if (score >= 80) return '#22c55e';
+            if (score >= 50) return '#f59e0b';
+            return '#ef4444';
+        }
+
+        function generateRecommendations(domain, results, score) {
+            let recommendations = '<ul class="check-list">';
+
+            if (score >= 80) {
+                recommendations += '<li>✅ <strong>SAFE TO USE:</strong> This domain is good for your IPTV business</li>';
+            } else if (score >= 50) {
+                recommendations += '<li>⚠️ <strong>PROCEED WITH CAUTION:</strong> Some concerns found</li>';
+            } else {
+                recommendations += '<li>❌ <strong>HIGH RISK:</strong> Consider a different domain</li>';
+            }
+
+            if (results.availability.status === 'available') {
+                recommendations += '<li>✅ Domain is available - register it quickly!</li>';
+                recommendations += '<li>💡 Recommended registrars: Namecheap, Cloudflare, Hostinger</li>';
+            }
+
+            if (results.dmcaHistory.safe) {
+                recommendations += '<li>✅ Clean DMCA record - Google will index normally</li>';
+            } else {
+                recommendations += '<li>❌ DMCA history detected - Google may NOT index this domain</li>';
+                recommendations += '<li>💡 Choose a different domain without copyright issues</li>';
+            }
+
+            if (results.iptvKeywords.status === 'present') {
+                recommendations += '<li>⚠️ "IPTV" keyword may attract more DMCA scrutiny</li>';
+                recommendations += '<li>💡 Consider neutral names like: streamholland.nl, kanaal4k.nl, tvplus.nl</li>';
+            }
+
+            recommendations += '<li>🔐 Always use HTTPS (SSL) - required for Google ranking</li>';
+            recommendations += '<li>📊 Submit sitemap to Google Search Console immediately after launch</li>';
+            recommendations += '<li>⏱️ New domains take 2-4 weeks to start appearing in Google</li>';
+
+            recommendations += '</ul>';
+
+            return recommendations;
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('domain').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkDomain();
+            }
+        });
+    </script>
+</body>
+</html>

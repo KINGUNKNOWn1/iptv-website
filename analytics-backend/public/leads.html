@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Leads - Stream Holland</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body class="text-white">
+  <!-- Login Modal -->
+  <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50" style="display: none;">
+    <div class="bg-gray-800 rounded-xl p-8 max-w-md w-full mx-4">
+      <h2 class="text-3xl font-bold mb-2">🔒 Admin Login</h2>
+      <p class="text-gray-400 mb-6">Voer het wachtwoord in om toegang te krijgen</p>
+
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="Wachtwoord"
+        class="w-full px-4 py-3 bg-gray-700 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
+        onkeypress="if(event.key === 'Enter') checkPassword()"
+      />
+
+      <button
+        onclick="checkPassword()"
+        class="w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 rounded-lg font-semibold transition-all"
+      >
+        Inloggen
+      </button>
+
+      <p id="errorMessage" class="text-red-500 text-sm mt-4 text-center" style="display: none;">
+        Onjuist wachtwoord
+      </p>
+
+      <p class="text-gray-500 text-xs mt-6 text-center">
+        Standaard wachtwoord: <code class="bg-gray-700 px-2 py-1 rounded">admin123</code>
+      </p>
+    </div>
+  </div>
+
+  <div id="mainContent" class="container mx-auto px-4 py-8" style="display: none;">
+    <!-- Header -->
+    <div class="mb-8">
+      <h1 class="text-4xl font-bold mb-2">📧 Email Leads</h1>
+      <p class="text-gray-400">Verzamelde leads van de pricing pagina</p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-6 shadow-lg">
+        <div class="text-blue-200 text-sm font-semibold mb-1">Totaal Leads</div>
+        <div class="text-3xl font-bold" id="totalLeads">-</div>
+      </div>
+
+      <div class="bg-gradient-to-br from-green-600 to-green-800 rounded-xl p-6 shadow-lg">
+        <div class="text-green-200 text-sm font-semibold mb-1">Vandaag</div>
+        <div class="text-3xl font-bold" id="todayLeads">-</div>
+      </div>
+
+      <div class="bg-gradient-to-br from-orange-600 to-orange-800 rounded-xl p-6 shadow-lg">
+        <div class="text-orange-200 text-sm font-semibold mb-1">Meest Populair</div>
+        <div class="text-lg font-bold" id="popularPlan">-</div>
+      </div>
+    </div>
+
+    <!-- Export Buttons -->
+    <div class="mb-6 flex gap-4">
+      <button
+        onclick="exportCSV()"
+        class="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-semibold transition-colors"
+      >
+        📥 Export als CSV
+      </button>
+      <button
+        onclick="exportJSON()"
+        class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-colors"
+      >
+        📄 Export als JSON
+      </button>
+      <button
+        onclick="refreshData()"
+        class="px-6 py-3 bg-gray-600 hover:bg-gray-700 rounded-lg font-semibold transition-colors"
+      >
+        🔄 Ververs
+      </button>
+    </div>
+
+    <!-- Plan Breakdown -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-lg mb-8">
+      <h2 class="text-xl font-bold mb-4">📊 Abonnement Verdeling</h2>
+      <div id="planBreakdown" class="space-y-3"></div>
+    </div>
+
+    <!-- Leads Table -->
+    <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+      <div class="p-6 border-b border-gray-700">
+        <h2 class="text-xl font-bold">Alle Leads</h2>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full">
+          <thead class="bg-gray-700">
+            <tr>
+              <th class="px-6 py-3 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">ID</th>
+              <th class="px-6 py-3 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">Email</th>
+              <th class="px-6 py-3 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">Abonnement</th>
+              <th class="px-6 py-3 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">Datum</th>
+              <th class="px-6 py-3 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">Bron</th>
+            </tr>
+          </thead>
+          <tbody id="leadsTable" class="divide-y divide-gray-700">
+            <tr>
+              <td colspan="5" class="px-6 py-8 text-center text-gray-400">
+                <div class="animate-pulse">Laden...</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="p-4 bg-gray-700 text-sm text-gray-300 text-center">
+        Totaal: <span id="tableCount">0</span> leads
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Authentication
+    const ADMIN_PASSWORD = 'admin123'; // Change this in production!
+
+    function checkAuth() {
+      const isAuthenticated = sessionStorage.getItem('admin_authenticated') === 'true';
+      if (isAuthenticated) {
+        document.getElementById('loginModal').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'block';
+      } else {
+        document.getElementById('loginModal').style.display = 'flex';
+        document.getElementById('mainContent').style.display = 'none';
+        document.getElementById('passwordInput').focus();
+      }
+    }
+
+    function checkPassword() {
+      const password = document.getElementById('passwordInput').value;
+      if (password === ADMIN_PASSWORD) {
+        sessionStorage.setItem('admin_authenticated', 'true');
+        checkAuth();
+      } else {
+        document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('passwordInput').value = '';
+        document.getElementById('passwordInput').focus();
+        setTimeout(() => {
+          document.getElementById('errorMessage').style.display = 'none';
+        }, 3000);
+      }
+    }
+
+    // Check auth on page load
+    checkAuth();
+
+    let allLeads = [];
+
+    async function fetchLeads() {
+      try {
+        const response = await fetch('/api/leads?limit=500');
+        const data = await response.json();
+        allLeads = data.leads || [];
+        displayLeads(allLeads);
+        document.getElementById('tableCount').textContent = data.total;
+      } catch (error) {
+        console.error('Error fetching leads:', error);
+        document.getElementById('leadsTable').innerHTML = `
+          <tr>
+            <td colspan="5" class="px-6 py-8 text-center text-red-400">
+              Fout bij laden van leads
+            </td>
+          </tr>
+        `;
+      }
+    }
+
+    async function fetchStats() {
+      try {
+        const response = await fetch('/api/leads/stats');
+        const data = await response.json();
+
+        document.getElementById('totalLeads').textContent = data.total;
+        document.getElementById('todayLeads').textContent = data.today;
+
+        if (data.planBreakdown.length > 0) {
+          const popular = data.planBreakdown[0];
+          document.getElementById('popularPlan').textContent = popular.plan;
+
+          // Display plan breakdown
+          const breakdownHTML = data.planBreakdown.map(item => `
+            <div class="flex items-center justify-between">
+              <span class="text-gray-300">${item.plan}</span>
+              <div class="flex items-center gap-3">
+                <div class="w-32 bg-gray-700 rounded-full h-2">
+                  <div class="bg-orange-500 h-2 rounded-full" style="width: ${(item.count / data.total * 100)}%"></div>
+                </div>
+                <span class="text-white font-bold w-12 text-right">${item.count}</span>
+              </div>
+            </div>
+          `).join('');
+
+          document.getElementById('planBreakdown').innerHTML = breakdownHTML;
+        }
+      } catch (error) {
+        console.error('Error fetching stats:', error);
+      }
+    }
+
+    function displayLeads(leads) {
+      if (leads.length === 0) {
+        document.getElementById('leadsTable').innerHTML = `
+          <tr>
+            <td colspan="5" class="px-6 py-8 text-center text-gray-400">
+              Nog geen leads verzameld
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      const html = leads.map(lead => {
+        const date = new Date(lead.timestamp);
+        const formattedDate = date.toLocaleString('nl-NL', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit'
+        });
+
+        return `
+          <tr class="hover:bg-gray-700/50 transition-colors">
+            <td class="px-6 py-4 text-gray-400">#${lead.id}</td>
+            <td class="px-6 py-4">
+              <a href="mailto:${lead.email}" class="text-blue-400 hover:text-blue-300 font-mono">
+                ${lead.email}
+              </a>
+            </td>
+            <td class="px-6 py-4">
+              <span class="px-3 py-1 bg-orange-600 rounded-full text-xs font-semibold">
+                ${lead.plan}
+              </span>
+            </td>
+            <td class="px-6 py-4 text-gray-300">${formattedDate}</td>
+            <td class="px-6 py-4 text-gray-400">${lead.source}</td>
+          </tr>
+        `;
+      }).join('');
+
+      document.getElementById('leadsTable').innerHTML = html;
+    }
+
+    function exportCSV() {
+      if (allLeads.length === 0) {
+        alert('Geen leads om te exporteren');
+        return;
+      }
+
+      const header = 'ID,Email,Abonnement,Datum,Bron\n';
+      const rows = allLeads.map(lead => {
+        return `${lead.id},"${lead.email}","${lead.plan}","${lead.timestamp}","${lead.source}"`;
+      }).join('\n');
+
+      const csv = header + rows;
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `streamholland-leads-${new Date().toISOString().split('T')[0]}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+    }
+
+    function exportJSON() {
+      if (allLeads.length === 0) {
+        alert('Geen leads om te exporteren');
+        return;
+      }
+
+      const json = JSON.stringify(allLeads, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `streamholland-leads-${new Date().toISOString().split('T')[0]}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+    }
+
+    function refreshData() {
+      fetchLeads();
+      fetchStats();
+    }
+
+    // Load data on page load
+    fetchLeads();
+    fetchStats();
+
+    // Auto-refresh every 30 seconds
+    setInterval(refreshData, 30000);
+  </script>
+</body>
+</html>

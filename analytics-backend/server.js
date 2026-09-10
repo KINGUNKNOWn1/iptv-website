@@ -41,9 +41,22 @@ db.exec(`
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
   );
 
+  CREATE TABLE IF NOT EXISTS leads (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL,
+    plan TEXT NOT NULL,
+    source TEXT NOT NULL,
+    visitor_id TEXT,
+    user_agent TEXT,
+    ip_address TEXT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+  );
+
   CREATE INDEX IF NOT EXISTS idx_visitor_id ON page_views(visitor_id);
   CREATE INDEX IF NOT EXISTS idx_timestamp ON page_views(timestamp);
   CREATE INDEX IF NOT EXISTS idx_page_url ON page_views(page_url);
+  CREATE INDEX IF NOT EXISTS idx_leads_email ON leads(email);
+  CREATE INDEX IF NOT EXISTS idx_leads_timestamp ON leads(timestamp);
 `);
 
 // Middleware
@@ -152,6 +165,104 @@ app.post('/api/event', apiLimiter, (req, res) => {
   } catch (error) {
     console.error('Event tracking error:', error);
     res.status(500).json({ error: 'Failed to track event' });
+  }
+});
+
+// Save lead (email collection)
+app.post('/api/leads', apiLimiter, (req, res) => {
+  try {
+    const { email, plan, source, visitorId } = req.body;
+
+    if (!email || !plan) {
+      return res.status(400).json({ error: 'Email and plan are required' });
+    }
+
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    const userAgent = req.headers['user-agent'];
+
+    const stmt = db.prepare(`
+      INSERT INTO leads (email, plan, source, visitor_id, user_agent, ip_address)
+      VALUES (?, ?, ?, ?, ?, ?)
+    `);
+
+    const result = stmt.run(
+      email,
+      plan,
+      source || 'pricing_page',
+      visitorId || null,
+      userAgent || null,
+      ip
+    );
+
+    res.json({
+      success: true,
+      leadId: result.lastInsertRowid
+    });
+  } catch (error) {
+    console.error('Lead save error:', error);
+    res.status(500).json({ error: 'Failed to save lead' });
+  }
+});
+
+// Get all leads
+app.get('/api/leads', (req, res) => {
+  try {
+    const { limit = 100, offset = 0 } = req.query;
+
+    const leads = db.prepare(`
+      SELECT * FROM leads
+      ORDER BY timestamp DESC
+      LIMIT ? OFFSET ?
+    `).all(parseInt(limit), parseInt(offset));
+
+    const totalCount = db.prepare('SELECT COUNT(*) as count FROM leads').get().count;
+
+    res.json({
+      leads,
+      total: totalCount,
+      limit: parseInt(limit),
+      offset: parseInt(offset)
+    });
+  } catch (error) {
+    console.error('Get leads error:', error);
+    res.status(500).json({ error: 'Failed to get leads' });
+  }
+});
+
+// Get leads stats
+app.get('/api/leads/stats', (req, res) => {
+  try {
+    const totalLeads = db.prepare('SELECT COUNT(*) as count FROM leads').get().count;
+
+    const todayLeads = db.prepare(`
+      SELECT COUNT(*) as count
+      FROM leads
+      WHERE DATE(timestamp) = DATE('now')
+    `).get().count;
+
+    const planBreakdown = db.prepare(`
+      SELECT plan, COUNT(*) as count
+      FROM leads
+      GROUP BY plan
+      ORDER BY count DESC
+    `).all();
+
+    const recentLeads = db.prepare(`
+      SELECT email, plan, timestamp
+      FROM leads
+      ORDER BY timestamp DESC
+      LIMIT 10
+    `).all();
+
+    res.json({
+      total: totalLeads,
+      today: todayLeads,
+      planBreakdown,
+      recentLeads
+    });
+  } catch (error) {
+    console.error('Leads stats error:', error);
+    res.status(500).json({ error: 'Failed to get leads stats' });
   }
 });
 

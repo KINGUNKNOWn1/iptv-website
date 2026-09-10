@@ -1,4 +1,4 @@
-# robots.txt for IPTV4K - Optimized for Google Indexing
+# robots.txt for Stream Holland - Optimized for Google Indexing
 # Allow all search engines to crawl everything
 
 User-agent: *
@@ -33,7 +33,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap location
-Sitemap: https://iptv-website-phi.vercel.app/sitemap.xml
+Sitemap: https://streamholland.com/sitemap.xml
 
 # Host (preferred domain)
-Host: https://iptv-website-phi.vercel.app
+Host: https://streamholland.com

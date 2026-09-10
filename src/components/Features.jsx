@@ -8,7 +8,7 @@ const Features = () => {
       icon: FaTv,
       title: '30.500+ Live Kanalen',
       description: 'Toegang tot duizenden kanalen uit Nederland, Turkije, Arabische landen en wereldwijd',
-      color: 'from-blue-500 to-blue-600',
+      color: 'from-blue-500 to-brand-orange',
     },
     {
       icon: FaGlobe,

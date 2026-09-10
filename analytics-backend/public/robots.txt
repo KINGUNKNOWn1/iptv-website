@@ -1,0 +1,16 @@
+# robots.txt for Stream Holland
+
+User-agent: *
+Allow: /
+
+# Disallow admin and analytics pages
+Disallow: /admin/
+Disallow: /dashboard.html
+Disallow: /leads.html
+Disallow: /login.html
+
+# Sitemap location
+Sitemap: https://streamholland.com/sitemap.xml
+
+# Crawl-delay (optional - prevents server overload)
+Crawl-delay: 1

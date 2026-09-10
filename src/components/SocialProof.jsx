@@ -48,7 +48,7 @@ const SocialProof = () => {
       gradient: 'from-blue-500 via-blue-600 to-cyan-500',
       shadowColor: 'shadow-blue-500/50',
       glowColor: 'bg-blue-500',
-      iconBg: 'from-blue-500 to-blue-600'
+      iconBg: 'from-blue-500 to-brand-orange'
     },
     {
       icon: FaStar,
@@ -109,7 +109,7 @@ const SocialProof = () => {
                       <FaFire className="text-orange-500 text-xs animate-pulse" />
                     </p>
                     <p className="text-xs text-gray-600 mt-1">
-                      heeft zojuist een <span className="font-bold text-blue-600">{currentNotif.plan}</span> abonnement besteld
+                      heeft zojuist een <span className="font-bold text-brand-orange">{currentNotif.plan}</span> abonnement besteld
                     </p>
                     <p className="text-xs text-gray-400 mt-1 flex items-center gap-1">
                       <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
@@ -142,7 +142,7 @@ const SocialProof = () => {
       </div>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-b from-brand-black via-slate-800 to-brand-black relative overflow-hidden">
         {/* Animated Background Orbs */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
@@ -228,7 +228,7 @@ const SocialProof = () => {
                 {/* Glow on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${badge.gradient} rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300`} />
 
-                <div className="relative flex items-center gap-3 px-6 py-3 bg-slate-800/80 backdrop-blur-sm rounded-xl border border-slate-700/50 group-hover:border-transparent transition-all">
+                <div className="relative flex items-center gap-3 px-6 py-3 bg-brand-black/90/80 backdrop-blur-sm rounded-xl border border-slate-700/50 group-hover:border-transparent transition-all">
                   <span className="text-2xl">{badge.icon}</span>
                   <span className="text-sm text-gray-300 font-semibold group-hover:text-white transition-colors">
                     {badge.text}
@@ -279,7 +279,7 @@ const StatCard = ({ stat, index }) => {
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
         className="relative h-full"
       >
-        <div className="relative bg-gradient-to-br from-slate-800/90 via-slate-800/95 to-slate-900/90 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50 group-hover:border-transparent transition-all duration-300 overflow-hidden">
+        <div className="relative bg-gradient-to-br from-brand-black/90/90 via-slate-800/95 to-brand-black/90 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50 group-hover:border-transparent transition-all duration-300 overflow-hidden">
           {/* Animated Background Pattern */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="absolute inset-0" style={{

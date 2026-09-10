@@ -1,0 +1,7 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black circle background -->
+  <circle cx="16" cy="16" r="16" fill="#000000"/>
+  
+  <!-- Orange play button -->
+  <path d="M 11 8 L 11 24 L 24 16 Z" fill="#FF6B2C"/>
+</svg>

@@ -85,7 +85,7 @@ const Interactive3DTV = () => {
   const currentChannelData = channels[currentChannel];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-brand-black via-slate-800 to-brand-black overflow-hidden">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
@@ -112,7 +112,7 @@ const Interactive3DTV = () => {
           viewport={{ once: true }}
           className="max-w-5xl mx-auto mb-8"
         >
-          <div className="relative bg-slate-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border-2 border-slate-700 group hover:border-blue-500 transition-all">
+          <div className="relative bg-brand-black/90/50 backdrop-blur-sm rounded-3xl overflow-hidden border-2 border-slate-700 group hover:border-blue-500 transition-all">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentChannel}
@@ -130,7 +130,7 @@ const Interactive3DTV = () => {
                 />
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/30" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/80 to-brand-black/30" />
 
                 {/* Live Badge */}
                 {currentChannelData.live && (
@@ -145,7 +145,7 @@ const Interactive3DTV = () => {
                 )}
 
                 {/* Quality Badge */}
-                <div className="absolute top-6 right-6 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 backdrop-blur-sm rounded-xl shadow-lg z-10">
+                <div className="absolute top-6 right-6 px-4 py-2 bg-gradient-to-r from-brand-orange to-[#E85D00] backdrop-blur-sm rounded-xl shadow-lg z-10">
                   <span className="text-sm font-bold text-white">
                     {currentChannelData.quality}
                   </span>
@@ -153,10 +153,10 @@ const Interactive3DTV = () => {
 
                 {/* Channel Info - Positioned at Bottom */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 z-10">
-                  <p className="text-sm text-blue-400 mb-2 uppercase tracking-wide">{currentChannelData.category}</p>
+                  <p className="text-sm text-brand-orange mb-2 uppercase tracking-wide">{currentChannelData.category}</p>
                   <h3 className="text-4xl font-bold text-white mb-6">{currentChannelData.name}</h3>
                   <div className="flex items-center gap-4">
-                    <button className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg shadow-blue-600/30 text-lg font-semibold">
+                    <button className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-brand-orange to-[#E85D00] text-white rounded-xl hover:from-[#E85D00] hover:to-blue-800 transition-all shadow-lg shadow-blue-600/30 text-lg font-semibold">
                       <FaPlay className="text-lg" />
                       <span>Bekijk Nu</span>
                     </button>
@@ -211,7 +211,7 @@ const Interactive3DTV = () => {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
         >
           {[
-            { number: '30.500+', label: 'Live Zenders', gradient: 'from-blue-600 to-blue-700' },
+            { number: '30.500+', label: 'Live Zenders', gradient: 'from-brand-orange to-[#E85D00]' },
             { number: '150.000+', label: 'Films & Series', gradient: 'from-orange-600 to-red-600' },
             { number: '99.9%', label: 'Uptime', gradient: 'from-green-600 to-emerald-600' },
             { number: '24/7', label: 'NL Support', gradient: 'from-purple-600 to-pink-600' }
@@ -228,7 +228,7 @@ const Interactive3DTV = () => {
               <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl blur-xl"
                    style={{ background: `linear-gradient(to right, var(--tw-gradient-stops))` }}
               />
-              <div className="relative text-center p-6 bg-slate-800/80 backdrop-blur-sm rounded-xl border border-slate-700 group-hover:border-transparent transition-all">
+              <div className="relative text-center p-6 bg-brand-black/90/80 backdrop-blur-sm rounded-xl border border-slate-700 group-hover:border-transparent transition-all">
                 <div className={`text-3xl md:text-4xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-2`}>
                   {stat.number}
                 </div>

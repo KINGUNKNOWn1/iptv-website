@@ -7,6 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Stream Holland Brand Colors
+        brand: {
+          black: '#121110',      // Near-black
+          orange: '#FF6B2C',     // Orange accent
+          offwhite: '#F7F5F2',   // Off-white background
+          gray: '#7A736A',       // Secondary gray
+          'gray-light': '#8A857D', // Label gray
+          'gray-border': '#DCD7D0', // Border gray
+        },
         // Netherlands National Colors 🇳🇱
         primary: {
           50: '#fff7ed',
@@ -14,7 +23,7 @@ export default {
           200: '#fed7aa',
           300: '#fdba74',
           400: '#fb923c',
-          500: '#f97316',
+          500: '#FF6B2C',  // Updated to brand orange
           600: '#ea580c',
           700: '#c2410c',
           800: '#9a3412',
@@ -67,8 +76,9 @@ export default {
         ring: '#f97316',
       },
       fontFamily: {
+        brand: ['Archivo', 'sans-serif'],  // Stream Holland brand font
         heading: ['Righteous', 'system-ui', 'sans-serif'],
-        sans: ['Poppins', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Poppins', 'Archivo', 'system-ui', '-apple-system', 'sans-serif'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

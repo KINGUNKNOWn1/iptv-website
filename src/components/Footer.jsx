@@ -1,23 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaPhone, FaPlay, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaPhone, FaPlay } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Abonnementen', href: '#pricing' },
-    { name: 'Functies', href: '#features' },
-    { name: 'Apparaten', href: '#devices' },
-    { name: 'Reviews', href: '#reviews' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Abonnementen', href: '/prijzen' },
+    { name: 'IPTV Kopen', href: '/iptv-kopen' },
+    { name: 'Kanalen', href: '/kanalen' },
+    { name: 'Apparaten', href: '/apparaten' },
+    { name: 'Over Ons', href: '/over-ons' },
+    { name: 'FAQ', href: '/veelgestelde-vragen' },
   ];
 
   const legalLinks = [
-    { name: 'Privacybeleid', href: '#privacy' },
-    { name: 'Algemene Voorwaarden', href: '#terms' },
-    { name: 'Retourbeleid', href: '#returns' },
-    { name: 'Cookie Beleid', href: '#cookies' },
+    { name: 'Privacybeleid', href: '/privacybeleid' },
+    { name: 'Algemene Voorwaarden', href: '/algemene-voorwaarden' },
+    { name: 'Retourbeleid', href: '/retourbeleid' },
+    { name: 'Cookie Beleid', href: '/cookie-beleid' },
   ];
 
   return (
@@ -30,23 +32,12 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-4">
               <FaPlay className="text-primary-500 text-2xl" />
               <span className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-                Holland IPTV
+                Stream Holland
               </span>
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
-              De meest betrouwbare IPTV service in Nederland. 30.500+ kanalen, 150.000+ films en series, en 24/7 Nederlandse support.
+            <p className="text-gray-400 leading-relaxed">
+              De meest betrouwbare streaming service in Nederland. 30.500+ kanalen, 150.000+ films en series, en 24/7 Nederlandse support.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors">
-                <FaFacebook />
-              </a>
-              <a href="#" className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors">
-                <FaInstagram />
-              </a>
-              <a href="#" className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors">
-                <FaTwitter />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -55,13 +46,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-gray-400 hover:text-primary-400 transition-colors flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-primary-500 rounded-full"></span>
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -73,13 +64,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {legalLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-gray-400 hover:text-primary-400 transition-colors flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-primary-500 rounded-full"></span>
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -104,8 +95,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <FaEnvelope className="text-primary-500 flex-shrink-0" />
-                <a href="mailto:info@holland-iptv.nl" className="hover:text-primary-400 transition-colors">
-                  info@holland-iptv.nl
+                <a href="mailto:info@streamholland.com" className="hover:text-primary-400 transition-colors">
+                  info@streamholland.com
                 </a>
               </li>
             </ul>
@@ -116,7 +107,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} Holland IPTV. Alle rechten voorbehouden.
+              © {currentYear} Stream Holland. Alle rechten voorbehouden.
             </p>
             <div className="flex items-center gap-4">
               <div className="glass-effect px-4 py-2 rounded-full text-sm">

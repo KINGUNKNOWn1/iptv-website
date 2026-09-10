@@ -6,41 +6,41 @@ const ComparisonTable = () => {
   const [hoveredRow, setHoveredRow] = useState(null);
 
   const features = [
-    { name: 'Aantal Live Zenders', iptv4k: '30.500+', competitor1: '15.000', competitor2: '10.000', competitor3: '8.500' },
-    { name: 'Films & Series (VOD)', iptv4k: '150.000+', competitor1: '50.000', competitor2: '30.000', competitor3: '25.000' },
-    { name: '4K/UHD Kwaliteit', iptv4k: true, competitor1: true, competitor2: false, competitor3: false },
-    { name: 'HD Kwaliteit', iptv4k: true, competitor1: true, competitor2: true, competitor3: true },
-    { name: 'Nederlandstalige Support 24/7', iptv4k: true, competitor1: false, competitor2: false, competitor3: true },
-    { name: 'iDEAL Betaling', iptv4k: true, competitor1: false, competitor2: true, competitor3: false },
-    { name: 'Geen Automatische Verlenging', iptv4k: true, competitor1: false, competitor2: false, competitor3: false },
-    { name: 'Uptime Garantie', iptv4k: '99.9%', competitor1: '99%', competitor2: '98%', competitor3: '97%' },
-    { name: 'Actief binnen', iptv4k: '5 minuten', competitor1: '24 uur', competitor2: '1-2 uur', competitor3: '12 uur' },
-    { name: 'Arabische Zenders', iptv4k: '2000+', competitor1: '500', competitor2: '300', competitor3: '400' },
-    { name: 'Turkse Zenders', iptv4k: '1500+', competitor1: '400', competitor2: '200', competitor3: '300' },
-    { name: 'Sportzenders', iptv4k: '2500+', competitor1: '800', competitor2: '500', competitor3: '600' },
-    { name: 'EPG (Elektronische Programmagids)', iptv4k: true, competitor1: true, competitor2: false, competitor3: true },
-    { name: 'Catch-up TV', iptv4k: true, competitor1: false, competitor2: false, competitor3: false },
-    { name: 'Multi-device Support', iptv4k: 'Onbeperkt', competitor1: '2 apparaten', competitor2: '3 apparaten', competitor3: '2 apparaten' },
-    { name: 'Prijs per jaar (vanaf)', iptv4k: '€50', competitor1: '€80', competitor2: '€120', competitor3: '€95' },
+    { name: 'Aantal Live Zenders', streamholland: '30.500+', competitor1: '15.000', competitor2: '10.000', competitor3: '8.500' },
+    { name: 'Films & Series (VOD)', streamholland: '150.000+', competitor1: '50.000', competitor2: '30.000', competitor3: '25.000' },
+    { name: '4K/UHD Kwaliteit', streamholland: true, competitor1: true, competitor2: false, competitor3: false },
+    { name: 'HD Kwaliteit', streamholland: true, competitor1: true, competitor2: true, competitor3: true },
+    { name: 'Nederlandstalige Support 24/7', streamholland: true, competitor1: false, competitor2: false, competitor3: true },
+    { name: 'iDEAL Betaling', streamholland: true, competitor1: false, competitor2: true, competitor3: false },
+    { name: 'Geen Automatische Verlenging', streamholland: true, competitor1: false, competitor2: false, competitor3: false },
+    { name: 'Uptime Garantie', streamholland: '99.9%', competitor1: '99%', competitor2: '98%', competitor3: '97%' },
+    { name: 'Actief binnen', streamholland: '5 minuten', competitor1: '24 uur', competitor2: '1-2 uur', competitor3: '12 uur' },
+    { name: 'Arabische Zenders', streamholland: '2000+', competitor1: '500', competitor2: '300', competitor3: '400' },
+    { name: 'Turkse Zenders', streamholland: '1500+', competitor1: '400', competitor2: '200', competitor3: '300' },
+    { name: 'Sportzenders', streamholland: '2500+', competitor1: '800', competitor2: '500', competitor3: '600' },
+    { name: 'EPG (Elektronische Programmagids)', streamholland: true, competitor1: true, competitor2: false, competitor3: true },
+    { name: 'Catch-up TV', streamholland: true, competitor1: false, competitor2: false, competitor3: false },
+    { name: 'Multi-device Support', streamholland: 'Onbeperkt', competitor1: '2 apparaten', competitor2: '3 apparaten', competitor3: '2 apparaten' },
+    { name: 'Prijs per jaar (vanaf)', streamholland: '€50', competitor1: '€80', competitor2: '€120', competitor3: '€95' },
   ];
 
-  const renderCell = (value, isIPTV4K = false) => {
+  const renderCell = (value, isStreamHolland = false) => {
     if (typeof value === 'boolean') {
       return value ? (
-        <FaCheckCircle className={`text-2xl mx-auto ${isIPTV4K ? 'text-green-500' : 'text-green-600/70'}`} />
+        <FaCheckCircle className={`text-2xl mx-auto ${isStreamHolland ? 'text-green-500' : 'text-green-600/70'}`} />
       ) : (
         <FaTimesCircle className="text-2xl text-red-500/70 mx-auto" />
       );
     }
     return (
-      <span className={`font-semibold ${isIPTV4K ? 'text-white text-lg' : 'text-gray-400'}`}>
+      <span className={`font-semibold ${isStreamHolland ? 'text-white text-lg' : 'text-gray-400'}`}>
         {value}
       </span>
     );
   };
 
   return (
-    <section id="comparison" className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
+    <section id="comparison" className="py-20 bg-gradient-to-b from-brand-black via-slate-800 to-brand-black">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
@@ -50,7 +50,7 @@ const ComparisonTable = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Waarom IPTV4K De Beste Keuze Is
+            Waarom Stream Holland De Beste Keuze Is
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Vergelijk ons met andere aanbieders en zie waarom duizenden Nederlanders voor ons kiezen
@@ -69,7 +69,7 @@ const ComparisonTable = () => {
               <table className="min-w-full divide-y divide-slate-700">
                 {/* Table Header */}
                 <thead>
-                  <tr className="bg-slate-800">
+                  <tr className="bg-brand-black/90">
                     <th className="px-6 py-5 text-left text-sm font-semibold text-gray-400 uppercase tracking-wider">
                       Kenmerken
                     </th>
@@ -77,9 +77,9 @@ const ComparisonTable = () => {
                       <div className="flex flex-col items-center gap-2">
                         <div className="flex items-center gap-2">
                           <FaCrown className="text-yellow-500 text-xl" />
-                          <span className="text-lg font-bold text-white">IPTV4K</span>
+                          <span className="text-lg font-bold text-white">Stream Holland</span>
                         </div>
-                        <span className="px-3 py-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-xs font-bold rounded-full">
+                        <span className="px-3 py-1 bg-gradient-to-r from-brand-orange to-[#E85D00] text-white text-xs font-bold rounded-full">
                           AANBEVOLEN
                         </span>
                       </div>
@@ -97,7 +97,7 @@ const ComparisonTable = () => {
                 </thead>
 
                 {/* Table Body */}
-                <tbody className="bg-slate-900 divide-y divide-slate-700/50">
+                <tbody className="bg-brand-black divide-y divide-slate-700/50">
                   {features.map((feature, index) => (
                     <motion.tr
                       key={index}
@@ -108,16 +108,16 @@ const ComparisonTable = () => {
                       onHoverStart={() => setHoveredRow(index)}
                       onHoverEnd={() => setHoveredRow(null)}
                       className={`transition-colors duration-200 ${
-                        hoveredRow === index ? 'bg-slate-800/50' : ''
+                        hoveredRow === index ? 'bg-brand-black/90/50' : ''
                       }`}
                     >
                       <td className="px-6 py-4 text-sm text-gray-300 font-medium">
                         {feature.name}
                       </td>
 
-                      {/* IPTV4K Column (Highlighted) */}
-                      <td className="px-6 py-4 text-center bg-gradient-to-r from-blue-600/10 to-blue-700/10 border-x-2 border-blue-500/30">
-                        {renderCell(feature.iptv4k, true)}
+                      {/* Stream Holland Column (Highlighted) */}
+                      <td className="px-6 py-4 text-center bg-gradient-to-r from-brand-orange/10 to-[#E85D00]/10 border-x-2 border-blue-500/30">
+                        {renderCell(feature.streamholland, true)}
                       </td>
 
                       <td className="px-6 py-4 text-center">
@@ -151,7 +151,7 @@ const ComparisonTable = () => {
           </p>
           <a
             href="#pricing"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 text-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-orange to-[#E85D00] text-white font-bold rounded-xl hover:from-[#E85D00] hover:to-blue-800 transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 text-lg"
           >
             <FaCrown />
             Kies Voor De Beste - Vanaf €50/jaar

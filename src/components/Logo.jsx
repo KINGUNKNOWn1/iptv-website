@@ -1,41 +1,62 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Logo = ({ className = "", textColor = "white" }) => {
+const Logo = ({ className = "", textColor = "white", size = "md" }) => {
+  const isDark = textColor === 'white';
+
+  // Size variants
+  const sizes = {
+    sm: { circle: 40, text: '20px', icon: 16 },
+    md: { circle: 56, text: '28px', icon: 24 },
+    lg: { circle: 72, text: '36px', icon: 32 }
+  };
+
+  const currentSize = sizes[size] || sizes.md;
+
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
-      {/* RSS/Broadcast Icon */}
-      <div className="relative">
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Orange rounded square background */}
-          <rect width="48" height="48" rx="10" fill="#FF6B35"/>
-
-          {/* RSS/Broadcast waves */}
-          <g fill="white">
-            {/* Small dot */}
-            <circle cx="14" cy="34" r="3"/>
-
-            {/* First arc */}
-            <path d="M14 26C18.418 26 22 29.582 22 34" stroke="white" strokeWidth="4" strokeLinecap="round" fill="none"/>
-
-            {/* Second arc */}
-            <path d="M14 18C22.837 18 30 25.163 30 34" stroke="white" strokeWidth="4" strokeLinecap="round" fill="none"/>
-
-            {/* Third arc */}
-            <path d="M14 10C27.255 10 38 20.745 38 34" stroke="white" strokeWidth="4" strokeLinecap="round" fill="none"/>
-          </g>
+    <Link
+      to="/"
+      className={`flex items-center gap-3 ${className} cursor-pointer transition-opacity hover:opacity-80`}
+      aria-label="Ga naar home pagina"
+    >
+      {/* Play button icon in black circle */}
+      <div
+        className="rounded-full bg-black flex items-center justify-center"
+        style={{
+          width: `${currentSize.circle}px`,
+          height: `${currentSize.circle}px`,
+          flexShrink: 0
+        }}
+      >
+        {/* Orange play triangle */}
+        <svg
+          width={currentSize.icon}
+          height={currentSize.icon}
+          viewBox="0 0 24 24"
+          fill="none"
+          style={{ marginLeft: '2px' }}
+        >
+          <path
+            d="M8 5v14l11-7L8 5z"
+            fill="#FF6B2C"
+          />
         </svg>
       </div>
 
-      {/* Text */}
-      <div className="flex items-baseline gap-0">
-        <span className={`font-bold text-3xl ${textColor === 'white' ? 'text-white' : 'text-gray-900'}`}>
-          iptv
-        </span>
-        <span className="font-bold text-3xl text-primary-600">
-          4K
-        </span>
-      </div>
-    </div>
+      {/* streamholland text (all one weight, all lowercase) */}
+      <span
+        className={isDark ? 'text-white' : 'text-black'}
+        style={{
+          fontFamily: 'Inter, system-ui, sans-serif',
+          fontSize: currentSize.text,
+          fontWeight: 700,
+          letterSpacing: '-0.02em',
+          lineHeight: 1
+        }}
+      >
+        streamholland
+      </span>
+    </Link>
   );
 };
 

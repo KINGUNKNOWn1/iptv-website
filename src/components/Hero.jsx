@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaCheckCircle } from 'react-icons/fa';
+import LightweightBackground from './LightweightBackground';
 
 const Hero = () => {
   const badges = [
@@ -14,6 +15,9 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Lightweight Background */}
+      <LightweightBackground variant="hero" />
+
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         {/* Using Unsplash for sports/racing background */}
@@ -23,7 +27,7 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-black/95 via-brand-black/80 to-brand-black/60"></div>
       </div>
 
       {/* Content */}
@@ -34,7 +38,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-brand-black/50 backdrop-blur-sm border border-brand-gray/30 rounded-full mb-8"
           >
             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
             <span className="text-sm text-gray-300">Gevestigd in Rotterdam, actief door heel Nederland</span>
@@ -49,9 +53,9 @@ const Hero = () => {
           >
             <span className="text-white">IPTV Kopen in Nederland</span>
             <br />
-            <span className="text-white">IPTV4K Abonnement</span>
+            <span className="text-white">Stream Holland</span>
             <br />
-            <span className="text-red-600">vanaf 48€ per jaar</span>
+            <span className="text-brand-orange">vanaf 48€ per jaar</span>
           </motion.h1>
 
           {/* Description */}
@@ -61,7 +65,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl"
           >
-            IPTV4K is een betrouwbare IPTV aanbieder gevestigd in Rotterdam. We leveren IPTV abonnement aan klanten door heel Nederland: van Amsterdam tot Den Haag, van Rotterdam tot Utrecht. Nederlandstalige zenders, sportzenders, Arabische en Turkse kanalen, allemaal in één abonnement. Geen automatische verlenging, betaling via iDEAL.
+            Stream Holland is een betrouwbare IPTV aanbieder gevestigd in Rotterdam. We leveren IPTV abonnement aan klanten door heel Nederland: van Amsterdam tot Den Haag, van Rotterdam tot Utrecht. Nederlandstalige zenders, sportzenders, Arabische en Turkse kanalen, allemaal in één abonnement. Geen automatische verlenging, betaling via iDEAL.
           </motion.p>
 
           {/* Feature Badges */}
@@ -77,7 +81,7 @@ const Hero = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
-                className="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg hover:bg-slate-800/70 transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-brand-black/50 backdrop-blur-sm border border-brand-gray/30 rounded-lg hover:bg-brand-black/70 transition-colors"
               >
                 <FaCheckCircle className="text-green-500 flex-shrink-0" />
                 <span className="text-sm text-gray-200">{badge}</span>
@@ -109,7 +113,7 @@ const Hero = () => {
       </div>
 
       {/* Bottom Gradient Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-900 to-transparent z-0"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brand-black to-transparent z-0"></div>
     </section>
   );
 };

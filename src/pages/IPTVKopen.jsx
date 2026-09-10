@@ -65,12 +65,12 @@ const IPTVKopen = () => {
   return (
     <>
       <SEO
-        title="IPTV Kopen Nederland | Premium IPTV Abonnement vanaf €48/jaar - IPTV4K"
-        description="IPTV kopen in Nederland? Kies IPTV4K voor 30.500+ kanalen, 4K kwaliteit, Nederlandse support 24/7. Geen automatische verlenging. Bestel direct via iDEAL."
+        title="IPTV Kopen Nederland | Premium IPTV Abonnement vanaf €48/jaar - Stream Holland"
+        description="IPTV kopen in Nederland? Kies Stream Holland voor 30.500+ kanalen, 4K kwaliteit, Nederlandse support 24/7. Geen automatische verlenging. Bestel direct via iDEAL."
         keywords="iptv kopen, iptv kopen nederland, iptv abonnement kopen, iptv aanbieder, nederlandse iptv"
       />
 
-      <div className="min-h-screen bg-slate-900">
+      <div className="min-h-screen bg-brand-black">
         {/* Hero Section */}
         <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-32 pb-20">
           <div className="absolute inset-0 z-0">
@@ -79,7 +79,7 @@ const IPTVKopen = () => {
               alt="IPTV kopen Nederland"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/60"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-black/95 via-brand-black/80 to-brand-black/60"></div>
           </div>
 
           <div className="container-custom relative z-10">
@@ -95,7 +95,7 @@ const IPTVKopen = () => {
                 <span className="text-blue-500">Betrouwbaar & Betaalbaar</span>
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed mb-8 max-w-3xl">
-                Op zoek naar waar je <strong>IPTV kopen</strong> kunt in Nederland? IPTV4K is dé betrouwbare IPTV aanbieder met 30.500+ kanalen, 4K kwaliteit en Nederlandse support. Geen automatische verlenging, iDEAL betaling mogelijk.
+                Op zoek naar waar je <strong>IPTV kopen</strong> kunt in Nederland? Stream Holland is dé betrouwbare IPTV aanbieder met 30.500+ kanalen, 4K kwaliteit en Nederlandse support. Geen automatische verlenging, iDEAL betaling mogelijk.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -116,8 +116,8 @@ const IPTVKopen = () => {
           </div>
         </section>
 
-        {/* Why Choose IPTV4K */}
-        <section className="py-20 bg-slate-800">
+        {/* Why Choose Stream Holland */}
+        <section className="py-20 bg-brand-black/90">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -126,10 +126,10 @@ const IPTVKopen = () => {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Waarom IPTV kopen bij IPTV4K?
+                Waarom IPTV kopen bij Stream Holland?
               </h2>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-                Als je op zoek bent naar een <Link to="/iptv-abonnement" className="text-blue-400 hover:text-blue-300 underline">betrouwbaar IPTV abonnement</Link>, ben je bij ons aan het juiste adres.
+                Als je op zoek bent naar een <Link to="/iptv-abonnement" className="text-brand-orange hover:text-[#E85D00] underline">betrouwbaar IPTV abonnement</Link>, ben je bij ons aan het juiste adres.
               </p>
             </motion.div>
 
@@ -141,9 +141,9 @@ const IPTVKopen = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-slate-900 border border-slate-700 rounded-xl p-6 hover:border-blue-600 transition-all"
+                  className="bg-brand-black border border-slate-700 rounded-xl p-6 hover:border-brand-orange transition-all"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center mb-4">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-brand-orange to-[#E85D00] flex items-center justify-center mb-4">
                     <benefit.icon className="text-white text-2xl" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
@@ -159,7 +159,7 @@ const IPTVKopen = () => {
         </section>
 
         {/* Features List */}
-        <section className="py-20 bg-slate-900">
+        <section className="py-20 bg-brand-black">
           <div className="container-custom">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div
@@ -171,7 +171,7 @@ const IPTVKopen = () => {
                   Wat krijg je bij een IPTV abonnement kopen?
                 </h2>
                 <p className="text-gray-400 text-lg mb-8">
-                  Bij IPTV4K krijg je toegang tot het meest complete IPTV aanbod van Nederland. Bekijk <Link to="/kanalen" className="text-blue-400 hover:text-blue-300 underline">alle beschikbare Nederlandse IPTV kanalen</Link> en meer.
+                  Bij Stream Holland krijg je toegang tot het meest complete IPTV aanbod van Nederland. Bekijk <Link to="/kanalen" className="text-brand-orange hover:text-[#E85D00] underline">alle beschikbare Nederlandse IPTV kanalen</Link> en meer.
                 </p>
                 <div className="space-y-4">
                   {features.map((feature, index) => (
@@ -207,7 +207,7 @@ const IPTVKopen = () => {
         </section>
 
         {/* How It Works */}
-        <section className="py-20 bg-gradient-to-b from-slate-800 to-slate-900">
+        <section className="py-20 bg-gradient-to-b from-brand-black/90 to-brand-black">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -216,7 +216,7 @@ const IPTVKopen = () => {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Hoe werkt IPTV kopen bij IPTV4K?
+                Hoe werkt IPTV kopen bij Stream Holland?
               </h2>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto">
                 In 4 simpele stappen begin je met kijken
@@ -233,8 +233,8 @@ const IPTVKopen = () => {
                   transition={{ delay: index * 0.1 }}
                   className="relative"
                 >
-                  <div className="bg-slate-800 border border-slate-700 rounded-xl p-6">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center mb-4 text-white text-2xl font-bold">
+                  <div className="bg-brand-black/90 border border-slate-700 rounded-xl p-6">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-brand-orange to-[#E85D00] flex items-center justify-center mb-4 text-white text-2xl font-bold">
                       {step.number}
                     </div>
                     <h3 className="text-xl font-bold text-white mb-3">
@@ -244,7 +244,7 @@ const IPTVKopen = () => {
                       {step.description.includes('<link-prijzen>') ? (
                         <>
                           {step.description.split('<link-prijzen>')[0]}
-                          <Link to="/prijzen" className="text-blue-400 hover:text-blue-300 underline">
+                          <Link to="/prijzen" className="text-brand-orange hover:text-[#E85D00] underline">
                             {step.description.split('<link-prijzen>')[1].split('</link-prijzen>')[0]}
                           </Link>
                           {step.description.split('</link-prijzen>')[1]}
@@ -252,7 +252,7 @@ const IPTVKopen = () => {
                       ) : step.description.includes('<link-apparaten>') ? (
                         <>
                           {step.description.split('<link-apparaten>')[0]}
-                          <Link to="/apparaten" className="text-blue-400 hover:text-blue-300 underline">
+                          <Link to="/apparaten" className="text-brand-orange hover:text-[#E85D00] underline">
                             {step.description.split('<link-apparaten>')[1].split('</link-apparaten>')[0]}
                           </Link>
                           {step.description.split('</link-apparaten>')[1]}
@@ -262,7 +262,7 @@ const IPTVKopen = () => {
                   </div>
                   {index < steps.length - 1 && (
                     <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                      <div className="w-8 h-8 text-blue-600 text-3xl">→</div>
+                      <div className="w-8 h-8 text-brand-orange text-3xl">→</div>
                     </div>
                   )}
                 </motion.div>
@@ -272,13 +272,13 @@ const IPTVKopen = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-slate-900">
+        <section className="py-20 bg-brand-black">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-12 text-center"
+              className="bg-gradient-to-r from-brand-orange to-[#E85D00] rounded-2xl p-12 text-center"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 Klaar om IPTV te kopen?
@@ -289,7 +289,7 @@ const IPTVKopen = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/prijzen"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-gray-100 transition-all shadow-lg"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-brand-black text-brand-orange font-bold rounded-xl hover:bg-white/5 transition-all shadow-lg"
                 >
                   Bekijk Alle Prijzen
                 </Link>

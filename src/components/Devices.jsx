@@ -18,7 +18,7 @@ const Devices = () => {
   const platforms = [
     { icon: FaApple, name: 'iOS', color: 'text-gray-300' },
     { icon: FaAndroid, name: 'Android', color: 'text-green-400' },
-    { icon: SiSamsung, name: 'Samsung', color: 'text-blue-400' },
+    { icon: SiSamsung, name: 'Samsung', color: 'text-brand-orange' },
     { icon: SiLg, name: 'LG', color: 'text-red-400' },
     { icon: FaAmazon, name: 'Fire TV', color: 'text-orange-400' },
   ];

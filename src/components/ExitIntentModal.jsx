@@ -63,7 +63,7 @@ const ExitIntentModal = () => {
           >
             <div
               onClick={(e) => e.stopPropagation()}
-              className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl max-w-2xl w-full overflow-hidden border-2 border-blue-600/50 shadow-2xl shadow-blue-600/20"
+              className="relative bg-gradient-to-br from-brand-black/90 to-brand-black rounded-3xl max-w-2xl w-full overflow-hidden border-2 border-brand-orange/50 shadow-2xl shadow-blue-600/20"
             >
               {/* Close Button */}
               <button
@@ -74,8 +74,8 @@ const ExitIntentModal = () => {
               </button>
 
               {/* Decorative Elements */}
-              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600" />
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-blue-600 rounded-full opacity-20 blur-3xl" />
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-orange via-purple-600 to-pink-600" />
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-brand-orange rounded-full opacity-20 blur-3xl" />
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-purple-600 rounded-full opacity-20 blur-3xl" />
 
               {/* Content */}
@@ -100,7 +100,7 @@ const ExitIntentModal = () => {
                 </p>
 
                 {/* Offer Box */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border-2 border-blue-600/50 rounded-2xl p-6 mb-6">
+                <div className="bg-gradient-to-r from-brand-orange/20 to-purple-600/20 border-2 border-brand-orange/50 rounded-2xl p-6 mb-6">
                   <div className="text-center mb-4">
                     <p className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 mb-2">
                       10% KORTING

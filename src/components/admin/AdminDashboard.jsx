@@ -6,7 +6,7 @@ const AdminDashboard = () => {
   const [activeTab, setActiveTab] = useState('overview');
 
   const stats = [
-    { icon: FaUsers, label: 'Actieve Gebruikers', value: '1,234', change: '+12%', color: 'from-blue-500 to-blue-600' },
+    { icon: FaUsers, label: 'Actieve Gebruikers', value: '1,234', change: '+12%', color: 'from-blue-500 to-brand-orange' },
     { icon: FaCreditCard, label: 'Omzet Deze Maand', value: '€15,680', change: '+23%', color: 'from-green-500 to-green-600' },
     { icon: FaTv, label: 'Actieve Streams', value: '3,456', change: '+8%', color: 'from-purple-500 to-purple-600' },
     { icon: FaWhatsapp, label: 'Support Tickets', value: '24', change: '-5%', color: 'from-orange-500 to-orange-600' },

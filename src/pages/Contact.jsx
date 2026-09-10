@@ -17,9 +17,9 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: 'E-mail',
-      description: 'info@iptv4k.nl',
+      description: 'info@streamholland.com',
       detail: 'We reageren binnen 1 uur',
-      link: 'mailto:info@iptv4k.nl',
+      link: 'mailto:info@streamholland.com',
       primary: false
     },
     {
@@ -60,12 +60,12 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact | IPTV Bestellen via WhatsApp - IPTV4K"
-        description="Neem contact op met IPTV4K via WhatsApp of e-mail. Nederlandse support 24/7. Bestel je IPTV abonnement en ontvang inloggegevens binnen 5 minuten."
+        title="Contact | IPTV Bestellen via WhatsApp - Stream Holland"
+        description="Neem contact op met Stream Holland via WhatsApp of e-mail. Nederlandse support 24/7. Bestel je IPTV abonnement en ontvang inloggegevens binnen 5 minuten."
         keywords="iptv contact, iptv bestellen whatsapp, iptv aanbieder contact, iptv klantenservice"
       />
 
-      <div className="min-h-screen bg-slate-900 pt-32">
+      <div className="min-h-screen bg-brand-black pt-32">
         {/* Header */}
         <section className="pb-12">
           <div className="container-custom">
@@ -79,7 +79,7 @@ const Contact = () => {
                 Contact & Bestellen
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed">
-                Bestel je <Link to="/iptv-abonnement" className="text-blue-400 hover:text-blue-300 underline">IPTV abonnement</Link> direct via WhatsApp of neem contact op voor vragen.
+                Bestel je <Link to="/iptv-abonnement" className="text-brand-orange hover:text-[#E85D00] underline">IPTV abonnement</Link> direct via WhatsApp of neem contact op voor vragen.
                 Nederlandse support 24/7 beschikbaar.
               </p>
             </motion.div>
@@ -97,10 +97,10 @@ const Contact = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className={`bg-slate-800 border ${method.primary ? 'border-blue-600' : 'border-slate-700'} rounded-xl p-6 ${method.link ? 'hover:border-blue-600 cursor-pointer' : ''} transition-all group`}
+                  className={`bg-brand-black/90 border ${method.primary ? 'border-brand-orange' : 'border-slate-700'} rounded-xl p-6 ${method.link ? 'hover:border-brand-orange cursor-pointer' : ''} transition-all group`}
                   onClick={() => method.link && window.open(method.link, '_blank')}
                 >
-                  <div className={`w-14 h-14 rounded-xl ${method.primary ? 'bg-gradient-to-br from-green-600 to-green-700' : 'bg-gradient-to-br from-blue-600 to-blue-700'} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                  <div className={`w-14 h-14 rounded-xl ${method.primary ? 'bg-gradient-to-br from-green-600 to-green-700' : 'bg-gradient-to-br from-brand-orange to-[#E85D00]'} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                     <method.icon className="text-white text-2xl" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
@@ -139,7 +139,7 @@ const Contact = () => {
                 href="https://wa.me/31612345678"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-green-600 font-bold rounded-xl hover:bg-gray-100 transition-all shadow-lg text-lg"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-brand-black text-green-600 font-bold rounded-xl hover:bg-white/5 transition-all shadow-lg text-lg"
               >
                 <FaWhatsapp className="text-2xl" />
                 Open WhatsApp Chat
@@ -149,7 +149,7 @@ const Contact = () => {
         </section>
 
         {/* Order Process */}
-        <section className="py-20 bg-slate-800">
+        <section className="py-20 bg-brand-black/90">
           <div className="container-custom max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -161,7 +161,7 @@ const Contact = () => {
                 Bestelproces in 5 stappen
               </h2>
               <p className="text-xl text-gray-400">
-                Bekijk eerst onze <Link to="/prijzen" className="text-blue-400 hover:text-blue-300 underline">IPTV prijzen</Link> en kies je abonnement
+                Bekijk eerst onze <Link to="/prijzen" className="text-brand-orange hover:text-[#E85D00] underline">IPTV prijzen</Link> en kies je abonnement
               </p>
             </motion.div>
 
@@ -173,9 +173,9 @@ const Contact = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex items-start gap-4 bg-slate-900 border border-slate-700 rounded-xl p-6"
+                  className="flex items-start gap-4 bg-brand-black border border-slate-700 rounded-xl p-6"
                 >
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center flex-shrink-0 text-white font-bold">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-orange to-[#E85D00] flex items-center justify-center flex-shrink-0 text-white font-bold">
                     {index + 1}
                   </div>
                   <div className="flex-1">
@@ -189,7 +189,7 @@ const Contact = () => {
         </section>
 
         {/* Support Topics */}
-        <section className="py-20 bg-slate-900">
+        <section className="py-20 bg-brand-black">
           <div className="container-custom max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -213,7 +213,7 @@ const Contact = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.05 }}
-                  className="flex items-center gap-3 bg-slate-800 border border-slate-700 rounded-xl p-4"
+                  className="flex items-center gap-3 bg-brand-black/90 border border-slate-700 rounded-xl p-4"
                 >
                   <FaCheckCircle className="text-blue-500 flex-shrink-0" />
                   <span className="text-gray-300">{topic}</span>
@@ -227,7 +227,7 @@ const Contact = () => {
               </p>
               <Link
                 to="/veelgestelde-vragen"
-                className="text-blue-400 hover:text-blue-300 underline text-lg"
+                className="text-brand-orange hover:text-[#E85D00] underline text-lg"
               >
                 Veelgestelde Vragen →
               </Link>
@@ -236,26 +236,26 @@ const Contact = () => {
         </section>
 
         {/* Additional Info */}
-        <section className="py-20 bg-slate-800">
+        <section className="py-20 bg-brand-black/90">
           <div className="container-custom max-w-4xl">
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="bg-slate-900 border border-slate-700 rounded-xl p-8"
+                className="bg-brand-black border border-slate-700 rounded-xl p-8"
               >
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Nieuwe klant?
                 </h3>
                 <p className="text-gray-400 mb-6">
-                  Lees meer over onze service en waarom klanten kiezen voor IPTV4K als hun betrouwbare <Link to="/iptv-nederland" className="text-blue-400 hover:text-blue-300 underline">Nederlandse IPTV aanbieder</Link>.
+                  Lees meer over onze service en waarom klanten kiezen voor Stream Holland als hun betrouwbare <Link to="/iptv-nederland" className="text-brand-orange hover:text-[#E85D00] underline">Nederlandse IPTV aanbieder</Link>.
                 </p>
                 <Link
                   to="/over-ons"
-                  className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold"
+                  className="inline-flex items-center gap-2 text-brand-orange hover:text-[#E85D00] font-semibold"
                 >
-                  Meer over IPTV4K →
+                  Meer over Stream Holland →
                 </Link>
               </motion.div>
 
@@ -263,17 +263,17 @@ const Contact = () => {
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="bg-slate-900 border border-slate-700 rounded-xl p-8"
+                className="bg-brand-black border border-slate-700 rounded-xl p-8"
               >
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Compatibiliteit checken?
                 </h3>
                 <p className="text-gray-400 mb-6">
-                  Wil je weten of IPTV4K werkt op jouw apparaat? Bekijk onze lijst met ondersteunde <Link to="/apparaten" className="text-blue-400 hover:text-blue-300 underline">apparaten</Link>.
+                  Wil je weten of Stream Holland werkt op jouw apparaat? Bekijk onze lijst met ondersteunde <Link to="/apparaten" className="text-brand-orange hover:text-[#E85D00] underline">apparaten</Link>.
                 </p>
                 <Link
                   to="/apparaten"
-                  className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold"
+                  className="inline-flex items-center gap-2 text-brand-orange hover:text-[#E85D00] font-semibold"
                 >
                   Bekijk apparaten →
                 </Link>

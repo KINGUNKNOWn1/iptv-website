@@ -1,14 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaCheckCircle, FaStar, FaCreditCard, FaHeadset, FaTrophy } from 'react-icons/fa';
+import EmailCollectionModal from './EmailCollectionModal';
 
 const Pricing = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState(null);
+  const handleOrderClick = (plan) => {
+    setSelectedPlan(plan);
+    setIsModalOpen(true);
+  };
+
+  const handleEmailSubmit = (email) => {
+    if (selectedPlan) {
+      // Redirect to WhatsApp with email included in message
+      const message = `${selectedPlan.whatsapp}\n\nE-mail: ${email}`;
+      window.open(
+        `https://wa.me/31612345678?text=${encodeURIComponent(message)}`,
+        '_blank',
+        'noopener,noreferrer'
+      );
+    }
+    setIsModalOpen(false);
+    setSelectedPlan(null);
+  };
+
   const plans = [
     {
       name: 'IPTV Premium',
       duration: '3 maanden',
       price: '23',
-      period: '/ 3 mois',
+      period: '/ 3 maanden',
       popular: false,
       features: [
         'HD - UHD - SHD',
@@ -28,7 +50,7 @@ const Pricing = () => {
       name: 'IPTV Premium',
       duration: '6 maanden',
       price: '32',
-      period: '/ 6 mois',
+      period: '/ 6 maanden',
       popular: false,
       savings: 'Bespaar €14',
       features: [
@@ -49,7 +71,7 @@ const Pricing = () => {
       name: 'IPTV Premium',
       duration: '12 maanden',
       price: '48',
-      period: '/ 12 mois',
+      period: '/ 12 maanden',
       popular: true,
       savings: 'Bespaar €28 - Beste Deal!',
       features: [
@@ -91,7 +113,7 @@ const Pricing = () => {
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-blue-400 text-lg mb-4 font-semibold"
+            className="text-brand-orange text-lg mb-4 font-semibold"
           >
             Vanaf 23€ - zonder automatische verlenging
           </motion.p>
@@ -111,23 +133,23 @@ const Pricing = () => {
               {
                 icon: FaCreditCard,
                 text: 'Eenmalige Betaling',
-                gradient: 'from-blue-500 to-blue-600',
-                iconBg: 'bg-blue-100',
-                iconColor: 'text-blue-600'
+                gradient: 'from-brand-orange to-[#E85D00]',
+                iconBg: 'bg-brand-offwhite',
+                iconColor: 'text-brand-orange'
               },
               {
                 icon: FaHeadset,
                 text: '24/7 Support',
-                gradient: 'from-cyan-500 to-teal-600',
-                iconBg: 'bg-cyan-100',
-                iconColor: 'text-cyan-600'
+                gradient: 'from-brand-orange to-[#E85D00]',
+                iconBg: 'bg-brand-offwhite',
+                iconColor: 'text-brand-orange'
               },
               {
                 icon: FaTrophy,
                 text: 'Uitstekende Prijs/Kwaliteit',
-                gradient: 'from-rose-500 to-pink-600',
-                iconBg: 'bg-rose-100',
-                iconColor: 'text-rose-600'
+                gradient: 'from-brand-orange to-[#E85D00]',
+                iconBg: 'bg-brand-offwhite',
+                iconColor: 'text-brand-orange'
               },
             ].map((badge, index) => (
               <motion.div
@@ -142,7 +164,7 @@ const Pricing = () => {
                 {/* Glow effect on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${badge.gradient} rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300`} />
 
-                <div className="relative flex flex-col items-center gap-3 p-6 bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 group-hover:border-transparent transition-all min-w-[180px]">
+                <div className="relative flex flex-col items-center gap-3 p-6 bg-brand-black/50 backdrop-blur-sm rounded-2xl border border-brand-gray/30 group-hover:border-transparent transition-all min-w-[180px]">
                   <div className={`w-14 h-14 rounded-full ${badge.iconBg} flex items-center justify-center group-hover:scale-110 transition-transform`}>
                     <badge.icon className={`text-2xl ${badge.iconColor}`} />
                   </div>
@@ -167,15 +189,15 @@ const Pricing = () => {
               whileHover={{ scale: 1.03, y: -10 }}
               className={`relative p-8 rounded-2xl shadow-xl transition-all duration-300 ${
                 plan.popular
-                  ? 'bg-gradient-to-b from-blue-900 via-blue-800 to-blue-900 border-2 border-blue-700'
-                  : 'bg-white border border-gray-200'
+                  ? 'bg-gradient-to-b from-brand-orange via-[#E85D00] to-brand-orange border-2 border-brand-orange'
+                  : 'bg-brand-offwhite border border-brand-gray-border'
               }`}
             >
               {/* Popular Badge */}
               {plan.popular && (
                 <div className="absolute -top-3 right-6">
                   <div className="bg-white px-4 py-2 rounded-b-lg flex items-center gap-2 shadow-lg">
-                    <FaStar className="text-blue-600" />
+                    <FaStar className="text-brand-orange" />
                   </div>
                 </div>
               )}
@@ -193,16 +215,16 @@ const Pricing = () => {
 
               {/* Plan Header */}
               <div className="text-center mb-6">
-                <p className={`text-lg font-bold mb-3 ${plan.popular ? 'text-yellow-400' : 'text-blue-600'}`}>
+                <p className={`text-lg font-bold mb-3 ${plan.popular ? 'text-white' : 'text-brand-orange'}`}>
                   {plan.name}
                 </p>
                 <div className="flex items-baseline justify-center gap-2 mb-2">
                   <span className={`text-5xl md:text-6xl font-bold ${
-                    plan.popular ? 'text-white' : 'text-gray-900'
+                    plan.popular ? 'text-white' : 'text-brand-black'
                   }`}>
                     {plan.price} €
                   </span>
-                  <span className={`text-lg ${plan.popular ? 'text-gray-300' : 'text-gray-500'}`}>
+                  <span className={`text-lg ${plan.popular ? 'text-brand-offwhite' : 'text-brand-gray'}`}>
                     {plan.period}
                   </span>
                 </div>
@@ -213,11 +235,11 @@ const Pricing = () => {
                 {plan.features.map((feature, fIndex) => (
                   <div key={fIndex} className="flex items-start gap-3">
                     <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
-                      plan.popular ? 'bg-yellow-500' : 'bg-blue-600'
+                      plan.popular ? 'bg-white' : 'bg-brand-orange'
                     }`}>
-                      <div className="w-2 h-2 bg-white rounded-full" />
+                      <div className={`w-2 h-2 rounded-full ${plan.popular ? 'bg-brand-orange' : 'bg-white'}`} />
                     </div>
-                    <span className={`text-sm ${plan.popular ? 'text-gray-200' : 'text-gray-700'}`}>
+                    <span className={`text-sm ${plan.popular ? 'text-white' : 'text-brand-black'}`}>
                       {feature}
                     </span>
                   </div>
@@ -225,18 +247,16 @@ const Pricing = () => {
               </div>
 
               {/* CTA Button */}
-              <a
-                href={`https://wa.me/31612345678?text=${encodeURIComponent(plan.whatsapp)}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => handleOrderClick(plan)}
                 className={`block w-full text-center px-6 py-4 rounded-xl font-bold transition-all ${
                   plan.popular
-                    ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg'
-                    : 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50'
+                    ? 'bg-white hover:bg-brand-offwhite text-brand-orange shadow-lg'
+                    : 'border-2 border-brand-orange text-brand-orange hover:bg-brand-offwhite'
                 }`}
               >
                 Passer la commande
-              </a>
+              </button>
             </motion.div>
           ))}
         </div>
@@ -269,6 +289,17 @@ const Pricing = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Email Collection Modal */}
+      <EmailCollectionModal
+        isOpen={isModalOpen}
+        onClose={() => {
+          setIsModalOpen(false);
+          setSelectedPlan(null);
+        }}
+        onSubmit={handleEmailSubmit}
+        planName={selectedPlan ? `${selectedPlan.name} - ${selectedPlan.duration}` : ''}
+      />
     </section>
   );
 };

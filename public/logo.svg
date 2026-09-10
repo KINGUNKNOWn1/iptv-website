@@ -1,0 +1,10 @@
+<svg width="320" height="60" viewBox="0 0 320 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black circle background for play icon -->
+  <circle cx="30" cy="30" r="28" fill="#000000"/>
+
+  <!-- Orange play triangle icon -->
+  <path d="M24 18 L24 42 L42 30 Z" fill="#FF6B2C"/>
+
+  <!-- streamholland text (all one weight, lowercase) -->
+  <text x="72" y="40" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.5" fill="#000000">streamholland</text>
+</svg>
