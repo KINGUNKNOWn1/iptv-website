@@ -33,6 +33,7 @@ const Pricing = () => {
       period: '/ 3 maanden',
       popular: false,
       features: [
+        '24 uur gratis proefperiode',
         'HD - UHD - SHD',
         'Meer dan 30.500 kanalen live',
         'Meer dan 150.000 films en series',
@@ -54,6 +55,7 @@ const Pricing = () => {
       popular: false,
       savings: 'Bespaar €14',
       features: [
+        '24 uur gratis proefperiode',
         'HD - UHD - SHD',
         'Meer dan 30.500 kanalen live',
         'Meer dan 150.000 films en series',
@@ -75,6 +77,7 @@ const Pricing = () => {
       popular: true,
       savings: 'Bespaar €28 - Beste Deal!',
       features: [
+        '24 uur gratis proefperiode',
         'HD - UHD - SHD',
         'Meer dan 30.500 kanalen live',
         'Meer dan 150.000 films en series',

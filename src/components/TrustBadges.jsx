@@ -36,8 +36,8 @@ const TrustBadges = () => {
     },
     {
       icon: FaAward,
-      title: 'Kwaliteitsgarantie',
-      description: 'Geld-terug garantie',
+      title: '24u Gratis Test',
+      description: 'Test de kwaliteit',
       color: 'from-yellow-500 to-yellow-600'
     }
   ];
