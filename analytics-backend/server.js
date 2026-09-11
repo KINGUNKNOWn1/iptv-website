@@ -7,7 +7,11 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 
 // Initialize SQLite database
-const db = new Database('analytics.db');
+// Use /data directory in production (Fly.io mounted volume) for persistence
+const dbPath = process.env.NODE_ENV === 'production' && process.env.FLY_APP_NAME
+  ? '/data/analytics.db'
+  : 'analytics.db';
+const db = new Database(dbPath);
 
 // Create tables
 db.exec(`
