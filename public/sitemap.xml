@@ -7,148 +7,148 @@
 
   <!-- Homepage - Highest Priority -->
   <url>
-    <loc>https://streamholland.com/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- IPTV Kopen - Main Landing Page -->
   <url>
-    <loc>https://streamholland.com/iptv-kopen</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/iptv-kopen</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Pricing Page -->
   <url>
-    <loc>https://streamholland.com/prijzen</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/prijzen</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- IPTV Abonnement -->
   <url>
-    <loc>https://streamholland.com/iptv-abonnement</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/iptv-abonnement</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- IPTV Nederland -->
   <url>
-    <loc>https://streamholland.com/iptv-nederland</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/iptv-nederland</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- IPTV Zonder Contract - NEW -->
   <url>
-    <loc>https://streamholland.com/iptv-zonder-contract</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/iptv-zonder-contract</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- IPTV Holland - NEW -->
   <url>
-    <loc>https://streamholland.com/iptv-holland</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/iptv-holland</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Features/Kanalen -->
   <url>
-    <loc>https://streamholland.com/kanalen</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/kanalen</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Devices -->
   <url>
-    <loc>https://streamholland.com/apparaten</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/apparaten</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Samsung TV Device Page - NEW -->
   <url>
-    <loc>https://streamholland.com/apparaten/samsung-tv</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/apparaten/samsung-tv</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- FAQ -->
   <url>
-    <loc>https://streamholland.com/veelgestelde-vragen</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/veelgestelde-vragen</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Contact -->
   <url>
-    <loc>https://streamholland.com/contact</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/contact</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- About -->
   <url>
-    <loc>https://streamholland.com/over-ons</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/over-ons</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- Blog -->
   <url>
-    <loc>https://streamholland.com/blog</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/blog</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Blog Articles (SEO-optimized topics) -->
   <url>
-    <loc>https://streamholland.com/blog/iptv-kopen-nederland-complete-gids</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/blog/iptv-kopen-nederland-complete-gids</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://streamholland.com/blog/beste-iptv-apps-2024</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/blog/beste-iptv-apps-2024</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://streamholland.com/blog/is-iptv-legaal-nederland</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/blog/is-iptv-legaal-nederland</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://streamholland.com/blog/iptv-installeren-samsung-tv</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/blog/iptv-installeren-samsung-tv</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://streamholland.com/blog/nederlandse-iptv-kanalen-lijst</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.streamholland.com/blog/nederlandse-iptv-kanalen-lijst</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
