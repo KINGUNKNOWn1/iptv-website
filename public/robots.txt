@@ -33,7 +33,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap location
-Sitemap: https://streamholland.com/sitemap.xml
+Sitemap: https://www.streamholland.com/sitemap.xml
 
 # Host (preferred domain)
-Host: https://streamholland.com
+Host: https://www.streamholland.com
