@@ -191,7 +191,7 @@ const IPTVZonderContract = () => {
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <a
-                  href="https://wa.me/31612345678?text=Ik%20wil%20IPTV%20zonder%20contract%20bestellen"
+                  href="https://wa.me/18653169315?text=Ik%20wil%20IPTV%20zonder%20contract%20bestellen"
                   className="bg-gradient-to-r from-brand-orange to-brand-orange hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
                   Bestel Zonder Contract via WhatsApp
@@ -392,7 +392,7 @@ const IPTVZonderContract = () => {
                     </div>
 
                     <a
-                      href={`https://wa.me/31612345678?text=Ik%20wil%20het%20${option.period}%20pakket%20zonder%20contract%20bestellen`}
+                      href={`https://wa.me/18653169315?text=Ik%20wil%20het%20${option.period}%20pakket%20zonder%20contract%20bestellen`}
                       className={`block w-full py-3 rounded-full font-bold transition-all duration-300 ${
                         option.popular
                           ? 'bg-gradient-to-r from-brand-orange to-brand-orange hover:from-orange-600 hover:to-orange-700 text-white'
@@ -469,7 +469,7 @@ const IPTVZonderContract = () => {
             </div>
 
             <a
-              href="https://wa.me/31612345678?text=Ik%20wil%20IPTV%20zonder%20contract%20bestellen"
+              href="https://wa.me/18653169315?text=Ik%20wil%20IPTV%20zonder%20contract%20bestellen"
               className="inline-block bg-gradient-to-r from-brand-orange to-brand-orange hover:from-orange-600 hover:to-orange-700 text-white px-12 py-5 rounded-full font-bold text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               Start Nu Zonder Contract

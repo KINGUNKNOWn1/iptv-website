@@ -412,7 +412,7 @@ const AlgemeneVoorwaarden = () => {
                     <strong className="text-white">Stream Holland</strong><br />
                     Rotterdam, Nederland<br />
                     E-mail: <a href="mailto:support@streamholland.com" className="text-brand-orange hover:underline">support@streamholland.com</a><br />
-                    WhatsApp: <a href="https://wa.me/31612345678" className="text-brand-orange hover:underline">+31 6 12345678</a>
+                    WhatsApp: <a href="https://wa.me/18653169315" className="text-brand-orange hover:underline">+1 8653169315</a>
                   </p>
                 </div>
               </motion.div>
@@ -437,7 +437,7 @@ const AlgemeneVoorwaarden = () => {
                     E-mail Support
                   </a>
                   <a
-                    href="https://wa.me/31612345678"
+                    href="https://wa.me/18653169315"
                     className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-semibold transition-colors border border-white/20"
                   >
                     WhatsApp Contact

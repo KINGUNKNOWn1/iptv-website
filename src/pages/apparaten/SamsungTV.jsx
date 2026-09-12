@@ -442,7 +442,7 @@ const SamsungTV = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <a
-                href="https://wa.me/31612345678?text=Hoi%2C%20ik%20wil%20IPTV%20installeren%20op%20mijn%20Samsung%20TV"
+                href="https://wa.me/18653169315?text=Hoi%2C%20ik%20wil%20IPTV%20installeren%20op%20mijn%20Samsung%20TV"
                 className="bg-gradient-to-r from-brand-orange to-brand-orange text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
@@ -554,7 +554,7 @@ const SamsungTV = () => {
               Klaar om te beginnen? Bestel je Stream Holland abonnement en start direct!
             </p>
             <a
-              href="https://wa.me/31612345678?text=Hoi%2C%20ik%20wil%20IPTV%20bestellen%20voor%20mijn%20Samsung%20TV"
+              href="https://wa.me/18653169315?text=Hoi%2C%20ik%20wil%20IPTV%20bestellen%20voor%20mijn%20Samsung%20TV"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-brand-orange text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all"
             >
               <Phone className="w-5 h-5" />
@@ -618,7 +618,7 @@ const SamsungTV = () => {
             viewport={{ once: true }}
             className="text-center text-gray-400 mt-8"
           >
-            Niet zeker of jouw model compatibel is? <a href="https://wa.me/31612345678" className="text-blue-400 underline">Vraag het ons via WhatsApp</a>
+            Niet zeker of jouw model compatibel is? <a href="https://wa.me/18653169315" className="text-blue-400 underline">Vraag het ons via WhatsApp</a>
           </motion.p>
         </div>
       </section>
@@ -757,7 +757,7 @@ const SamsungTV = () => {
           >
             <p className="text-gray-400 mb-4">Staat jouw probleem er niet tussen?</p>
             <a
-              href="https://wa.me/31612345678?text=Hoi%2C%20ik%20heb%20een%20probleem%20met%20IPTV%20op%20mijn%20Samsung%20TV"
+              href="https://wa.me/18653169315?text=Hoi%2C%20ik%20heb%20een%20probleem%20met%20IPTV%20op%20mijn%20Samsung%20TV"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-brand-orange text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl transition-all"
             >
               <Phone className="w-5 h-5" />
@@ -890,7 +890,7 @@ const SamsungTV = () => {
             </p>
 
             <a
-              href="https://wa.me/31612345678?text=Hoi%2C%20ik%20wil%20IPTV%20bestellen%20voor%20Samsung%20TV"
+              href="https://wa.me/18653169315?text=Hoi%2C%20ik%20wil%20IPTV%20bestellen%20voor%20Samsung%20TV"
               className="inline-flex items-center gap-2 bg-brand-black text-blue-500 px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all"
             >
               <Phone className="w-6 h-6" />

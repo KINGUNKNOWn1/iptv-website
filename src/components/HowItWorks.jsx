@@ -91,7 +91,7 @@ const HowItWorks = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/31612345678?text=Ik%20wil%20graag%20meer%20informatie"
+            href="https://wa.me/18653169315?text=Ik%20wil%20graag%20meer%20informatie"
             className="btn-primary inline-flex items-center gap-2 text-lg"
           >
             <FaWhatsapp className="text-2xl" />

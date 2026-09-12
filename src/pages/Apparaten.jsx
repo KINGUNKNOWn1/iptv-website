@@ -313,7 +313,7 @@ const Apparaten = () => {
                 Onze Nederlandse support helpt je graag. Binnen 5 minuten actief!
               </p>
               <a
-                href="https://wa.me/31612345678?text=Ik%20heb%20hulp%20nodig%20bij%20installatie"
+                href="https://wa.me/18653169315?text=Ik%20heb%20hulp%20nodig%20bij%20installatie"
                 className="inline-block px-8 py-3 bg-brand-black text-purple-600 font-semibold rounded-lg hover:bg-white/5 transition-all"
               >
                 WhatsApp Support
@@ -400,7 +400,7 @@ const Apparaten = () => {
                 Bekijk Abonnementen
               </Link>
               <a
-                href="https://wa.me/31612345678?text=Welke%20apparaten%20zijn%20compatible?"
+                href="https://wa.me/18653169315?text=Welke%20apparaten%20zijn%20compatible?"
                 className="px-10 py-4 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-lg transition-all transform hover:scale-105"
               >
                 Vragen? WhatsApp Ons

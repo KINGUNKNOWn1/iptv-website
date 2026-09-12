@@ -383,7 +383,7 @@ const IPTVHolland = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <a
-                href="https://wa.me/31612345678?text=Hoi%2C%20ik%20wil%20graag%20IPTV%20Holland%20bestellen"
+                href="https://wa.me/18653169315?text=Hoi%2C%20ik%20wil%20graag%20IPTV%20Holland%20bestellen"
                 className="group bg-gradient-to-r from-brand-orange to-brand-orange text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 flex items-center gap-2"
               >
                 <Phone className="w-5 h-5" />
@@ -648,7 +648,7 @@ const IPTVHolland = () => {
                 </ul>
 
                 <a
-                  href={`https://wa.me/31612345678?text=Hoi%2C%20ik%20wil%20graag%20het%20${option.duration}%20pakket%20bestellen`}
+                  href={`https://wa.me/18653169315?text=Hoi%2C%20ik%20wil%20graag%20het%20${option.duration}%20pakket%20bestellen`}
                   className={`block text-center py-3 rounded-xl font-semibold transition-all duration-300 ${
                     option.popular
                       ? 'bg-gradient-to-r from-brand-orange to-brand-orange text-white hover:shadow-xl'
@@ -736,7 +736,7 @@ const IPTVHolland = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://wa.me/31612345678?text=Hoi%2C%20ik%20wil%20graag%20IPTV%20Holland%20bestellen"
+                href="https://wa.me/18653169315?text=Hoi%2C%20ik%20wil%20graag%20IPTV%20Holland%20bestellen"
                 className="group bg-brand-black text-orange-500 px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center gap-2"
               >
                 <Phone className="w-5 h-5" />

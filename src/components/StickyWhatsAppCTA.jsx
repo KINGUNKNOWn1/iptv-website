@@ -32,7 +32,7 @@ const StickyWhatsAppCTA = () => {
     const message = encodeURIComponent(
       'Hoi! Ik ben geïnteresseerd in een Stream Holland abonnement. Kan ik meer informatie krijgen?'
     );
-    window.open(`https://wa.me/31612345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/18653169315?text=${message}`, '_blank');
   };
 
   return (

@@ -131,7 +131,7 @@ const VeelgesteldeVragen = () => {
       questions: [
         {
           q: "Hoe kan ik contact opnemen met support?",
-          a: "We bieden 24/7 Nederlandse klantenservice via WhatsApp (+31612345678) en email (support@streamholland.com). WhatsApp is het snelst voor directe hulp."
+          a: "We bieden 24/7 Nederlandse klantenservice via WhatsApp (+1 8653169315) en email (support@streamholland.com). WhatsApp is het snelst voor directe hulp."
         },
         {
           q: "Is de support in het Nederlands?",
@@ -171,7 +171,7 @@ const VeelgesteldeVragen = () => {
                 Neem contact op via WhatsApp!
               </p>
               <a
-                href="https://wa.me/31612345678?text=Ik%20heb%20een%20vraag%20over%20IPTV"
+                href="https://wa.me/18653169315?text=Ik%20heb%20een%20vraag%20over%20IPTV"
                 className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-all"
               >
                 Stel Je Vraag via WhatsApp
@@ -295,7 +295,7 @@ const VeelgesteldeVragen = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="https://wa.me/31612345678?text=Ik%20heb%20een%20vraag%20over%20Stream Holland"
+                href="https://wa.me/18653169315?text=Ik%20heb%20een%20vraag%20over%20Stream Holland"
                 className="px-10 py-4 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-lg transition-all transform hover:scale-105"
               >
                 WhatsApp Ons

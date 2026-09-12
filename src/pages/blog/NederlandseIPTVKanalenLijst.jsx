@@ -126,7 +126,7 @@ const NederlandseIPTVKanalenLijst = () => {
               <p className="text-xl mb-6">Start met Stream Holland en kijk alle Nederlandse zenders + duizenden internationale kanalen</p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Link to="/iptv-abonnement" className="px-8 py-4 bg-brand-orange text-white font-bold rounded-lg hover:bg-orange-600">Bekijk Abonnementen</Link>
-                <a href="https://wa.me/31612345678" className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg"><FaWhatsapp className="inline mr-2" /> WhatsApp Ons</a>
+                <a href="https://wa.me/18653169315" className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg"><FaWhatsapp className="inline mr-2" /> WhatsApp Ons</a>
               </div>
             </section>
           </div>

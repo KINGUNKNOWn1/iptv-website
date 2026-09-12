@@ -35,7 +35,7 @@ const ExitIntentModal = () => {
     const message = encodeURIComponent(
       'Hoi! Ik wil graag gebruik maken van de 10% korting actie voor nieuwe klanten!'
     );
-    window.open(`https://wa.me/31612345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/18653169315?text=${message}`, '_blank');
     setIsOpen(false);
   };
 

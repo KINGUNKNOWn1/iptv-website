@@ -287,7 +287,7 @@ const IPTVKopenNederlandGids = () => {
                     Stuur ons een WhatsApp-bericht met je gekozen abonnement. Onze klantenservice helpt je direct verder.
                   </p>
                   <a
-                    href="https://wa.me/31612345678?text=Ik%20wil%20graag%20IPTV%20bestellen"
+                    href="https://wa.me/18653169315?text=Ik%20wil%20graag%20IPTV%20bestellen"
                     className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-all"
                   >
                     <FaWhatsapp className="text-xl" /> Bestel via WhatsApp
@@ -389,7 +389,7 @@ const IPTVKopenNederlandGids = () => {
                   Bekijk Abonnementen
                 </Link>
                 <a
-                  href="https://wa.me/31612345678?text=Ik%20wil%20meer%20weten%20over%20IPTV"
+                  href="https://wa.me/18653169315?text=Ik%20wil%20meer%20weten%20over%20IPTV"
                   className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-all transform hover:scale-105"
                 >
                   <FaWhatsapp className="inline mr-2" /> Vraag Advies

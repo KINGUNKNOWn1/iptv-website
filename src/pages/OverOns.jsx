@@ -288,7 +288,7 @@ const OverOns = () => {
                 Bekijk Abonnementen
               </Link>
               <a
-                href="https://wa.me/31612345678?text=Ik%20wil%20graag%20meer%20weten%20over%20Stream Holland"
+                href="https://wa.me/18653169315?text=Ik%20wil%20graag%20meer%20weten%20over%20Stream Holland"
                 className="px-10 py-4 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-lg transition-all transform hover:scale-105"
               >
                 Chat met Ons

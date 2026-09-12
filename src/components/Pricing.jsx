@@ -14,7 +14,7 @@ const Pricing = () => {
   const handleEmailSubmit = (email) => {
     if (selectedPlan) {
       // Get WhatsApp number from environment variable (without + prefix for wa.me URL)
-      const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '31612345678';
+      const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '18653169315';
 
       // Redirect to WhatsApp with email included in message
       const message = `${selectedPlan.whatsapp}\n\nE-mail: ${email}`;

@@ -94,7 +94,7 @@ const IPTVAbonnement = () => {
                   Bekijk Abonnementen
                 </a>
                 <a
-                  href="https://wa.me/31612345678"
+                  href="https://wa.me/18653169315"
                   className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-all transform hover:scale-105"
                 >
                   Direct Bestellen via WhatsApp
@@ -173,7 +173,7 @@ const IPTVAbonnement = () => {
                     )}
 
                     <a
-                      href="https://wa.me/31612345678"
+                      href="https://wa.me/18653169315"
                       className={`block w-full py-3 rounded-lg font-semibold transition-all ${
                         plan.popular
                           ? 'bg-brand-orange hover:bg-[#E85D00] text-white'
@@ -320,7 +320,7 @@ const IPTVAbonnement = () => {
               betaal via iDEAL, en begin binnen 5 minuten met kijken.
             </p>
             <a
-              href="https://wa.me/31612345678?text=Ik%20wil%20graag%20een%20IPTV%20abonnement%20bestellen"
+              href="https://wa.me/18653169315?text=Ik%20wil%20graag%20een%20IPTV%20abonnement%20bestellen"
               className="inline-block px-10 py-4 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-lg transition-all transform hover:scale-105"
             >
               Bestel Nu via WhatsApp

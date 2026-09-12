@@ -9,9 +9,9 @@ const Contact = () => {
     {
       icon: FaWhatsapp,
       title: 'WhatsApp',
-      description: '+31 6 12 34 56 78',
+      description: '+1 8653169315',
       detail: 'Snelste manier om te bestellen',
-      link: 'https://wa.me/31612345678',
+      link: 'https://wa.me/18653169315',
       primary: true
     },
     {
@@ -136,7 +136,7 @@ const Contact = () => {
                 Stuur ons een bericht en we helpen je direct verder.
               </p>
               <a
-                href="https://wa.me/31612345678"
+                href="https://wa.me/18653169315"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-brand-black text-green-600 font-bold rounded-xl hover:bg-white/5 transition-all shadow-lg text-lg"

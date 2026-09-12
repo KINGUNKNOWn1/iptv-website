@@ -288,7 +288,7 @@ const Kanalen = () => {
                 Bekijk Abonnementen
               </Link>
               <a
-                href="https://wa.me/31612345678?text=Ik%20wil%20graag%20meer%20info%20over%20de%20kanalen"
+                href="https://wa.me/18653169315?text=Ik%20wil%20graag%20meer%20info%20over%20de%20kanalen"
                 className="px-10 py-4 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-lg transition-all transform hover:scale-105"
               >
                 Vragen? WhatsApp Ons
