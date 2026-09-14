@@ -31,7 +31,7 @@ const IPTVKopenNederlandGids = () => {
 
   const providers = [
     {
-      name: 'Stream Holland',
+      name: 'StreamHolland',
       rating: '4.9/5',
       price: '€4/maand',
       channels: '30.500+',
@@ -228,7 +228,7 @@ const IPTVKopenNederlandGids = () => {
                   <thead className="bg-slate-700">
                     <tr>
                       <th className="p-4 text-left">Looptijd</th>
-                      <th className="p-4 text-left">Stream Holland</th>
+                      <th className="p-4 text-left">StreamHolland</th>
                       <th className="p-4 text-left">Ziggo</th>
                       <th className="p-4 text-left">KPN</th>
                       <th className="p-4 text-left">Besparing</th>
@@ -260,7 +260,7 @@ const IPTVKopenNederlandGids = () => {
                 </table>
               </div>
               <p className="text-gray-400 text-sm mt-4">
-                * Prijzen zijn indicatief en kunnen variëren. Traditionele aanbieders bieden vaak minder kanalen dan Stream Holland.
+                * Prijzen zijn indicatief en kunnen variëren. Traditionele aanbieders bieden vaak minder kanalen dan StreamHolland.
               </p>
             </section>
 
@@ -355,14 +355,14 @@ const IPTVKopenNederlandGids = () => {
                 <div className="bg-brand-black/90 p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-2">Wat is de beste IPTV-aanbieder?</h3>
                   <p className="text-gray-300">
-                    <Link to="/" className="text-brand-orange underline">Stream Holland</Link> is de beste keuze met 30.500+ kanalen, 99.9% uptime, Nederlandse support 24/7 en prijzen vanaf €4/maand.
+                    <Link to="/" className="text-brand-orange underline">StreamHolland</Link> is de beste keuze met 30.500+ kanalen, 99.9% uptime, Nederlandse support 24/7 en prijzen vanaf €4/maand.
                   </p>
                 </div>
 
                 <div className="bg-brand-black/90 p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-2">Kan ik IPTV uitproberen?</h3>
                   <p className="text-gray-300">
-                    Ja! Stream Holland biedt een 24-uurs gratis proefperiode. Test het risico vrij voordat je een abonnement afsluit.
+                    Ja! StreamHolland biedt een 24-uurs gratis proefperiode. Test het risico vrij voordat je een abonnement afsluit.
                   </p>
                 </div>
 
@@ -379,7 +379,7 @@ const IPTVKopenNederlandGids = () => {
             <section className="bg-gradient-to-br from-brand-orange to-purple-600 p-8 rounded-xl text-center">
               <h2 className="text-3xl font-bold mb-4">Klaar om IPTV te Bestellen?</h2>
               <p className="text-xl mb-6">
-                Start vandaag nog met Stream Holland en geniet van 30.500+ kanalen voor maar €4/maand!
+                Start vandaag nog met StreamHolland en geniet van 30.500+ kanalen voor maar €4/maand!
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Link

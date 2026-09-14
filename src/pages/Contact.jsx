@@ -9,7 +9,7 @@ const Contact = () => {
     {
       icon: FaWhatsapp,
       title: 'WhatsApp',
-      description: '+1 8653169315',
+      description: '+1 (865) 316-9315',
       detail: 'Snelste manier om te bestellen',
       link: 'https://wa.me/18653169315',
       primary: true
@@ -60,8 +60,8 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact | IPTV Bestellen via WhatsApp - Stream Holland"
-        description="Neem contact op met Stream Holland via WhatsApp of e-mail. Nederlandse support 24/7. Bestel je IPTV abonnement en ontvang inloggegevens binnen 5 minuten."
+        title="Contact | IPTV Bestellen via WhatsApp - StreamHolland"
+        description="Neem contact op met StreamHolland via WhatsApp of e-mail. Nederlandse support 24/7. Bestel je IPTV abonnement en ontvang inloggegevens binnen 5 minuten."
         keywords="iptv contact, iptv bestellen whatsapp, iptv aanbieder contact, iptv klantenservice"
       />
 
@@ -249,13 +249,13 @@ const Contact = () => {
                   Nieuwe klant?
                 </h3>
                 <p className="text-gray-400 mb-6">
-                  Lees meer over onze service en waarom klanten kiezen voor Stream Holland als hun betrouwbare <Link to="/iptv-nederland" className="text-brand-orange hover:text-[#E85D00] underline">Nederlandse IPTV aanbieder</Link>.
+                  Lees meer over onze service en waarom klanten kiezen voor StreamHolland als hun betrouwbare <Link to="/iptv-nederland" className="text-brand-orange hover:text-[#E85D00] underline">Nederlandse IPTV aanbieder</Link>.
                 </p>
                 <Link
                   to="/over-ons"
                   className="inline-flex items-center gap-2 text-brand-orange hover:text-[#E85D00] font-semibold"
                 >
-                  Meer over Stream Holland →
+                  Meer over StreamHolland →
                 </Link>
               </motion.div>
 
@@ -269,7 +269,7 @@ const Contact = () => {
                   Compatibiliteit checken?
                 </h3>
                 <p className="text-gray-400 mb-6">
-                  Wil je weten of Stream Holland werkt op jouw apparaat? Bekijk onze lijst met ondersteunde <Link to="/apparaten" className="text-brand-orange hover:text-[#E85D00] underline">apparaten</Link>.
+                  Wil je weten of StreamHolland werkt op jouw apparaat? Bekijk onze lijst met ondersteunde <Link to="/apparaten" className="text-brand-orange hover:text-[#E85D00] underline">apparaten</Link>.
                 </p>
                 <Link
                   to="/apparaten"

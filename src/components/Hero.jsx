@@ -54,7 +54,7 @@ const Hero = () => {
           >
             <span className="text-white">IPTV Kopen in Nederland</span>
             <br />
-            <span className="text-white">Stream Holland</span>
+            <span className="text-white">StreamHolland</span>
             <br />
             <span className="text-brand-orange">vanaf 48€ per jaar</span>
           </motion.h1>
@@ -66,7 +66,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl"
           >
-            Stream Holland is een betrouwbare IPTV aanbieder gevestigd in Rotterdam. Test ons eerst 24 uur gratis om de kwaliteit van onze service te ervaren! We leveren IPTV abonnement aan klanten door heel Nederland: van Amsterdam tot Den Haag, van Rotterdam tot Utrecht. Nederlandstalige zenders, sportzenders, Arabische en Turkse kanalen, allemaal in één abonnement. Geen automatische verlenging, betaling via iDEAL.
+            StreamHolland is een betrouwbare IPTV aanbieder gevestigd in Rotterdam. Test ons eerst 24 uur gratis om de kwaliteit van onze service te ervaren! We leveren IPTV abonnement aan klanten door heel Nederland: van Amsterdam tot Den Haag, van Rotterdam tot Utrecht. Nederlandstalige zenders, sportzenders, Arabische en Turkse kanalen, allemaal in één abonnement. Geen automatische verlenging, betaling via iDEAL.
           </motion.p>
 
           {/* Feature Badges */}

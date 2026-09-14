@@ -1,4 +1,4 @@
-# robots.txt for Stream Holland - Optimized for Google Indexing
+# robots.txt for StreamHolland - Optimized for Google Indexing
 # Allow all search engines to crawl everything
 
 User-agent: *

@@ -13,11 +13,11 @@ const VeelgesteldeVragen = () => {
       questions: [
         {
           q: "Wat is IPTV?",
-          a: "IPTV staat voor Internet Protocol Television. Het is een manier om televisie te kijken via je internetverbinding in plaats van via traditionele satellit of kabel. Met Stream Holland krijg je toegang tot 30.500+ kanalen en 150.000+ films en series via internet."
+          a: "IPTV staat voor Internet Protocol Television. Het is een manier om televisie te kijken via je internetverbinding in plaats van via traditionele satellit of kabel. Met StreamHolland krijg je toegang tot 30.500+ kanalen en 150.000+ films en series via internet."
         },
         {
-          q: "Is Stream Holland legaal?",
-          a: "Ja, Stream Holland is een legale IPTV aanbieder. We bieden een betrouwbare service met officiële content en volledige klantenondersteuning. IPTV legaal kopen betekent kiezen voor een vertrouwde aanbieder zoals Stream Holland."
+          q: "Is StreamHolland legaal?",
+          a: "Ja, StreamHolland is een legale IPTV aanbieder. We bieden een betrouwbare service met officiële content en volledige klantenondersteuning. IPTV legaal kopen betekent kiezen voor een vertrouwde aanbieder zoals StreamHolland."
         },
         {
           q: "Welke internetsnelheid heb ik nodig?",
@@ -51,7 +51,7 @@ const VeelgesteldeVragen = () => {
       questions: [
         {
           q: "Hoe snel is mijn IPTV abonnement actief?",
-          a: "Je Stream Holland abonnement is binnen 5 minuten actief na betaling via iDEAL. Je ontvangt direct je inloggegevens via email en kunt meteen beginnen met kijken."
+          a: "Je StreamHolland abonnement is binnen 5 minuten actief na betaling via iDEAL. Je ontvangt direct je inloggegevens via email en kunt meteen beginnen met kijken."
         },
         {
           q: "Hoe installeer ik IPTV op mijn apparaat?",
@@ -59,11 +59,11 @@ const VeelgesteldeVragen = () => {
         },
         {
           q: "Op hoeveel apparaten kan ik kijken?",
-          a: "Met één Stream Holland abonnement kun je op onbeperkt aantal apparaten tegelijk kijken. Perfect voor gezinnen! Geen extra kosten voor extra apparaten."
+          a: "Met één StreamHolland abonnement kun je op onbeperkt aantal apparaten tegelijk kijken. Perfect voor gezinnen! Geen extra kosten voor extra apparaten."
         },
         {
           q: "Werkt IPTV op mijn Smart TV?",
-          a: "Ja! Stream Holland werkt op vrijwel alle Smart TV's: Samsung, LG, Sony, Philips, TCL, Hisense en meer. Ook op Android TV, Apple TV, Fire TV en andere streaming apparaten."
+          a: "Ja! StreamHolland werkt op vrijwel alle Smart TV's: Samsung, LG, Sony, Philips, TCL, Hisense en meer. Ook op Android TV, Apple TV, Fire TV en andere streaming apparaten."
         }
       ]
     },
@@ -71,8 +71,8 @@ const VeelgesteldeVragen = () => {
       category: "Kanalen & Content",
       questions: [
         {
-          q: "Hoeveel kanalen biedt Stream Holland?",
-          a: "Stream Holland biedt meer dan 30.500 live zenders in verschillende talen, waaronder 80+ Nederlandse kanalen. Daarnaast hebben we 150.000+ films en series on-demand."
+          q: "Hoeveel kanalen biedt StreamHolland?",
+          a: "StreamHolland biedt meer dan 30.500 live zenders in verschillende talen, waaronder 80+ Nederlandse kanalen. Daarnaast hebben we 150.000+ films en series on-demand."
         },
         {
           q: "Welke Nederlandse kanalen zijn beschikbaar?",
@@ -93,7 +93,7 @@ const VeelgesteldeVragen = () => {
       questions: [
         {
           q: "Verlengd mijn abonnement automatisch?",
-          a: "Nee! Bij Stream Holland is er geen automatische verlenging. Je hebt volledige controle. We sturen je een herinnering voordat je abonnement afloopt, zodat je zelf kunt beslissen of je wilt verlengen."
+          a: "Nee! Bij StreamHolland is er geen automatische verlenging. Je hebt volledige controle. We sturen je een herinnering voordat je abonnement afloopt, zodat je zelf kunt beslissen of je wilt verlengen."
         },
         {
           q: "Kan ik mijn abonnement annuleren?",
@@ -114,11 +114,11 @@ const VeelgesteldeVragen = () => {
         },
         {
           q: "Heb ik een VPN nodig?",
-          a: "Nee, je hebt geen VPN nodig. Stream Holland werkt direct in Nederland zonder extra software. Voor privacy kun je optioneel een VPN gebruiken, maar het is niet verplicht."
+          a: "Nee, je hebt geen VPN nodig. StreamHolland werkt direct in Nederland zonder extra software. Voor privacy kun je optioneel een VPN gebruiken, maar het is niet verplicht."
         },
         {
           q: "Werkt IPTV ook in het buitenland?",
-          a: "Ja, je kunt Stream Holland wereldwijd gebruiken. Je abonnement werkt overal waar je internet hebt. Perfect voor vakanties of als je in het buitenland woont."
+          a: "Ja, je kunt StreamHolland wereldwijd gebruiken. Je abonnement werkt overal waar je internet hebt. Perfect voor vakanties of als je in het buitenland woont."
         },
         {
           q: "Wat is EPG?",
@@ -131,7 +131,7 @@ const VeelgesteldeVragen = () => {
       questions: [
         {
           q: "Hoe kan ik contact opnemen met support?",
-          a: "We bieden 24/7 Nederlandse klantenservice via WhatsApp (+1 8653169315) en email (support@streamholland.com). WhatsApp is het snelst voor directe hulp."
+          a: "We bieden 24/7 Nederlandse klantenservice via WhatsApp (+1 (865) 316-9315) en email (support@streamholland.com). WhatsApp is het snelst voor directe hulp."
         },
         {
           q: "Is de support in het Nederlands?",
@@ -167,7 +167,7 @@ const VeelgesteldeVragen = () => {
                 </span>
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Alle antwoorden op je vragen over Stream Holland. Kan je vraag er niet tussen vinden?
+                Alle antwoorden op je vragen over StreamHolland. Kan je vraag er niet tussen vinden?
                 Neem contact op via WhatsApp!
               </p>
               <a
@@ -295,7 +295,7 @@ const VeelgesteldeVragen = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="https://wa.me/18653169315?text=Ik%20heb%20een%20vraag%20over%20Stream Holland"
+                href="https://wa.me/18653169315?text=Ik%20heb%20een%20vraag%20over%20StreamHolland"
                 className="px-10 py-4 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-lg transition-all transform hover:scale-105"
               >
                 WhatsApp Ons

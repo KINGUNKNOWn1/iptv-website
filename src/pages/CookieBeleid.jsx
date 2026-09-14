@@ -61,8 +61,8 @@ const CookieBeleid = () => {
   return (
     <>
       <Helmet>
-        <title>Cookie Beleid - Stream Holland</title>
-        <meta name="description" content="Cookie beleid van Stream Holland. Informatie over welke cookies wij gebruiken en waarom." />
+        <title>Cookie Beleid - StreamHolland</title>
+        <meta name="description" content="Cookie beleid van StreamHolland. Informatie over welke cookies wij gebruiken en waarom." />
         <link rel="canonical" href="https://streamholland.com/cookie-beleid" />
       </Helmet>
 
@@ -95,7 +95,7 @@ const CookieBeleid = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl text-gray-300 max-w-2xl mx-auto"
             >
-              Stream Holland gebruikt cookies om uw ervaring te verbeteren en onze website te optimaliseren. Hier leest u welke cookies wij gebruiken en waarom.
+              StreamHolland gebruikt cookies om uw ervaring te verbeteren en onze website te optimaliseren. Hier leest u welke cookies wij gebruiken en waarom.
             </motion.p>
 
             <motion.p
@@ -130,7 +130,7 @@ const CookieBeleid = () => {
                       Cookies zijn kleine tekstbestanden die op uw computer of mobiele apparaat worden geplaatst wanneer u een website bezoekt. Cookies worden veel gebruikt om websites efficiënt te laten werken en om informatie te verstrekken aan de eigenaren van de website.
                     </p>
                     <p className="text-gray-300 leading-relaxed">
-                      Stream Holland gebruikt cookies om:
+                      StreamHolland gebruikt cookies om:
                     </p>
                     <ul className="space-y-2 text-gray-300 mt-4">
                       <li className="flex items-start gap-2">

@@ -7,8 +7,8 @@ const Privacybeleid = () => {
   return (
     <>
       <Helmet>
-        <title>Privacybeleid - Stream Holland</title>
-        <meta name="description" content="Privacybeleid van Stream Holland. Lees hoe wij uw persoonsgegevens beschermen en verwerken volgens de AVG/GDPR wetgeving." />
+        <title>Privacybeleid - StreamHolland</title>
+        <meta name="description" content="Privacybeleid van StreamHolland. Lees hoe wij uw persoonsgegevens beschermen en verwerken volgens de AVG/GDPR wetgeving." />
         <link rel="canonical" href="https://streamholland.com/privacybeleid" />
       </Helmet>
 
@@ -41,7 +41,7 @@ const Privacybeleid = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl text-gray-300 max-w-2xl mx-auto"
             >
-              Uw privacy is belangrijk voor ons. Hier leest u hoe Stream Holland uw persoonsgegevens beschermt en verwerkt.
+              Uw privacy is belangrijk voor ons. Hier leest u hoe StreamHolland uw persoonsgegevens beschermt en verwerkt.
             </motion.p>
 
             <motion.p
@@ -73,7 +73,7 @@ const Privacybeleid = () => {
                   <div>
                     <h2 className="text-2xl font-bold mb-4">1. Verwerkingsverantwoordelijke</h2>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      Stream Holland, gevestigd in Rotterdam, Nederland, is verantwoordelijk voor de verwerking van uw persoonsgegevens zoals beschreven in dit privacybeleid.
+                      StreamHolland, gevestigd in Rotterdam, Nederland, is verantwoordelijk voor de verwerking van uw persoonsgegevens zoals beschreven in dit privacybeleid.
                     </p>
                     <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30">
                       <p className="text-gray-300"><strong className="text-white">Contact:</strong></p>

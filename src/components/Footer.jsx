@@ -32,7 +32,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-4">
               <FaPlay className="text-primary-500 text-2xl" />
               <span className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-                Stream Holland
+                StreamHolland
               </span>
             </div>
             <p className="text-gray-400 leading-relaxed">
@@ -90,7 +90,7 @@ const Footer = () => {
               <li className="flex items-center gap-3 text-gray-400">
                 <FaWhatsapp className="text-primary-500 flex-shrink-0" />
                 <a href="https://wa.me/18653169315" className="hover:text-primary-400 transition-colors">
-                  +1 8653169315
+                  +1 (865) 316-9315
                 </a>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} Stream Holland. Alle rechten voorbehouden.
+              © {currentYear} StreamHolland. Alle rechten voorbehouden.
             </p>
             <div className="flex items-center gap-4">
               <div className="glass-effect px-4 py-2 rounded-full text-sm">

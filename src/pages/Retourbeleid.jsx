@@ -7,8 +7,8 @@ const Retourbeleid = () => {
   return (
     <>
       <Helmet>
-        <title>Retourbeleid - Stream Holland</title>
-        <meta name="description" content="Retourbeleid van Stream Holland. Informatie over herroepingsrecht en restitutie bij digitale dienstverlening." />
+        <title>Retourbeleid - StreamHolland</title>
+        <meta name="description" content="Retourbeleid van StreamHolland. Informatie over herroepingsrecht en restitutie bij digitale dienstverlening." />
         <link rel="canonical" href="https://streamholland.com/retourbeleid" />
       </Helmet>
 
@@ -41,7 +41,7 @@ const Retourbeleid = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl text-gray-300 max-w-2xl mx-auto"
             >
-              Informatie over herroepingsrecht en restitutie voor Stream Holland IPTV diensten.
+              Informatie over herroepingsrecht en restitutie voor StreamHolland IPTV diensten.
             </motion.p>
 
             <motion.p
@@ -73,7 +73,7 @@ const Retourbeleid = () => {
                   <div>
                     <h2 className="text-2xl font-bold mb-4 text-blue-400">Belangrijke Informatie</h2>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      Stream Holland biedt <strong className="text-white">digitale diensten</strong> aan (IPTV streaming). Voor digitale diensten gelden andere regels dan voor fysieke producten.
+                      StreamHolland biedt <strong className="text-white">digitale diensten</strong> aan (IPTV streaming). Voor digitale diensten gelden andere regels dan voor fysieke producten.
                     </p>
                     <p className="text-gray-300 leading-relaxed">
                       Zodra de IPTV dienst wordt geactiveerd en u toegang krijgt tot de streaming content, vervalt het herroepingsrecht volgens de <strong className="text-white">Wet koop op afstand</strong> (artikel 6:230p lid 13 BW).
@@ -94,7 +94,7 @@ const Retourbeleid = () => {
                   In principe heeft u als consument een bedenktijd van <strong className="text-white">14 dagen</strong> bij aankoop op afstand (via internet). Deze bedenktijd begint op de dag van aankoop.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  <strong className="text-white">Echter:</strong> Bij Stream Holland vervalt dit herroepingsrecht zodra:
+                  <strong className="text-white">Echter:</strong> Bij StreamHolland vervalt dit herroepingsrecht zodra:
                 </p>
                 <ul className="space-y-2 text-gray-300 mb-4">
                   <li className="flex items-start gap-2">
@@ -226,7 +226,7 @@ const Retourbeleid = () => {
                     </ul>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    <strong className="text-white">Belangrijk:</strong> Stream Holland is niet verantwoordelijk voor problemen veroorzaakt door uw internet provider, apparatuur, of externe factoren buiten onze controle.
+                    <strong className="text-white">Belangrijk:</strong> StreamHolland is niet verantwoordelijk voor problemen veroorzaakt door uw internet provider, apparatuur, of externe factoren buiten onze controle.
                   </p>
                 </div>
               </motion.div>
@@ -240,7 +240,7 @@ const Retourbeleid = () => {
               >
                 <h2 className="text-2xl font-bold mb-4">5. Geen Automatische Verlenging</h2>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Stream Holland hanteert <strong className="text-white">geen automatische verlenging</strong>. Dit betekent:
+                  StreamHolland hanteert <strong className="text-white">geen automatische verlenging</strong>. Dit betekent:
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">

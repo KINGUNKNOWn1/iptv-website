@@ -32,7 +32,7 @@ const Testimonials = () => {
       name: 'Emma Jansen',
       location: 'Den Haag',
       rating: 5,
-      text: 'Super blij met Stream Holland! Ik kan nu al mijn favoriete series en films kijken zonder gedoe. De app werkt vlekkeloos op mijn iPhone en iPad.',
+      text: 'Super blij met StreamHolland! Ik kan nu al mijn favoriete series en films kijken zonder gedoe. De app werkt vlekkeloos op mijn iPhone en iPad.',
       plan: 'IPTV Premium 3 maanden',
       initials: 'EJ'
     },
@@ -75,7 +75,7 @@ const Testimonials = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ontdek waarom duizenden Nederlanders kiezen voor Stream Holland
+            Ontdek waarom duizenden Nederlanders kiezen voor StreamHolland
           </p>
         </motion.div>
 

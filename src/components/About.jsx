@@ -49,7 +49,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Over Stream Holland
+            Over StreamHolland
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Betrouwbare IPTV aanbieder gevestigd in Rotterdam, Nederland
@@ -97,7 +97,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-3xl font-bold text-white mb-4">
-              Zes redenen om <Link to="/iptv-kopen" className="text-brand-orange hover:text-[#E85D00] underline">IPTV kopen</Link> bij Stream Holland te doen
+              Zes redenen om <Link to="/iptv-kopen" className="text-brand-orange hover:text-[#E85D00] underline">IPTV kopen</Link> bij StreamHolland te doen
             </h3>
             <p className="text-gray-400 text-lg mb-6">
               Niet wat elke aanbieder belooft. Wat wij concreet anders doen. Bekijk onze <Link to="/prijzen" className="text-brand-orange hover:text-[#E85D00] underline">transparante prijzen</Link> zonder verborgen kosten.
@@ -159,7 +159,7 @@ const About = () => {
           className="text-center mt-16"
         >
           <h3 className="text-2xl font-bold text-white mb-4">
-            Klaar om te starten met Stream Holland?
+            Klaar om te starten met StreamHolland?
           </h3>
           <p className="text-gray-400 mb-6">
             Actief binnen 5 minuten. Geen automatische verlenging. <Link to="/contact" className="text-brand-orange hover:text-[#E85D00] underline">Bestel nu via WhatsApp</Link>.

@@ -94,7 +94,7 @@ const DeviceCompatibility = () => {
 
             <div className="space-y-5 text-gray-600 text-lg mb-10 leading-relaxed">
               <p>
-                Met een Stream Holland abonnement kies je zelf op welk apparaat je kijkt: je Samsung of LG Smart TV, je iPhone of Android telefoon, je laptop of Amazon Fire TV Stick. <span className="font-semibold text-gray-800">Geen extra hardware of technische kennis nodig.</span>
+                Met een StreamHolland abonnement kies je zelf op welk apparaat je kijkt: je Samsung of LG Smart TV, je iPhone of Android telefoon, je laptop of Amazon Fire TV Stick. <span className="font-semibold text-gray-800">Geen extra hardware of technische kennis nodig.</span>
               </p>
               <p>
                 Installeer IPTV Smarters Pro of SS IPTV, voer je inloggegevens in en klaar! <span className="font-semibold text-gray-800">Gemiddeld ben je binnen vijf minuten</span> aan het kijken naar je eerste kanaal.

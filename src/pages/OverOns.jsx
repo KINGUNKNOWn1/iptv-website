@@ -61,7 +61,7 @@ const OverOns = () => {
             >
               <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
                 Over <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-                  Stream Holland
+                  StreamHolland
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
@@ -82,7 +82,7 @@ const OverOns = () => {
             <div className="prose prose-invert max-w-none">
               <div className="bg-brand-black p-8 rounded-xl mb-8">
                 <p className="text-lg text-gray-300 mb-4">
-                  Stream Holland is ontstaan uit frustratie met bestaande IPTV aanbieders. Slechte kwaliteit,
+                  StreamHolland is ontstaan uit frustratie met bestaande IPTV aanbieders. Slechte kwaliteit,
                   onbetrouwbare diensten, geen Nederlandse support, en hoge prijzen. We dachten: dit kan beter.
                 </p>
                 <p className="text-lg text-gray-300 mb-4">
@@ -103,7 +103,7 @@ const OverOns = () => {
         <section className="py-20 bg-brand-black">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
-              Stream Holland in <span className="text-brand-orange">Cijfers</span>
+              StreamHolland in <span className="text-brand-orange">Cijfers</span>
             </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -159,7 +159,7 @@ const OverOns = () => {
         <section className="py-20 bg-brand-black">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
-              Waarom Kiezen voor <span className="text-brand-orange">Stream Holland</span>?
+              Waarom Kiezen voor <span className="text-brand-orange">StreamHolland</span>?
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -274,7 +274,7 @@ const OverOns = () => {
         <section className="py-20 bg-gradient-to-br from-brand-black to-brand-black/90">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Klaar om te Starten met Stream Holland?
+              Klaar om te Starten met StreamHolland?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
               Sluit je aan bij 24.587+ tevreden klanten. Ervaar zelf waarom wij de{' '}
@@ -288,7 +288,7 @@ const OverOns = () => {
                 Bekijk Abonnementen
               </Link>
               <a
-                href="https://wa.me/18653169315?text=Ik%20wil%20graag%20meer%20weten%20over%20Stream Holland"
+                href="https://wa.me/18653169315?text=Ik%20wil%20graag%20meer%20weten%20over%20StreamHolland"
                 className="px-10 py-4 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold rounded-lg transition-all transform hover:scale-105"
               >
                 Chat met Ons

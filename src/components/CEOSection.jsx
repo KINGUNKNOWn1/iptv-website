@@ -75,7 +75,7 @@ const CEOSection = () => {
               <div className="relative pl-8 mb-8">
                 <FaQuoteLeft className="absolute left-0 top-0 text-4xl text-brand-orange opacity-20" />
                 <blockquote className="text-xl text-brand-gray italic leading-relaxed">
-                  "Bij Stream Holland geloven we dat iedereen toegang moet hebben tot hoogwaardige televisie,
+                  "Bij StreamHolland geloven we dat iedereen toegang moet hebben tot hoogwaardige televisie,
                   zonder complexe contracten of verborgen kosten. Onze missie is simpel: de beste IPTV-ervaring
                   leveren met Nederlandse service waar je op kunt vertrouwen."
                 </blockquote>
@@ -131,7 +131,7 @@ const CEOSection = () => {
                   </div>
                 </div>
                 <p className="text-brand-gray text-sm mt-2">
-                  Founder & CEO, Stream Holland
+                  Founder & CEO, StreamHolland
                 </p>
               </div>
             </motion.div>

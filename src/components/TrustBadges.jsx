@@ -53,7 +53,7 @@ const TrustBadges = () => {
           className="text-center mb-8"
         >
           <h3 className="text-2xl font-bold text-brand-black mb-2">
-            Waarom Stream Holland Vertrouwen?
+            Waarom StreamHolland Vertrouwen?
           </h3>
           <p className="text-gray-600">
             Veilig, betrouwbaar en altijd bereikbaar

@@ -65,8 +65,8 @@ const IPTVKopen = () => {
   return (
     <>
       <SEO
-        title="IPTV Kopen Nederland | Premium IPTV Abonnement vanaf €48/jaar - Stream Holland"
-        description="IPTV kopen in Nederland? Kies Stream Holland voor 30.500+ kanalen, 4K kwaliteit, Nederlandse support 24/7. Geen automatische verlenging. Bestel direct via iDEAL."
+        title="IPTV Kopen Nederland | Premium IPTV Abonnement vanaf €48/jaar - StreamHolland"
+        description="IPTV kopen in Nederland? Kies StreamHolland voor 30.500+ kanalen, 4K kwaliteit, Nederlandse support 24/7. Geen automatische verlenging. Bestel direct via iDEAL."
         keywords="iptv kopen, iptv kopen nederland, iptv abonnement kopen, iptv aanbieder, nederlandse iptv"
       />
 
@@ -95,7 +95,7 @@ const IPTVKopen = () => {
                 <span className="text-blue-500">Betrouwbaar & Betaalbaar</span>
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed mb-8 max-w-3xl">
-                Op zoek naar waar je <strong>IPTV kopen</strong> kunt in Nederland? Stream Holland is dé betrouwbare IPTV aanbieder met 30.500+ kanalen, 4K kwaliteit en Nederlandse support. Geen automatische verlenging, iDEAL betaling mogelijk.
+                Op zoek naar waar je <strong>IPTV kopen</strong> kunt in Nederland? StreamHolland is dé betrouwbare IPTV aanbieder met 30.500+ kanalen, 4K kwaliteit en Nederlandse support. Geen automatische verlenging, iDEAL betaling mogelijk.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -116,7 +116,7 @@ const IPTVKopen = () => {
           </div>
         </section>
 
-        {/* Why Choose Stream Holland */}
+        {/* Why Choose StreamHolland */}
         <section className="py-20 bg-brand-black/90">
           <div className="container-custom">
             <motion.div
@@ -126,7 +126,7 @@ const IPTVKopen = () => {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Waarom IPTV kopen bij Stream Holland?
+                Waarom IPTV kopen bij StreamHolland?
               </h2>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto">
                 Als je op zoek bent naar een <Link to="/iptv-abonnement" className="text-brand-orange hover:text-[#E85D00] underline">betrouwbaar IPTV abonnement</Link>, ben je bij ons aan het juiste adres.
@@ -171,7 +171,7 @@ const IPTVKopen = () => {
                   Wat krijg je bij een IPTV abonnement kopen?
                 </h2>
                 <p className="text-gray-400 text-lg mb-8">
-                  Bij Stream Holland krijg je toegang tot het meest complete IPTV aanbod van Nederland. Bekijk <Link to="/kanalen" className="text-brand-orange hover:text-[#E85D00] underline">alle beschikbare Nederlandse IPTV kanalen</Link> en meer.
+                  Bij StreamHolland krijg je toegang tot het meest complete IPTV aanbod van Nederland. Bekijk <Link to="/kanalen" className="text-brand-orange hover:text-[#E85D00] underline">alle beschikbare Nederlandse IPTV kanalen</Link> en meer.
                 </p>
                 <div className="space-y-4">
                   {features.map((feature, index) => (
@@ -216,7 +216,7 @@ const IPTVKopen = () => {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Hoe werkt IPTV kopen bij Stream Holland?
+                Hoe werkt IPTV kopen bij StreamHolland?
               </h2>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto">
                 In 4 simpele stappen begin je met kijken

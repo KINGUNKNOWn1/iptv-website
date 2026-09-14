@@ -50,7 +50,7 @@ const ComparisonTable = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Waarom Stream Holland De Beste Keuze Is
+            Waarom StreamHolland De Beste Keuze Is
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Vergelijk ons met andere aanbieders en zie waarom duizenden Nederlanders voor ons kiezen
@@ -77,7 +77,7 @@ const ComparisonTable = () => {
                       <div className="flex flex-col items-center gap-2">
                         <div className="flex items-center gap-2">
                           <FaCrown className="text-yellow-500 text-xl" />
-                          <span className="text-lg font-bold text-white">Stream Holland</span>
+                          <span className="text-lg font-bold text-white">StreamHolland</span>
                         </div>
                         <span className="px-3 py-1 bg-gradient-to-r from-brand-orange to-[#E85D00] text-white text-xs font-bold rounded-full">
                           AANBEVOLEN
@@ -115,7 +115,7 @@ const ComparisonTable = () => {
                         {feature.name}
                       </td>
 
-                      {/* Stream Holland Column (Highlighted) */}
+                      {/* StreamHolland Column (Highlighted) */}
                       <td className="px-6 py-4 text-center bg-gradient-to-r from-brand-orange/10 to-[#E85D00]/10 border-x-2 border-blue-500/30">
                         {renderCell(feature.streamholland, true)}
                       </td>

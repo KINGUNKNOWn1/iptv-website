@@ -193,7 +193,7 @@ const IPTVAbonnement = () => {
         <section className="py-20 bg-brand-black/90/50">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
-              Waarom Kiezen voor <span className="text-brand-orange">Stream Holland Abonnement</span>?
+              Waarom Kiezen voor <span className="text-brand-orange">StreamHolland Abonnement</span>?
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -260,7 +260,7 @@ const IPTVAbonnement = () => {
                   Verlengd mijn IPTV abonnement automatisch?
                 </h3>
                 <p className="text-gray-300">
-                  Nee! Bij Stream Holland is er <strong>geen automatische verlenging</strong>. Je hebt volledige controle.
+                  Nee! Bij StreamHolland is er <strong>geen automatische verlenging</strong>. Je hebt volledige controle.
                   We sturen je een herinnering voordat je abonnement afloopt, en je kunt dan zelf beslissen of je wilt verlengen.
                 </p>
               </div>
@@ -290,7 +290,7 @@ const IPTVAbonnement = () => {
                   Op hoeveel apparaten kan ik kijken?
                 </h3>
                 <p className="text-gray-300">
-                  Met één Stream Holland abonnement kun je op <strong>onbeperkt aantal apparaten tegelijk</strong> kijken.
+                  Met één StreamHolland abonnement kun je op <strong>onbeperkt aantal apparaten tegelijk</strong> kijken.
                   Perfect voor gezinnen! Bekijk alle{' '}
                   <Link to="/apparaten" className="text-brand-orange hover:underline">ondersteunde apparaten</Link>.
                 </p>

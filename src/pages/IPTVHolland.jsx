@@ -25,10 +25,10 @@ const IPTVHolland = () => {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Waarom Stream Holland kiezen voor IPTV in Nederland?',
+        name: 'Waarom StreamHolland kiezen voor IPTV in Nederland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Stream Holland is gevestigd in Rotterdam en gespecialiseerd in de Nederlandse markt. We bieden Nederlandse zenders, iDEAL betaling, Nederlandse klantenservice en servers geoptimaliseerd voor Holland. Met 15.000+ tevreden klanten in Nederland zijn we de betrouwbare keuze voor IPTV Holland.'
+          text: 'StreamHolland is gevestigd in Rotterdam en gespecialiseerd in de Nederlandse markt. We bieden Nederlandse zenders, iDEAL betaling, Nederlandse klantenservice en servers geoptimaliseerd voor Holland. Met 15.000+ tevreden klanten in Nederland zijn we de betrouwbare keuze voor IPTV Holland.'
         }
       },
       {
@@ -44,7 +44,7 @@ const IPTVHolland = () => {
         name: 'Werkt IPTV Holland overal in Nederland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Ja, onze IPTV service werkt overal in Nederland waar je een internetverbinding hebt. Of je nu in Amsterdam, Rotterdam, Den Haag, Utrecht of een kleiner dorp woont - Stream Holland werkt perfect. We hebben servers in Europa voor optimale snelheid in Nederland.'
+          text: 'Ja, onze IPTV service werkt overal in Nederland waar je een internetverbinding hebt. Of je nu in Amsterdam, Rotterdam, Den Haag, Utrecht of een kleiner dorp woont - StreamHolland werkt perfect. We hebben servers in Europa voor optimale snelheid in Nederland.'
         }
       },
       {
@@ -52,7 +52,7 @@ const IPTVHolland = () => {
         name: 'Kan ik betalen met iDEAL?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Ja, Stream Holland accepteert iDEAL, de meest gebruikte betaalmethode in Nederland. Daarnaast accepteren we ook creditcard en andere Europese betaalmethoden. Betalen is veilig en binnen 1 minuut geregeld.'
+          text: 'Ja, StreamHolland accepteert iDEAL, de meest gebruikte betaalmethode in Nederland. Daarnaast accepteren we ook creditcard en andere Europese betaalmethoden. Betalen is veilig en binnen 1 minuut geregeld.'
         }
       },
       {
@@ -60,7 +60,7 @@ const IPTVHolland = () => {
         name: 'Is IPTV legaal in Nederland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Het gebruik van IPTV-technologie zelf is volkomen legaal in Nederland. Stream Holland biedt een wettige IPTV service aan met officiële content en betaalde licenties. We opereren volgens Nederlandse wetgeving en zijn een geregistreerd Nederlands bedrijf.'
+          text: 'Het gebruik van IPTV-technologie zelf is volkomen legaal in Nederland. StreamHolland biedt een wettige IPTV service aan met officiële content en betaalde licenties. We opereren volgens Nederlandse wetgeving en zijn een geregistreerd Nederlands bedrijf.'
         }
       }
     ]
@@ -88,7 +88,7 @@ const IPTVHolland = () => {
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'IPTV Holland - Nederlandse IPTV Provider | Stream Holland',
+    name: 'IPTV Holland - Nederlandse IPTV Provider | StreamHolland',
     description: 'IPTV Holland: 15.000+ klanten in Nederland ✓ Nederlandse zenders ✓ iDEAL betaling ✓ Servers in Europa ✓ Nederlandse support. Vanaf €4/mnd.',
     url: 'https://streamholland.com/iptv-holland'
   };
@@ -247,7 +247,7 @@ const IPTVHolland = () => {
   return (
     <>
       <Helmet>
-        <title>IPTV Holland - #1 Nederlandse IPTV Provider vanaf €4/mnd | Stream Holland</title>
+        <title>IPTV Holland - #1 Nederlandse IPTV Provider vanaf €4/mnd | StreamHolland</title>
         <meta
           name="description"
           content="IPTV Holland: 15.000+ klanten in Nederland ✓ Nederlandse zenders (NPO, RTL, SBS) ✓ iDEAL betaling ✓ Servers in Europa ✓ Nederlandse support ✓ Gevestigd in Rotterdam. Vanaf €4/mnd."
@@ -259,7 +259,7 @@ const IPTVHolland = () => {
         <link rel="canonical" href="https://streamholland.com/iptv-holland" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="IPTV Holland - #1 Nederlandse IPTV Provider | Stream Holland" />
+        <meta property="og:title" content="IPTV Holland - #1 Nederlandse IPTV Provider | StreamHolland" />
         <meta property="og:description" content="15.000+ Nederlandse klanten ✓ Alle Nederlandse zenders ✓ iDEAL betaling ✓ Gevestigd in Rotterdam ✓ 99.9% uptime. Vanaf €4/mnd." />
         <meta property="og:url" content="https://streamholland.com/iptv-holland" />
         <meta property="og:type" content="website" />
@@ -410,7 +410,7 @@ const IPTVHolland = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Waarom <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-orange">Stream Holland</span>?
+              Waarom <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-orange">StreamHolland</span>?
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               De Nederlandse IPTV provider waar 15.000+ klanten voor kozen
@@ -558,7 +558,7 @@ const IPTVHolland = () => {
               Beschikbaar in <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-orange">heel Nederland</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Van grote steden tot kleine dorpen - Stream Holland werkt overal waar je internet hebt
+              Van grote steden tot kleine dorpen - StreamHolland werkt overal waar je internet hebt
             </p>
           </motion.div>
 

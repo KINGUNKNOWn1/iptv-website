@@ -113,7 +113,7 @@ const IPTVInstallerenSamsungTV = () => {
 
             <section className="bg-gradient-to-br from-brand-orange to-purple-600 p-8 rounded-xl text-center">
               <h2 className="text-3xl font-bold mb-4">Nog Geen IPTV Abonnement?</h2>
-              <p className="text-xl mb-6">Start met Stream Holland: 30.500+ kanalen, werkt perfect op Samsung TV!</p>
+              <p className="text-xl mb-6">Start met StreamHolland: 30.500+ kanalen, werkt perfect op Samsung TV!</p>
               <Link to="/iptv-abonnement" className="inline-block px-8 py-4 bg-brand-orange text-white font-bold rounded-lg hover:bg-orange-600">Bekijk Abonnementen</Link>
             </section>
           </div>

@@ -132,7 +132,7 @@ const NotFound = () => {
             <div className="text-left">
               <h3 className="text-white font-bold mb-1">Wist je dat?</h3>
               <p className="text-gray-400 text-sm">
-                Stream Holland biedt 30.500+ kanalen, 150.000+ films en series, en werkt op alle apparaten. Bekijk onze{' '}
+                StreamHolland biedt 30.500+ kanalen, 150.000+ films en series, en werkt op alle apparaten. Bekijk onze{' '}
                 <Link to="/prijzen" className="text-brand-orange hover:underline">
                   prijzen
                 </Link>{' '}

@@ -75,8 +75,8 @@ const NederlandseIPTVKanalenLijst = () => {
           <div className="container mx-auto px-4 max-w-4xl">
             <section className="mb-12">
               <div className="bg-orange-900/30 border-l-4 border-orange-500 p-6 rounded">
-                <p className="text-white font-semibold mb-2">🔥 Stream Holland Voordeel</p>
-                <p className="text-gray-300">Met <Link to="/" className="text-orange-400 underline">Stream Holland</Link> krijg je ALLE Nederlandse kanalen hieronder + 30.500 internationale zenders voor maar €4/maand!</p>
+                <p className="text-white font-semibold mb-2">🔥 StreamHolland Voordeel</p>
+                <p className="text-gray-300">Met <Link to="/" className="text-orange-400 underline">StreamHolland</Link> krijg je ALLE Nederlandse kanalen hieronder + 30.500 internationale zenders voor maar €4/maand!</p>
               </div>
             </section>
 
@@ -108,7 +108,7 @@ const NederlandseIPTVKanalenLijst = () => {
               <div className="space-y-4">
                 <div className="bg-brand-black/90 p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-2">Krijg ik alle Nederlandse kanalen?</h3>
-                  <p className="text-gray-300">Ja! Met <Link to="/iptv-abonnement" className="text-orange-400 underline">Stream Holland</Link> krijg je alle 80+ Nederlandse zenders inclusief NPO, RTL, SBS, sport en regionale kanalen.</p>
+                  <p className="text-gray-300">Ja! Met <Link to="/iptv-abonnement" className="text-orange-400 underline">StreamHolland</Link> krijg je alle 80+ Nederlandse zenders inclusief NPO, RTL, SBS, sport en regionale kanalen.</p>
                 </div>
                 <div className="bg-brand-black/90 p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-2">Werken NPO en RTL kanalen?</h3>
@@ -123,7 +123,7 @@ const NederlandseIPTVKanalenLijst = () => {
 
             <section className="bg-gradient-to-br from-orange-600 to-red-600 p-8 rounded-xl text-center">
               <h2 className="text-3xl font-bold mb-4">Alle Nederlandse Kanalen + 30.500 Meer!</h2>
-              <p className="text-xl mb-6">Start met Stream Holland en kijk alle Nederlandse zenders + duizenden internationale kanalen</p>
+              <p className="text-xl mb-6">Start met StreamHolland en kijk alle Nederlandse zenders + duizenden internationale kanalen</p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Link to="/iptv-abonnement" className="px-8 py-4 bg-brand-orange text-white font-bold rounded-lg hover:bg-orange-600">Bekijk Abonnementen</Link>
                 <a href="https://wa.me/18653169315" className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg"><FaWhatsapp className="inline mr-2" /> WhatsApp Ons</a>

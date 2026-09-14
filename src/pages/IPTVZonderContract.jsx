@@ -15,7 +15,7 @@ const IPTVZonderContract = () => {
     url: 'https://streamholland.com/iptv-zonder-contract',
     provider: {
       '@type': 'Organization',
-      name: 'Stream Holland'
+      name: 'StreamHolland'
     }
   };
 
@@ -28,12 +28,12 @@ const IPTVZonderContract = () => {
         name: 'Wat betekent IPTV zonder contract?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'IPTV zonder contract betekent dat je geen langdurige verplichting aangaat. Bij Stream Holland koop je IPTV voor 3, 6 of 12 maanden. Na afloop stopt het abonnement automatisch - geen verlenging, geen opzegtermijn, geen verrassingen.'
+          text: 'IPTV zonder contract betekent dat je geen langdurige verplichting aangaat. Bij StreamHolland koop je IPTV voor 3, 6 of 12 maanden. Na afloop stopt het abonnement automatisch - geen verlenging, geen opzegtermijn, geen verrassingen.'
         }
       },
       {
         '@type': 'Question',
-        name: 'Moet ik opzeggen bij Stream Holland?',
+        name: 'Moet ik opzeggen bij StreamHolland?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Nee, opzeggen is niet nodig. Je abonnement stopt automatisch na de gekozen periode (3, 6 of 12 maanden). Wil je verlengen? Dan kun je dit eenvoudig doen, maar het gebeurt nooit automatisch.'
@@ -52,7 +52,7 @@ const IPTVZonderContract = () => {
         name: 'Wat is het verschil met een IPTV contract?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Bij traditionele IPTV aanbieders sluit je vaak een contract van 12-24 maanden met automatische verlenging. Stream Holland werkt zonder contract: betaal eenmalig, geniet van IPTV, en stop automatisch. Geen verrassing facturen, geen opzegtermijn van 1 maand.'
+          text: 'Bij traditionele IPTV aanbieders sluit je vaak een contract van 12-24 maanden met automatische verlenging. StreamHolland werkt zonder contract: betaal eenmalig, geniet van IPTV, en stop automatisch. Geen verrassing facturen, geen opzegtermijn van 1 maand.'
         }
       }
     ]
@@ -135,7 +135,7 @@ const IPTVZonderContract = () => {
   return (
     <>
       <Helmet>
-        <title>IPTV Zonder Contract - Geen Verplichtingen vanaf €4/mnd | Stream Holland</title>
+        <title>IPTV Zonder Contract - Geen Verplichtingen vanaf €4/mnd | StreamHolland</title>
         <meta
           name="description"
           content="IPTV zonder contract vanaf €23. Geen automatische verlenging, geen opzegtermijn. Stop wanneer je wilt. 30.500+ kanalen, iDEAL betaling. Bestel vrijblijvend ➜"
@@ -147,7 +147,7 @@ const IPTVZonderContract = () => {
         <link rel="canonical" href="https://streamholland.com/iptv-zonder-contract" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="IPTV Zonder Contract - Geen Verplichtingen | Stream Holland" />
+        <meta property="og:title" content="IPTV Zonder Contract - Geen Verplichtingen | StreamHolland" />
         <meta property="og:description" content="IPTV zonder contract vanaf €4/mnd. Geen automatische verlenging, geen opzegtermijn. Bestel vrijblijvend." />
         <meta property="og:url" content="https://streamholland.com/iptv-zonder-contract" />
         <meta property="og:type" content="website" />
@@ -305,7 +305,7 @@ const IPTVZonderContract = () => {
         <section className="py-16 px-4 bg-slate-800/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-white mb-4 text-center">
-              Stream Holland vs Traditionele IPTV Contracten
+              StreamHolland vs Traditionele IPTV Contracten
             </h2>
             <p className="text-slate-300 text-center mb-12 text-lg">
               Zie het verschil tussen vrijheid en vastzitten
@@ -319,7 +319,7 @@ const IPTVZonderContract = () => {
                     <th className="px-6 py-4 text-center text-white font-bold">
                       <div className="flex items-center justify-center gap-2">
                         <FiShield className="w-5 h-5 text-green-400" />
-                        Stream Holland
+                        StreamHolland
                       </div>
                     </th>
                     <th className="px-6 py-4 text-center text-white font-bold">Traditionele IPTV</th>
@@ -447,7 +447,7 @@ const IPTVZonderContract = () => {
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Waarom Klanten Kiezen voor Stream Holland
+              Waarom Klanten Kiezen voor StreamHolland
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Meer dan 15.000 tevreden klanten vertrouwen op onze service zonder contract

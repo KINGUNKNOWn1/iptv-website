@@ -140,7 +140,7 @@ const IPTVNederland = () => {
         <section className="py-20 bg-brand-black/90/50">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
-              Waarom Stream Holland de Beste <span className="text-orange-400">Nederlandse IPTV</span> Is
+              Waarom StreamHolland de Beste <span className="text-orange-400">Nederlandse IPTV</span> Is
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">

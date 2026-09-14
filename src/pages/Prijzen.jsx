@@ -19,7 +19,7 @@ const Prijzen = () => {
   return (
     <>
       <SEO
-        title="IPTV Prijzen Nederland | Abonnement vanaf €48/jaar - Stream Holland"
+        title="IPTV Prijzen Nederland | Abonnement vanaf €48/jaar - StreamHolland"
         description="IPTV abonnement prijzen: 3 maanden €23, 6 maanden €32, 12 maanden €48. Geen automatische verlenging. iDEAL betaling. 30.500+ kanalen. Bestel nu!"
         keywords="iptv prijzen, iptv abonnement prijzen, iptv kopen prijs, goedkope iptv, iptv kosten"
       />

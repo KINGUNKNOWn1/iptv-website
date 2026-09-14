@@ -195,9 +195,9 @@ const IsIPTVLegaalNederland = () => {
                 </div>
 
                 <div className="bg-green-900/30 border-l-4 border-green-500 p-6 my-6 rounded">
-                  <p className="text-white font-semibold mb-2">✅ Waarom Stream Holland Veilig Is</p>
+                  <p className="text-white font-semibold mb-2">✅ Waarom StreamHolland Veilig Is</p>
                   <p className="text-gray-300 mb-3">
-                    <Link to="/" className="text-green-400 underline">Stream Holland</Link> voldoet aan alle juridische vereisten:
+                    <Link to="/" className="text-green-400 underline">StreamHolland</Link> voldoet aan alle juridische vereisten:
                   </p>
                   <ul className="text-gray-300 space-y-1 text-sm">
                     <li>✓ Geregistreerd Nederlands bedrijf</li>
@@ -233,14 +233,14 @@ const IsIPTVLegaalNederland = () => {
                 <div className="bg-brand-black/90 p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-2">Is een VPN nodig voor IPTV?</h3>
                   <p className="text-gray-300">
-                    Bij <strong>legale IPTV-diensten</strong> zoals Stream Holland is een VPN <strong>niet noodzakelijk</strong>. Je gebruikt gewoon je normale internetverbinding. VPN's zijn voornamelijk nuttig voor extra privacy of toegang tot geo-blocked content.
+                    Bij <strong>legale IPTV-diensten</strong> zoals StreamHolland is een VPN <strong>niet noodzakelijk</strong>. Je gebruikt gewoon je normale internetverbinding. VPN's zijn voornamelijk nuttig voor extra privacy of toegang tot geo-blocked content.
                   </p>
                 </div>
 
                 <div className="bg-brand-black/90 p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-2">Wat als mijn IPTV-aanbieder offline gaat?</h3>
                   <p className="text-gray-300">
-                    Bij betrouwbare aanbieders zoals <Link to="/" className="text-green-400 underline">Stream Holland</Link> heb je garanties en klantenservice. Illegale diensten kunnen zomaar verdwijnen zonder refund. Check altijd de voorwaarden.
+                    Bij betrouwbare aanbieders zoals <Link to="/" className="text-green-400 underline">StreamHolland</Link> heb je garanties en klantenservice. Illegale diensten kunnen zomaar verdwijnen zonder refund. Check altijd de voorwaarden.
                   </p>
                 </div>
               </div>
@@ -270,7 +270,7 @@ const IsIPTVLegaalNederland = () => {
             <section className="bg-gradient-to-br from-green-600 to-brand-orange p-8 rounded-xl text-center">
               <h2 className="text-3xl font-bold mb-4">Start Veilig met Legale IPTV</h2>
               <p className="text-xl mb-6">
-                Kies voor Stream Holland: 100% legaal, 24/7 support, en 30.500+ kanalen vanaf €4/maand
+                Kies voor StreamHolland: 100% legaal, 24/7 support, en 30.500+ kanalen vanaf €4/maand
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Link to="/iptv-abonnement" className="px-8 py-4 bg-brand-black text-green-600 font-bold rounded-lg hover:bg-white/5 transition-all">

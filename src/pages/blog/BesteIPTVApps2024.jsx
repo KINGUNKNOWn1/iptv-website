@@ -84,7 +84,7 @@ const BesteIPTVApps2024 = () => {
               <div className="bg-purple-900/30 border-l-4 border-purple-500 p-6 rounded">
                 <p className="text-white font-semibold mb-2">💡 Wist je dat?</p>
                 <p className="text-gray-300">
-                  Met <Link to="/" className="text-purple-400 underline">Stream Holland</Link> werken alle apps hieronder perfect. Ontvang direct je M3U-link en Xtream API codes bij aanmelding!
+                  Met <Link to="/" className="text-purple-400 underline">StreamHolland</Link> werken alle apps hieronder perfect. Ontvang direct je M3U-link en Xtream API codes bij aanmelding!
                 </p>
               </div>
             </section>
@@ -222,9 +222,9 @@ const BesteIPTVApps2024 = () => {
                   </p>
                 </div>
                 <div className="bg-brand-black/90 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold mb-2">Werkt elke IPTV app met Stream Holland?</h3>
+                  <h3 className="text-xl font-bold mb-2">Werkt elke IPTV app met StreamHolland?</h3>
                   <p className="text-gray-300">
-                    Ja! <Link to="/" className="text-purple-400 underline">Stream Holland</Link> werkt met alle populaire IPTV apps. Je ontvangt zowel M3U-links als Xtream API codes, compatibel met TiviMate, IPTV Smarters, GSE en meer.
+                    Ja! <Link to="/" className="text-purple-400 underline">StreamHolland</Link> werkt met alle populaire IPTV apps. Je ontvangt zowel M3U-links als Xtream API codes, compatibel met TiviMate, IPTV Smarters, GSE en meer.
                   </p>
                 </div>
               </div>
@@ -234,7 +234,7 @@ const BesteIPTVApps2024 = () => {
             <section className="bg-gradient-to-br from-purple-600 to-brand-orange p-8 rounded-xl text-center">
               <h2 className="text-3xl font-bold mb-4">Klaar om te Beginnen met IPTV?</h2>
               <p className="text-xl mb-6">
-                Bestel Stream Holland en ontvang direct je inloggegevens voor elke IPTV app!
+                Bestel StreamHolland en ontvang direct je inloggegevens voor elke IPTV app!
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Link to="/iptv-abonnement" className="px-8 py-4 bg-brand-black text-purple-600 font-bold rounded-lg hover:bg-white/5 transition-all">

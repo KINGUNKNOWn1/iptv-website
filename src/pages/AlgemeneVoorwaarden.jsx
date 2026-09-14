@@ -7,8 +7,8 @@ const AlgemeneVoorwaarden = () => {
   return (
     <>
       <Helmet>
-        <title>Algemene Voorwaarden - Stream Holland</title>
-        <meta name="description" content="Algemene voorwaarden van Stream Holland IPTV diensten. Lees de voorwaarden voor gebruik van onze IPTV service." />
+        <title>Algemene Voorwaarden - StreamHolland</title>
+        <meta name="description" content="Algemene voorwaarden van StreamHolland IPTV diensten. Lees de voorwaarden voor gebruik van onze IPTV service." />
         <link rel="canonical" href="https://streamholland.com/algemene-voorwaarden" />
       </Helmet>
 
@@ -41,7 +41,7 @@ const AlgemeneVoorwaarden = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl text-gray-300 max-w-2xl mx-auto"
             >
-              Deze algemene voorwaarden zijn van toepassing op alle aanbiedingen, bestellingen, overeenkomsten en leveringen van Stream Holland.
+              Deze algemene voorwaarden zijn van toepassing op alle aanbiedingen, bestellingen, overeenkomsten en leveringen van StreamHolland.
             </motion.p>
 
             <motion.p
@@ -74,7 +74,7 @@ const AlgemeneVoorwaarden = () => {
                     <h2 className="text-2xl font-bold mb-4">1. Definities</h2>
                     <div className="space-y-3">
                       <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30">
-                        <p className="text-gray-300"><strong className="text-white">Dienstverlener:</strong> Stream Holland, gevestigd in Rotterdam, Nederland</p>
+                        <p className="text-gray-300"><strong className="text-white">Dienstverlener:</strong> StreamHolland, gevestigd in Rotterdam, Nederland</p>
                       </div>
                       <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30">
                         <p className="text-gray-300"><strong className="text-white">Klant:</strong> Natuurlijke of rechtspersoon die gebruik maakt van de diensten</p>
@@ -83,7 +83,7 @@ const AlgemeneVoorwaarden = () => {
                         <p className="text-gray-300"><strong className="text-white">Diensten:</strong> IPTV abonnementen en bijbehorende dienstverlening</p>
                       </div>
                       <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30">
-                        <p className="text-gray-300"><strong className="text-white">Overeenkomst:</strong> De tussen Stream Holland en Klant gesloten overeenkomst</p>
+                        <p className="text-gray-300"><strong className="text-white">Overeenkomst:</strong> De tussen StreamHolland en Klant gesloten overeenkomst</p>
                       </div>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ const AlgemeneVoorwaarden = () => {
               >
                 <h2 className="text-2xl font-bold mb-4">2. Toepasselijkheid</h2>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Deze algemene voorwaarden zijn van toepassing op alle aanbiedingen, bestellingen, overeenkomsten en leveringen van Stream Holland, tenzij uitdrukkelijk schriftelijk anders is overeengekomen.
+                  Deze algemene voorwaarden zijn van toepassing op alle aanbiedingen, bestellingen, overeenkomsten en leveringen van StreamHolland, tenzij uitdrukkelijk schriftelijk anders is overeengekomen.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
                   Door gebruik te maken van onze diensten gaat u akkoord met deze voorwaarden. Afwijkende voorwaarden van de klant worden uitdrukkelijk van de hand gewezen.
@@ -116,7 +116,7 @@ const AlgemeneVoorwaarden = () => {
                 <h2 className="text-2xl font-bold mb-4">3. Diensten & Beschikbaarheid</h2>
                 <div className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Stream Holland biedt IPTV diensten aan via internet. De dienstverlening omvat:
+                    StreamHolland biedt IPTV diensten aan via internet. De dienstverlening omvat:
                   </p>
                   <ul className="space-y-2 text-gray-300">
                     <li className="flex items-start gap-2">
@@ -134,7 +134,7 @@ const AlgemeneVoorwaarden = () => {
                   </ul>
                   <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4 mt-4">
                     <p className="text-gray-300 text-sm">
-                      <strong className="text-yellow-400">Let op:</strong> Beschikbaarheid van specifieke kanalen kan wijzigen zonder voorafgaande kennisgeving. Stream Holland is afhankelijk van derden voor content levering.
+                      <strong className="text-yellow-400">Let op:</strong> Beschikbaarheid van specifieke kanalen kan wijzigen zonder voorafgaande kennisgeving. StreamHolland is afhankelijk van derden voor content levering.
                     </p>
                   </div>
                   <p className="text-gray-300 leading-relaxed mt-4">
@@ -164,7 +164,7 @@ const AlgemeneVoorwaarden = () => {
                     </p>
                     <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30">
                       <p className="text-gray-300">
-                        <strong className="text-white">Niet-betaling:</strong> Bij niet-tijdige betaling behoudt Stream Holland zich het recht voor om de dienstverlening op te schorten of te beëindigen zonder voorafgaande waarschuwing.
+                        <strong className="text-white">Niet-betaling:</strong> Bij niet-tijdige betaling behoudt StreamHolland zich het recht voor om de dienstverlening op te schorten of te beëindigen zonder voorafgaande waarschuwing.
                       </p>
                     </div>
                   </div>
@@ -207,7 +207,7 @@ const AlgemeneVoorwaarden = () => {
                       </p>
                     </div>
                     <p className="text-gray-300 leading-relaxed mt-4">
-                      <strong className="text-white">Beëindiging door aanbieder:</strong> Stream Holland kan de overeenkomst onmiddellijk beëindigen bij misbruik, fraude, doorverkoop of schending van deze voorwaarden.
+                      <strong className="text-white">Beëindiging door aanbieder:</strong> StreamHolland kan de overeenkomst onmiddellijk beëindigen bij misbruik, fraude, doorverkoop of schending van deze voorwaarden.
                     </p>
                   </div>
                 </div>
@@ -287,7 +287,7 @@ const AlgemeneVoorwaarden = () => {
                   <div>
                     <h2 className="text-2xl font-bold mb-4">7. Aansprakelijkheid & Garanties</h2>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      Stream Holland spant zich in om een betrouwbare dienst te leveren, maar:
+                      StreamHolland spant zich in om een betrouwbare dienst te leveren, maar:
                     </p>
                     <ul className="space-y-2 text-gray-300 mb-4">
                       <li className="flex items-start gap-2">
@@ -296,16 +296,16 @@ const AlgemeneVoorwaarden = () => {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-brand-orange mt-1">•</span>
-                        <span>Stream Holland is niet verantwoordelijk voor verstoringen, technische problemen of dataverlies veroorzaakt door externe factoren (internet, stroomuitval, externe servers)</span>
+                        <span>StreamHolland is niet verantwoordelijk voor verstoringen, technische problemen of dataverlies veroorzaakt door externe factoren (internet, stroomuitval, externe servers)</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-brand-orange mt-1">•</span>
-                        <span>Stream Holland garandeert een uptime van 99.9%, maar kan niet aansprakelijk worden gesteld voor tijdelijke onderbrekingen</span>
+                        <span>StreamHolland garandeert een uptime van 99.9%, maar kan niet aansprakelijk worden gesteld voor tijdelijke onderbrekingen</span>
                       </li>
                     </ul>
                     <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30">
                       <p className="text-gray-300">
-                        <strong className="text-white">Force majeure:</strong> Stream Holland is niet aansprakelijk bij overmacht, waaronder begrepen: oorlog, natuurrampen, stroomuitval, internetuitval, acties van derden en overheidsmaatregelen.
+                        <strong className="text-white">Force majeure:</strong> StreamHolland is niet aansprakelijk bij overmacht, waaronder begrepen: oorlog, natuurrampen, stroomuitval, internetuitval, acties van derden en overheidsmaatregelen.
                       </p>
                     </div>
                   </div>
@@ -348,7 +348,7 @@ const AlgemeneVoorwaarden = () => {
               >
                 <h2 className="text-2xl font-bold mb-4">9. Privacy & Gegevensbescherming</h2>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Stream Holland verwerkt persoonsgegevens in overeenstemming met de AVG (GDPR). Voor meer informatie over hoe wij uw gegevens verwerken, zie ons <a href="/privacybeleid" className="text-brand-orange hover:underline">Privacybeleid</a>.
+                  StreamHolland verwerkt persoonsgegevens in overeenstemming met de AVG (GDPR). Voor meer informatie over hoe wij uw gegevens verwerken, zie ons <a href="/privacybeleid" className="text-brand-orange hover:underline">Privacybeleid</a>.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
                   Wij implementeren passende technische en organisatorische maatregelen om uw gegevens te beschermen.
@@ -369,7 +369,7 @@ const AlgemeneVoorwaarden = () => {
                   <div>
                     <h2 className="text-2xl font-bold mb-4">10. Toepasselijk Recht & Geschillen</h2>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      Op deze algemene voorwaarden en alle overeenkomsten tussen Stream Holland en de klant is <strong className="text-white">Nederlands recht</strong> van toepassing.
+                      Op deze algemene voorwaarden en alle overeenkomsten tussen StreamHolland en de klant is <strong className="text-white">Nederlands recht</strong> van toepassing.
                     </p>
                     <p className="text-gray-300 leading-relaxed mb-4">
                       Geschillen worden voorgelegd aan de bevoegde rechter in <strong className="text-white">Rotterdam, Nederland</strong>, tenzij dwingend recht anders voorschrijft.
@@ -392,7 +392,7 @@ const AlgemeneVoorwaarden = () => {
               >
                 <h2 className="text-2xl font-bold mb-4">11. Wijzigingen</h2>
                 <p className="text-gray-300 leading-relaxed">
-                  Stream Holland behoudt zich het recht voor om deze algemene voorwaarden te wijzigen. Wijzigingen worden op deze pagina gepubliceerd en treden in werking 30 dagen na publicatie. Bestaande overeenkomsten blijven onderworpen aan de voorwaarden die golden op het moment van afsluiting.
+                  StreamHolland behoudt zich het recht voor om deze algemene voorwaarden te wijzigen. Wijzigingen worden op deze pagina gepubliceerd en treden in werking 30 dagen na publicatie. Bestaande overeenkomsten blijven onderworpen aan de voorwaarden die golden op het moment van afsluiting.
                 </p>
               </motion.div>
 
@@ -409,10 +409,10 @@ const AlgemeneVoorwaarden = () => {
                 </p>
                 <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30">
                   <p className="text-gray-300">
-                    <strong className="text-white">Stream Holland</strong><br />
+                    <strong className="text-white">StreamHolland</strong><br />
                     Rotterdam, Nederland<br />
                     E-mail: <a href="mailto:support@streamholland.com" className="text-brand-orange hover:underline">support@streamholland.com</a><br />
-                    WhatsApp: <a href="https://wa.me/18653169315" className="text-brand-orange hover:underline">+1 8653169315</a>
+                    WhatsApp: <a href="https://wa.me/18653169315" className="text-brand-orange hover:underline">+1 (865) 316-9315</a>
                   </p>
                 </div>
               </motion.div>

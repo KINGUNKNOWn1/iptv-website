@@ -42,7 +42,7 @@ const SamsungTV = () => {
       },
       {
         '@type': 'HowToTool',
-        name: 'Stream Holland IPTV abonnement'
+        name: 'StreamHolland IPTV abonnement'
       }
     ],
     step: [
@@ -85,7 +85,7 @@ const SamsungTV = () => {
         '@type': 'HowToStep',
         position: 6,
         name: 'Start met kijken',
-        text: 'Herstart de app. Je Stream Holland IPTV abonnement is nu actief en je kunt direct beginnen met kijken!',
+        text: 'Herstart de app. Je StreamHolland IPTV abonnement is nu actief en je kunt direct beginnen met kijken!',
         image: 'https://streamholland.com/images/samsung-step6.jpg'
       }
     ]
@@ -97,10 +97,10 @@ const SamsungTV = () => {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Werkt Stream Holland IPTV op alle Samsung TV\'s?',
+        name: 'Werkt StreamHolland IPTV op alle Samsung TV\'s?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Stream Holland IPTV werkt op alle Samsung Smart TV\'s vanaf model jaar 2016 en nieuwer. Dit omvat alle Samsung Tizen OS televisies. Heb je een ouder model? Je kunt alsnog IPTV kijken via een Android TV Box of Amazon Fire Stick.'
+          text: 'StreamHolland IPTV werkt op alle Samsung Smart TV\'s vanaf model jaar 2016 en nieuwer. Dit omvat alle Samsung Tizen OS televisies. Heb je een ouder model? Je kunt alsnog IPTV kijken via een Android TV Box of Amazon Fire Stick.'
         }
       },
       {
@@ -132,7 +132,7 @@ const SamsungTV = () => {
         name: 'Kan ik 4K kijken op mijn Samsung TV?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Ja! Stream Holland biedt duizenden zenders in 4K Ultra HD kwaliteit. Als je een 4K Samsung TV hebt en een internetsnelheid van minimaal 25 Mbps, kun je genieten van kristalheldere 4K IPTV content. Alle premium sport, films en series zijn beschikbaar in 4K.'
+          text: 'Ja! StreamHolland biedt duizenden zenders in 4K Ultra HD kwaliteit. Als je een 4K Samsung TV hebt en een internetsnelheid van minimaal 25 Mbps, kun je genieten van kristalheldere 4K IPTV content. Alle premium sport, films en series zijn beschikbaar in 4K.'
         }
       },
       {
@@ -227,7 +227,7 @@ const SamsungTV = () => {
     {
       number: 5,
       title: 'Activeer via WhatsApp',
-      description: 'Stuur je MAC-adres via WhatsApp naar ons. We activeren je Stream Holland abonnement binnen 1 minuut. Je ontvangt een bevestiging.',
+      description: 'Stuur je MAC-adres via WhatsApp naar ons. We activeren je StreamHolland abonnement binnen 1 minuut. Je ontvangt een bevestiging.',
       icon: Phone,
       time: '1 minuut',
       difficulty: 'Makkelijk'
@@ -331,7 +331,7 @@ const SamsungTV = () => {
   return (
     <>
       <Helmet>
-        <title>IPTV Installeren op Samsung TV - Handleiding 2026 | Stream Holland</title>
+        <title>IPTV Installeren op Samsung TV - Handleiding 2026 | StreamHolland</title>
         <meta
           name="description"
           content="IPTV installeren op Samsung Smart TV in 5 minuten ✓ Stap-voor-stap handleiding ✓ Alle Samsung modellen vanaf 2016 ✓ 4K ondersteuning ✓ Nederlandse support. Werkt gegarandeerd!"
@@ -410,7 +410,7 @@ const SamsungTV = () => {
             </h1>
 
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Installeer Stream Holland IPTV in slechts <span className="font-bold text-blue-400">5 minuten</span> op je Samsung TV.
+              Installeer StreamHolland IPTV in slechts <span className="font-bold text-blue-400">5 minuten</span> op je Samsung TV.
               Stap-voor-stap handleiding met Nederlandse support.
             </p>
 
@@ -551,7 +551,7 @@ const SamsungTV = () => {
             className="text-center mt-12"
           >
             <p className="text-gray-400 mb-6 text-lg">
-              Klaar om te beginnen? Bestel je Stream Holland abonnement en start direct!
+              Klaar om te beginnen? Bestel je StreamHolland abonnement en start direct!
             </p>
             <a
               href="https://wa.me/18653169315?text=Hoi%2C%20ik%20wil%20IPTV%20bestellen%20voor%20mijn%20Samsung%20TV"
@@ -577,7 +577,7 @@ const SamsungTV = () => {
               Compatibele <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Samsung Modellen</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Stream Holland IPTV werkt op vrijwel alle Samsung Smart TV's
+              StreamHolland IPTV werkt op vrijwel alle Samsung Smart TV's
             </p>
           </motion.div>
 
@@ -636,7 +636,7 @@ const SamsungTV = () => {
               Aanbevolen <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-orange">IPTV Apps</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Deze IPTV apps werken perfect met Stream Holland op Samsung TV
+              Deze IPTV apps werken perfect met StreamHolland op Samsung TV
             </p>
           </motion.div>
 
@@ -846,7 +846,7 @@ const SamsungTV = () => {
               Andere Apparaten
             </h2>
             <p className="text-xl text-gray-300">
-              Stream Holland IPTV werkt op alle apparaten
+              StreamHolland IPTV werkt op alle apparaten
             </p>
           </motion.div>
 
@@ -885,7 +885,7 @@ const SamsungTV = () => {
               Klaar om te Beginnen?
             </h2>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Installeer Stream Holland IPTV op je Samsung TV in 5 minuten.
+              Installeer StreamHolland IPTV op je Samsung TV in 5 minuten.
               15.000+ tevreden klanten gingen je voor!
             </p>
 

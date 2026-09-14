@@ -247,7 +247,7 @@ const Apparaten = () => {
               Alle <span className="text-purple-400">Platformen</span> Ondersteund
             </h2>
             <p className="text-center text-gray-400 mb-12 text-lg">
-              Stream Holland werkt op vrijwel elk modern apparaat
+              StreamHolland werkt op vrijwel elk modern apparaat
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -283,7 +283,7 @@ const Apparaten = () => {
               IPTV Installeren in <span className="text-purple-400">3 Stappen</span>
             </h2>
             <p className="text-center text-gray-400 mb-12 text-lg">
-              Zo eenvoudig is het om te beginnen met Stream Holland
+              Zo eenvoudig is het om te beginnen met StreamHolland
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -326,7 +326,7 @@ const Apparaten = () => {
         <section className="py-20 bg-brand-black/90/30">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
-              Waarom Stream Holland op <span className="text-purple-400">Alle Apparaten</span> Werkt
+              Waarom StreamHolland op <span className="text-purple-400">Alle Apparaten</span> Werkt
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
