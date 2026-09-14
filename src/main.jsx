@@ -6,6 +6,12 @@ import './index.css';
 import { initWebVitals } from './utils/webVitals';
 import './utils/exportLeads'; // Make lead export functions available in console
 
+// After a new deploy, old chunk URLs disappear; reload instead of showing a blank page
+window.addEventListener('vite:preloadError', (event) => {
+  event.preventDefault();
+  window.location.reload();
+});
+
 // Initialize Web Vitals monitoring
 initWebVitals();
 

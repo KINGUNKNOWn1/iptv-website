@@ -88,3 +88,8 @@
     @apply absolute inset-0 bg-gradient-to-br from-brand-orange/10 to-[#E85D00]/10 -z-10;
   }
 }
+
+/* Keep anchored sections clear of the fixed 80px navigation bar */
+[id] {
+  scroll-margin-top: 5.5rem;
+}

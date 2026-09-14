@@ -44,11 +44,26 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Scroll to top on route change
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if (!hash) {
+      window.scrollTo(0, 0);
+      return undefined;
+    }
+    // Lazy-loaded pages render after navigation, so retry until the anchor exists
+    const id = hash.slice(1);
+    let attempts = 0;
+    const timer = setInterval(() => {
+      const el = document.getElementById(id);
+      attempts += 1;
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      if (el || attempts >= 20) clearInterval(timer);
+    }, 100);
+    return () => clearInterval(timer);
+  }, [pathname, hash]);
 
   return null;
 }

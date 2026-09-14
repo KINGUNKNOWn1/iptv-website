@@ -16,12 +16,12 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Holland TV', href: '#features' },
-    { name: 'Prijzen', href: '#pricing' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'IPTV Vergelijking', href: '#comparison' },
-    { name: 'Beoordelingen', href: '#reviews' },
-    { name: 'Over ons', href: '#about' },
+    { name: 'Holland TV', href: '/#features' },
+    { name: 'Prijzen', href: '/#pricing' },
+    { name: 'Blog', href: '/#blog' },
+    { name: 'IPTV Vergelijking', href: '/#comparison' },
+    { name: 'Beoordelingen', href: '/#reviews' },
+    { name: 'Over ons', href: '/#about' },
   ];
 
   return (
@@ -33,7 +33,7 @@ const Navigation = () => {
       <div className="container-custom px-4 md:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <a href="/" className="flex items-center">
             <Logo />
           </a>
 
@@ -49,7 +49,7 @@ const Navigation = () => {
               </a>
             ))}
             <a
-              href="#pricing"
+              href="/#pricing"
               className="px-6 py-2.5 bg-brand-orange hover:bg-[#E85D00] text-white font-semibold rounded-lg transition-colors"
             >
               Contact
@@ -80,7 +80,7 @@ const Navigation = () => {
                 </a>
               ))}
               <a
-                href="#pricing"
+                href="/#pricing"
                 onClick={() => setIsOpen(false)}
                 className="px-6 py-2.5 bg-brand-orange hover:bg-[#E85D00] text-white font-semibold rounded-lg transition-colors text-center"
               >
