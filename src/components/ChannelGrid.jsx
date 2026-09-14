@@ -54,7 +54,7 @@ const ChannelGrid = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-brand-black via-slate-800 to-brand-black">
+    <section id="features" className="py-20 bg-gradient-to-b from-brand-black via-slate-800 to-brand-black">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
