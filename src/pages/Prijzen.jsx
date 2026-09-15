@@ -19,8 +19,8 @@ const Prijzen = () => {
   return (
     <>
       <SEO
-        title="IPTV Prijzen Nederland | Abonnement vanaf €48/jaar - StreamHolland"
-        description="IPTV abonnement prijzen: 3 maanden €23, 6 maanden €32, 12 maanden €48. Geen automatische verlenging. iDEAL betaling. 30.500+ kanalen. Bestel nu!"
+        title="IPTV Prijzen Nederland | Abonnement vanaf €8/maand - StreamHolland"
+        description="IPTV abonnement prijs: €8 per maand. Geen jaarcontract, geen automatische verlenging. iDEAL betaling. 30.500+ kanalen. Bestel nu!"
         keywords="iptv prijzen, iptv abonnement prijzen, iptv kopen prijs, goedkope iptv, iptv kosten"
       />
 
@@ -103,10 +103,10 @@ const Prijzen = () => {
             <div className="space-y-6">
               <div className="bg-brand-black/90 border border-slate-700 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Wat is de goedkoopste optie?
+                  Wat kost een IPTV abonnement?
                 </h3>
                 <p className="text-gray-400">
-                  Het 12 maanden abonnement is de voordeligste optie: slechts €48 per jaar (€4 per maand).
+                  Eén vast tarief: €8 per maand, zonder jaarcontract.
                   Dat is goedkoper dan de meeste <Link to="/iptv-nederland" className="text-brand-orange hover:text-[#E85D00] underline">Nederlandse IPTV aanbieders</Link>.
                 </p>
               </div>

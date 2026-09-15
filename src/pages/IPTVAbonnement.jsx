@@ -31,23 +31,10 @@ const IPTVAbonnement = () => {
 
   const plans = [
     {
-      duration: "3 Maanden",
-      price: "€23",
-      perMonth: "€7,67/maand",
-      popular: false
-    },
-    {
-      duration: "6 Maanden",
-      price: "€32",
-      perMonth: "€5,33/maand",
-      popular: false
-    },
-    {
-      duration: "12 Maanden",
-      price: "€48",
-      perMonth: "€4,00/maand",
-      popular: true,
-      savings: "Bespaar €44"
+      duration: "IPTV Premium",
+      price: "€8",
+      perMonth: "per maand",
+      popular: true
     }
   ];
 
@@ -84,7 +71,7 @@ const IPTVAbonnement = () => {
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
                 Het beste <strong>IPTV abonnement</strong> van Nederland. 30.500+ kanalen, 150.000+ films en series.
-                Vanaf €4 per maand. Geen automatische verlenging.
+                Slechts €8 per maand. Geen automatische verlenging.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a
@@ -136,10 +123,10 @@ const IPTVAbonnement = () => {
               Kies Je <span className="text-brand-orange">IPTV Abonnement</span>
             </h2>
             <p className="text-center text-gray-400 mb-12 text-lg">
-              Alle abonnementen bevatten hetzelfde aanbod. Kies alleen de duur die bij je past.
+              Eén helder tarief. Geen jaarcontract, geen verrassingen.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="flex justify-center mb-12">
               {plans.map((plan, index) => (
                 <motion.div
                   key={index}
@@ -147,14 +134,14 @@ const IPTVAbonnement = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className={`bg-brand-black/90 rounded-xl p-8 relative ${
+                  className={`w-full max-w-sm bg-brand-black/90 rounded-xl p-8 relative ${
                     plan.popular ? 'border-2 border-blue-500 shadow-lg shadow-blue-500/20' : ''
                   }`}
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                       <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
-                        <FaCrown /> MEEST GEKOZEN
+                        <FaCrown /> IPTV PREMIUM
                       </span>
                     </div>
                   )}

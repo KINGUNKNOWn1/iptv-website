@@ -38,7 +38,7 @@ const VeelgesteldeVragen = () => {
         },
         {
           q: "Wat kost een IPTV abonnement?",
-          a: "Onze abonnementen starten vanaf €23 voor 3 maanden (€7,67/maand), €32 voor 6 maanden (€5,33/maand), of €48 voor 12 maanden (€4/maand). Geen verborgen kosten of automatische verlenging."
+          a: "Ons IPTV abonnement kost €8 per maand. Eén vast tarief, geen verborgen kosten en geen automatische verlenging."
         },
         {
           q: "Krijg ik een factuur?",

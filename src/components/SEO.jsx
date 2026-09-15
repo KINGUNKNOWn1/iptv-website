@@ -8,7 +8,7 @@ const SEO = () => {
     name: 'StreamHolland - Beste IPTV Aanbieder Nederland',
     url: 'https://streamholland.com',
     logo: 'https://streamholland.com/logo.png',
-    description: 'StreamHolland is de beste IPTV aanbieder in Nederland. IPTV kopen vanaf 23€. Legaal IPTV abonnement met 30.500+ kanalen en 150.000+ films en series. Nederlandse IPTV met 24/7 support.',
+    description: 'StreamHolland is de beste IPTV aanbieder in Nederland. IPTV kopen vanaf 8€ per maand. Legaal IPTV abonnement met 30.500+ kanalen en 150.000+ films en series. Nederlandse IPTV met 24/7 support.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Rotterdam',
@@ -40,26 +40,8 @@ const SEO = () => {
     offers: [
       {
         '@type': 'Offer',
-        name: '3 Maanden IPTV Abonnement',
-        price: '23',
-        priceCurrency: 'EUR',
-        availability: 'https://schema.org/InStock',
-        url: 'https://streamholland.com/#pricing',
-        priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
-      },
-      {
-        '@type': 'Offer',
-        name: '6 Maanden IPTV Abonnement',
-        price: '32',
-        priceCurrency: 'EUR',
-        availability: 'https://schema.org/InStock',
-        url: 'https://streamholland.com/#pricing',
-        priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
-      },
-      {
-        '@type': 'Offer',
-        name: '12 Maanden IPTV Abonnement - Beste Deal',
-        price: '48',
+        name: 'IPTV Abonnement - per maand',
+        price: '8',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
         url: 'https://streamholland.com/#pricing',
@@ -93,21 +75,7 @@ const SEO = () => {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: '3 Maanden IPTV Abonnement'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: '6 Maanden IPTV Abonnement'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: '12 Maanden IPTV Abonnement'
+            name: 'IPTV Abonnement - €8 per maand'
           }
         }
       ]
@@ -123,7 +91,7 @@ const SEO = () => {
         name: 'Waar kan ik IPTV kopen in Nederland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'IPTV kopen in Nederland kan bij StreamHolland, de beste IPTV aanbieder. We bieden IPTV abonnementen vanaf 23€ met 30.500+ kanalen. Je kunt direct online een IPTV abonnement kopen en bent binnen 5 minuten actief.'
+          text: 'IPTV kopen in Nederland kan bij StreamHolland, de beste IPTV aanbieder. We bieden een IPTV abonnement vanaf 8€ per maand met 30.500+ kanalen. Je kunt direct online een IPTV abonnement kopen en bent binnen 5 minuten actief.'
         }
       },
       {
@@ -163,7 +131,7 @@ const SEO = () => {
         name: 'Wat kost een IPTV abonnement bij StreamHolland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'IPTV abonnement kopen bij StreamHolland start vanaf 23€ voor 3 maanden, 32€ voor 6 maanden, of 48€ voor 12 maanden. Geen verborgen kosten, geen automatische verlenging.'
+          text: 'Een IPTV abonnement bij StreamHolland kost €8 per maand. Geen verborgen kosten, geen jaarcontract, geen automatische verlenging.'
         }
       },
       {
@@ -205,14 +173,14 @@ const SEO = () => {
   return (
     <Helmet>
       {/* Primary Meta Tags */}
-      <title>StreamHolland - Premium Streaming Service Nederland | 30.500+ Kanalen vanaf 23€</title>
+      <title>StreamHolland - Premium Streaming Service Nederland | 30.500+ Kanalen vanaf 8€/maand</title>
       <meta
         name="description"
-        content="StreamHolland - Premium streaming service met 30.500+ kanalen. Betrouwbaar IPTV abonnement vanaf 23€. Nederlandse service, legaal & veilig. Actief binnen 5 min."
+        content="StreamHolland - Premium streaming service met 30.500+ kanalen. Betrouwbaar IPTV abonnement vanaf 8€ per maand. Nederlandse service, legaal & veilig. Actief binnen 5 min."
       />
       <meta
         name="keywords"
-        content="iptv kopen, iptv abonnement kopen, iptv aanbieders, iptv nederland, beste iptv app, nederlandse iptv, iptv aanbieder, iptv legaal, iptv abbonement, nederland iptv, dutch iptv, iptv proefabonnement, iptv abonnement, ip tv"
+        content="iptv kopen, iptv abonnement kopen, iptv aanbieders, iptv nederland, beste iptv app, nederlandse iptv, iptv aanbieder, iptv legaal, iptv abbonement, nederland iptv, dutch iptv, iptv abonnement per maand, iptv abonnement, ip tv"
       />
       <link rel="canonical" href="https://streamholland.com" />
 
@@ -222,7 +190,7 @@ const SEO = () => {
       <meta property="og:title" content="StreamHolland - Premium Streaming Service | 30.500+ Kanalen" />
       <meta
         property="og:description"
-        content="StreamHolland - Premium streaming service met 30.500+ kanalen, legaal & betrouwbaar. Abonnement vanaf 23€. Actief binnen 5 min. 24/7 support."
+        content="StreamHolland - Premium streaming service met 30.500+ kanalen, legaal & betrouwbaar. Abonnement vanaf 8€ per maand. Actief binnen 5 min. 24/7 support."
       />
       <meta property="og:image" content="https://streamholland.com/og-image.jpg" />
       <meta property="og:locale" content="nl_NL" />
@@ -233,7 +201,7 @@ const SEO = () => {
       <meta property="twitter:title" content="StreamHolland - Premium Streaming Service Nederland" />
       <meta
         property="twitter:description"
-        content="StreamHolland - Premium streaming service. Vanaf 23€. 30.500+ kanalen, legaal & betrouwbaar."
+        content="StreamHolland - Premium streaming service. Vanaf 8€ per maand. 30.500+ kanalen, legaal & betrouwbaar."
       />
       <meta property="twitter:image" content="https://streamholland.com/twitter-image.jpg" />
 

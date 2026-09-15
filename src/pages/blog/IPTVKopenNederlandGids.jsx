@@ -7,7 +7,7 @@ import SEO from '../../components/SEO';
 const IPTVKopenNederlandGids = () => {
   const seoData = {
     title: 'IPTV Kopen Nederland 2024: Complete Gids + Beste Aanbieders',
-    description: 'Complete gids voor IPTV kopen in Nederland 2024. Ontdek de beste aanbieders, prijzen vanaf €4/maand, installatie tips en alles wat je moet weten over IPTV abonnementen.',
+    description: 'Complete gids voor IPTV kopen in Nederland 2024. Ontdek de beste aanbieders, prijzen vanaf €8/maand, installatie tips en alles wat je moet weten over IPTV abonnementen.',
     keywords: 'iptv kopen nederland, iptv abonnement nederland, beste iptv aanbieder, iptv prijzen, iptv bestellen',
     ogType: 'article'
   };
@@ -24,7 +24,7 @@ const IPTVKopenNederlandGids = () => {
 
   const benefits = [
     { icon: <FaTv />, title: '30.500+ Kanalen', desc: 'Grootste aanbod van Nederland' },
-    { icon: <FaEuroSign />, title: 'Vanaf €4/maand', desc: 'Tot 10x goedkoper dan kabel-TV' },
+    { icon: <FaEuroSign />, title: 'Vanaf €8/maand', desc: 'Tot 10x goedkoper dan kabel-TV' },
     { icon: <FaPlayCircle />, title: '150.000+ VOD', desc: 'Films en series on-demand' },
     { icon: <FaShieldAlt />, title: '99.9% Uptime', desc: 'Stabiele, betrouwbare service' }
   ];
@@ -33,17 +33,17 @@ const IPTVKopenNederlandGids = () => {
     {
       name: 'StreamHolland',
       rating: '4.9/5',
-      price: '€4/maand',
+      price: '€8/maand',
       channels: '30.500+',
       quality: '4K/HD',
-      trial: '24 uur gratis',
+      trial: 'Nee',
       pros: ['Grootste kanaalaanbod', 'Nederlandse support 24/7', 'Snelle activering'],
       recommended: true
     },
     {
       name: 'Concurrent A',
       rating: '4.2/5',
-      price: '€8/maand',
+      price: '€10/maand',
       channels: '12.000',
       quality: 'HD',
       trial: 'Nee',
@@ -180,7 +180,7 @@ const IPTVKopenNederlandGids = () => {
                       </div>
                       <div className="text-right">
                         <p className="text-3xl font-bold text-brand-orange">{provider.price}</p>
-                        <p className="text-sm text-gray-400">12 maanden</p>
+                        <p className="text-sm text-gray-400">per maand</p>
                       </div>
                     </div>
                     <div className="grid grid-cols-3 gap-4 mb-4 text-sm">
@@ -227,7 +227,7 @@ const IPTVKopenNederlandGids = () => {
                 <table className="w-full bg-brand-black/90 rounded-lg">
                   <thead className="bg-slate-700">
                     <tr>
-                      <th className="p-4 text-left">Looptijd</th>
+                      <th className="p-4 text-left">Kosten</th>
                       <th className="p-4 text-left">StreamHolland</th>
                       <th className="p-4 text-left">Ziggo</th>
                       <th className="p-4 text-left">KPN</th>
@@ -235,26 +235,12 @@ const IPTVKopenNederlandGids = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-t border-slate-700">
-                      <td className="p-4">3 maanden</td>
-                      <td className="p-4 font-bold text-brand-orange">€23 (€7,67/m)</td>
-                      <td className="p-4">€75</td>
-                      <td className="p-4">€90</td>
-                      <td className="p-4 text-green-400">€52-67</td>
-                    </tr>
-                    <tr className="border-t border-slate-700">
-                      <td className="p-4">6 maanden</td>
-                      <td className="p-4 font-bold text-brand-orange">€32 (€5,33/m)</td>
-                      <td className="p-4">€150</td>
-                      <td className="p-4">€180</td>
-                      <td className="p-4 text-green-400">€118-148</td>
-                    </tr>
                     <tr className="border-t border-slate-700 bg-blue-900/20">
-                      <td className="p-4">12 maanden</td>
-                      <td className="p-4 font-bold text-brand-orange">€48 (€4,00/m)</td>
-                      <td className="p-4">€300</td>
-                      <td className="p-4">€360</td>
-                      <td className="p-4 text-green-400 font-bold">€252-312</td>
+                      <td className="p-4">Per maand</td>
+                      <td className="p-4 font-bold text-brand-orange">€8</td>
+                      <td className="p-4">€25</td>
+                      <td className="p-4">€30</td>
+                      <td className="p-4 text-green-400 font-bold">€17-22</td>
                     </tr>
                   </tbody>
                 </table>
@@ -274,7 +260,7 @@ const IPTVKopenNederlandGids = () => {
                     <h3 className="text-xl font-bold">Kies Je Abonnement</h3>
                   </div>
                   <p className="text-gray-300">
-                    Bekijk onze <Link to="/iptv-abonnement" className="text-brand-orange underline">abonnementspagina</Link> en kies de looptijd die bij je past. We adviseren 12 maanden voor de beste prijs.
+                    Bekijk onze <Link to="/iptv-abonnement" className="text-brand-orange underline">abonnementspagina</Link> en bevestig je IPTV Premium abonnement voor €8 per maand.
                   </p>
                 </div>
 
@@ -326,7 +312,7 @@ const IPTVKopenNederlandGids = () => {
                     <li><strong>Kanaalaanbod:</strong> Controleer of alle kanalen die je wilt hebben beschikbaar zijn</li>
                     <li><strong>Kwaliteit:</strong> Vraag naar HD/4K-beschikbaarheid en uptime-garantie</li>
                     <li><strong>Nederlandse support:</strong> Belangrijk voor hulp bij problemen</li>
-                    <li><strong>Proefperiode:</strong> Test eerst voordat je langdurig abonnement neemt</li>
+                    <li><strong>Opzegtermijn:</strong> Kun je zonder gedoe stoppen, of zit je vast aan een jaarcontract?</li>
                     <li><strong>Apparaten:</strong> Werkt het op jouw TV/apparaten?</li>
                     <li><strong>Geen automatische verlenging:</strong> Voorkom verrassingen</li>
                   </ul>
@@ -355,14 +341,14 @@ const IPTVKopenNederlandGids = () => {
                 <div className="bg-brand-black/90 p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-2">Wat is de beste IPTV-aanbieder?</h3>
                   <p className="text-gray-300">
-                    <Link to="/" className="text-brand-orange underline">StreamHolland</Link> is de beste keuze met 30.500+ kanalen, 99.9% uptime, Nederlandse support 24/7 en prijzen vanaf €4/maand.
+                    <Link to="/" className="text-brand-orange underline">StreamHolland</Link> is de beste keuze met 30.500+ kanalen, 99.9% uptime, Nederlandse support 24/7 en een vast tarief van €8/maand.
                   </p>
                 </div>
 
                 <div className="bg-brand-black/90 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold mb-2">Kan ik IPTV uitproberen?</h3>
+                  <h3 className="text-xl font-bold mb-2">Zit ik ergens aan vast?</h3>
                   <p className="text-gray-300">
-                    Ja! StreamHolland biedt een 24-uurs gratis proefperiode. Test het risico vrij voordat je een abonnement afsluit.
+                    Nee. Je betaalt €8 per maand, zonder jaarcontract en zonder automatische verlenging. Stop of ga door, helemaal jouw keuze.
                   </p>
                 </div>
 
@@ -379,7 +365,7 @@ const IPTVKopenNederlandGids = () => {
             <section className="bg-gradient-to-br from-brand-orange to-purple-600 p-8 rounded-xl text-center">
               <h2 className="text-3xl font-bold mb-4">Klaar om IPTV te Bestellen?</h2>
               <p className="text-xl mb-6">
-                Start vandaag nog met StreamHolland en geniet van 30.500+ kanalen voor maar €4/maand!
+                Start vandaag nog met StreamHolland en geniet van 30.500+ kanalen voor maar €8/maand!
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Link

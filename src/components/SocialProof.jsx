@@ -8,14 +8,14 @@ const SocialProof = () => {
   const [customerCount, setCustomerCount] = useState(24587);
 
   const notifications = [
-    { name: 'Mohammed A.', location: 'Rotterdam', time: '2 minuten geleden', plan: '12 maanden' },
-    { name: 'Lisa V.', location: 'Amsterdam', time: '5 minuten geleden', plan: '6 maanden' },
-    { name: 'Ahmed K.', location: 'Den Haag', time: '8 minuten geleden', plan: '12 maanden' },
-    { name: 'Sarah B.', location: 'Utrecht', time: '12 minuten geleden', plan: '3 maanden' },
-    { name: 'Hassan M.', location: 'Eindhoven', time: '15 minuten geleden', plan: '12 maanden' },
-    { name: 'Emma J.', location: 'Groningen', time: '18 minuten geleden', plan: '6 maanden' },
-    { name: 'Fatima D.', location: 'Tilburg', time: '22 minuten geleden', plan: '12 maanden' },
-    { name: 'Pieter S.', location: 'Almere', time: '25 minuten geleden', plan: '3 maanden' },
+    { name: 'Mohammed A.', location: 'Rotterdam', time: '2 minuten geleden', plan: 'IPTV Premium' },
+    { name: 'Lisa V.', location: 'Amsterdam', time: '5 minuten geleden', plan: 'IPTV Premium' },
+    { name: 'Ahmed K.', location: 'Den Haag', time: '8 minuten geleden', plan: 'IPTV Premium' },
+    { name: 'Sarah B.', location: 'Utrecht', time: '12 minuten geleden', plan: 'IPTV Premium' },
+    { name: 'Hassan M.', location: 'Eindhoven', time: '15 minuten geleden', plan: 'IPTV Premium' },
+    { name: 'Emma J.', location: 'Groningen', time: '18 minuten geleden', plan: 'IPTV Premium' },
+    { name: 'Fatima D.', location: 'Tilburg', time: '22 minuten geleden', plan: 'IPTV Premium' },
+    { name: 'Pieter S.', location: 'Almere', time: '25 minuten geleden', plan: 'IPTV Premium' },
   ];
 
   // Cycle through notifications

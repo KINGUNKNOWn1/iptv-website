@@ -42,7 +42,7 @@ const Contact = () => {
 
   const orderSteps = [
     'Neem contact op via WhatsApp',
-    'Kies je gewenste abonnement (3, 6 of 12 maanden)',
+    'Bevestig je IPTV Premium abonnement (€8/maand)',
     'Betaal veilig met iDEAL',
     'Ontvang je inloggegevens binnen 5 minuten',
     'Installeer de app en begin met kijken'

@@ -18,7 +18,7 @@ const About = () => {
     {
       icon: FaClock,
       title: 'Flexibiliteit',
-      description: 'Geen jaarcontract verplicht. Kies je looptijd: 3, 6 of 12 maanden. Stop wanneer je wilt.'
+      description: 'Geen jaarcontract verplicht. Betaal €8 per maand en stop wanneer je wilt.'
     },
     {
       icon: FaWhatsapp,

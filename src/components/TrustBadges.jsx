@@ -36,8 +36,8 @@ const TrustBadges = () => {
     },
     {
       icon: FaAward,
-      title: '24u Gratis Test',
-      description: 'Test de kwaliteit',
+      title: '€8 per Maand',
+      description: 'Geen jaarcontract',
       color: 'from-yellow-500 to-yellow-600'
     }
   ];

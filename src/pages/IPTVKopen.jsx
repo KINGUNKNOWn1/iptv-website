@@ -43,7 +43,7 @@ const IPTVKopen = () => {
     {
       number: '1',
       title: 'Kies je abonnement',
-      description: 'Selecteer een <link-prijzen>IPTV abonnement</link-prijzen> dat bij jou past: 3, 6 of 12 maanden.'
+      description: 'Selecteer het <link-prijzen>IPTV abonnement</link-prijzen>: €8 per maand, zonder jaarcontract.'
     },
     {
       number: '2',
@@ -65,7 +65,7 @@ const IPTVKopen = () => {
   return (
     <>
       <SEO
-        title="IPTV Kopen Nederland | Premium IPTV Abonnement vanaf €48/jaar - StreamHolland"
+        title="IPTV Kopen Nederland | Premium IPTV Abonnement vanaf €8/maand - StreamHolland"
         description="IPTV kopen in Nederland? Kies StreamHolland voor 30.500+ kanalen, 4K kwaliteit, Nederlandse support 24/7. Geen automatische verlenging. Bestel direct via iDEAL."
         keywords="iptv kopen, iptv kopen nederland, iptv abonnement kopen, iptv aanbieder, nederlandse iptv"
       />
@@ -284,7 +284,7 @@ const IPTVKopen = () => {
                 Klaar om IPTV te kopen?
               </h2>
               <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Kies het <Link to="/iptv-abonnement" className="text-white underline font-semibold">beste IPTV abonnement voor Nederland</Link> en begin binnen 5 minuten met kijken. Vanaf slechts €48 per jaar.
+                Kies het <Link to="/iptv-abonnement" className="text-white underline font-semibold">beste IPTV abonnement voor Nederland</Link> en begin binnen 5 minuten met kijken. Slechts €8 per maand.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

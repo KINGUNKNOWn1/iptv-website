@@ -185,20 +185,12 @@ const AlgemeneVoorwaarden = () => {
                   <div>
                     <h2 className="text-2xl font-bold mb-4">5. Looptijd & Beëindiging</h2>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      Abonnementen worden aangeboden voor vaste perioden:
+                      Het abonnement wordt aangeboden voor een vaste periode van één maand, voor €8:
                     </p>
-                    <div className="grid md:grid-cols-3 gap-4 mb-4">
-                      <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30 text-center">
-                        <div className="text-2xl font-bold text-brand-orange mb-1">3 maanden</div>
-                        <div className="text-sm text-gray-400">Korte test periode</div>
-                      </div>
-                      <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30 text-center">
-                        <div className="text-2xl font-bold text-brand-orange mb-1">6 maanden</div>
-                        <div className="text-sm text-gray-400">Populaire keuze</div>
-                      </div>
-                      <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30 text-center">
-                        <div className="text-2xl font-bold text-brand-orange mb-1">12 maanden</div>
-                        <div className="text-sm text-gray-400">Beste prijs</div>
+                    <div className="flex justify-center mb-4">
+                      <div className="w-full max-w-xs bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30 text-center">
+                        <div className="text-2xl font-bold text-brand-orange mb-1">1 maand - €8</div>
+                        <div className="text-sm text-gray-400">Eén vast tarief, elke maand opnieuw te kiezen</div>
                       </div>
                     </div>
                     <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4">

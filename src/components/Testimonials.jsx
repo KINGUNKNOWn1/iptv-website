@@ -9,7 +9,7 @@ const Testimonials = () => {
       location: 'Amsterdam',
       rating: 5,
       text: 'Geweldige service! De kwaliteit is uitstekend en de prijs is zeer redelijk. Geen buffering, zelfs niet tijdens drukke wedstrijden. Absoluut aan te raden!',
-      plan: 'IPTV Premium 12 maanden',
+      plan: 'IPTV Premium',
       initials: 'JV'
     },
     {
@@ -17,7 +17,7 @@ const Testimonials = () => {
       location: 'Rotterdam',
       rating: 5,
       text: 'Eindelijk een betrouwbare IPTV aanbieder! Installatie was super eenvoudig op mijn Samsung TV. De Nederlandse support reageert binnen een paar minuten via WhatsApp.',
-      plan: 'IPTV Premium 6 maanden',
+      plan: 'IPTV Premium',
       initials: 'SB'
     },
     {
@@ -25,7 +25,7 @@ const Testimonials = () => {
       location: 'Utrecht',
       rating: 5,
       text: 'Beste IPTV die ik ooit heb gehad. Alle Arabische en Nederlandse kanalen in perfecte kwaliteit. Mijn hele familie is tevreden. Zeker 5 sterren waard!',
-      plan: 'IPTV Premium 12 maanden',
+      plan: 'IPTV Premium',
       initials: 'MA'
     },
     {
@@ -33,7 +33,7 @@ const Testimonials = () => {
       location: 'Den Haag',
       rating: 5,
       text: 'Super blij met StreamHolland! Ik kan nu al mijn favoriete series en films kijken zonder gedoe. De app werkt vlekkeloos op mijn iPhone en iPad.',
-      plan: 'IPTV Premium 3 maanden',
+      plan: 'IPTV Premium',
       initials: 'EJ'
     },
     {
@@ -41,7 +41,7 @@ const Testimonials = () => {
       location: 'Eindhoven',
       rating: 5,
       text: 'Zeer tevreden! Alle Turkse kanalen beschikbaar in HD kwaliteit. De prijs is eerlijk en er zijn geen verborgen kosten. Aanrader voor iedereen!',
-      plan: 'IPTV Premium 12 maanden',
+      plan: 'IPTV Premium',
       initials: 'MY'
     },
     {
@@ -49,7 +49,7 @@ const Testimonials = () => {
       location: 'Groningen',
       rating: 5,
       text: 'Perfect voor sportliefhebbers! Alle voetbalwedstrijden live in 4K. De replay functie is ook erg handig als je een wedstrijd gemist hebt.',
-      plan: 'IPTV Premium 6 maanden',
+      plan: 'IPTV Premium',
       initials: 'LV'
     }
   ];

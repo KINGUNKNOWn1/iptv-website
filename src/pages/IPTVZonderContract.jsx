@@ -11,7 +11,7 @@ const IPTVZonderContract = () => {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'IPTV Zonder Contract - Flexibel & Vrijblijvend',
-    description: 'IPTV zonder contract vanaf €23. Geen automatische verlenging, geen opzegtermijn. Stop wanneer je wilt. iDEAL betaling. Bestel vrijblijvend.',
+    description: 'IPTV zonder contract voor €8 per maand. Geen automatische verlenging, geen opzegtermijn. Stop wanneer je wilt. iDEAL betaling. Bestel vrijblijvend.',
     url: 'https://streamholland.com/iptv-zonder-contract',
     provider: {
       '@type': 'Organization',
@@ -28,7 +28,7 @@ const IPTVZonderContract = () => {
         name: 'Wat betekent IPTV zonder contract?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'IPTV zonder contract betekent dat je geen langdurige verplichting aangaat. Bij StreamHolland koop je IPTV voor 3, 6 of 12 maanden. Na afloop stopt het abonnement automatisch - geen verlenging, geen opzegtermijn, geen verrassingen.'
+          text: 'IPTV zonder contract betekent dat je geen langdurige verplichting aangaat. Bij StreamHolland betaal je €8 per maand. Na afloop van de maand stopt het abonnement automatisch - geen verlenging, geen opzegtermijn, geen verrassingen.'
         }
       },
       {
@@ -36,7 +36,7 @@ const IPTVZonderContract = () => {
         name: 'Moet ik opzeggen bij StreamHolland?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Nee, opzeggen is niet nodig. Je abonnement stopt automatisch na de gekozen periode (3, 6 of 12 maanden). Wil je verlengen? Dan kun je dit eenvoudig doen, maar het gebeurt nooit automatisch.'
+          text: 'Nee, opzeggen is niet nodig. Je abonnement van €8 stopt automatisch na de maand. Wil je doorkijken? Dan bestel je eenvoudig de volgende maand, maar het gebeurt nooit automatisch.'
         }
       },
       {
@@ -44,7 +44,7 @@ const IPTVZonderContract = () => {
         name: 'Kan ik tussentijds stoppen?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Je betaalt eenmalig voor de gekozen periode. Tussentijds stoppen is niet mogelijk, maar je zit ook niet vast aan automatische verlenging. Kies daarom de periode die bij je past: 3 maanden voor een korte test, of 12 maanden voor de beste prijs.'
+          text: 'Je betaalt €8 per maand. Tussentijds stoppen midden in de maand is niet mogelijk, maar je zit ook nooit vast aan een lange periode: elke maand is een losse betaling, zonder automatische verlenging.'
         }
       },
       {
@@ -83,7 +83,7 @@ const IPTVZonderContract = () => {
     {
       icon: <FiClock className="w-8 h-8" />,
       title: 'Geen Opzegtermijn',
-      description: 'Opzeggen is niet eens nodig. Na 3, 6 of 12 maanden stopt alles vanzelf.'
+      description: 'Opzeggen is niet eens nodig. Na elke maand stopt alles vanzelf.'
     },
     {
       icon: <FiDollarSign className="w-8 h-8" />,
@@ -98,36 +98,22 @@ const IPTVZonderContract = () => {
   ];
 
   const comparison = [
-    { feature: 'Looptijd', streamHolland: 'Kies 3, 6 of 12 maanden', traditional: '12-24 maanden verplicht' },
+    { feature: 'Looptijd', streamHolland: '1 maand, geen minimum', traditional: '12-24 maanden verplicht' },
     { feature: 'Automatische verlenging', streamHolland: 'Nee, nooit', traditional: 'Ja, standaard' },
     { feature: 'Opzegtermijn', streamHolland: 'Niet nodig', traditional: '1 maand van tevoren' },
     { feature: 'Opzeggen vergeten?', streamHolland: 'Geen probleem!', traditional: 'Nog een jaar vast' },
     { feature: 'Betaling', streamHolland: 'Eenmalig met iDEAL', traditional: 'Maandelijks automatisch' },
     { feature: 'Flexibiliteit', streamHolland: 'Maximaal', traditional: 'Beperkt' },
     { feature: 'Verborgen kosten', streamHolland: 'Geen', traditional: 'Activatiekosten, beheerkosten' },
-    { feature: 'Prijs', streamHolland: 'Vanaf €4/mnd', traditional: '€8-15/mnd' }
+    { feature: 'Prijs', streamHolland: '€8/mnd', traditional: '€8-15/mnd' }
   ];
 
   const pricingOptions = [
     {
-      period: '3 Maanden',
-      total: '€23',
-      monthly: '€7,67/mnd',
-      description: 'Perfect om te testen',
-      popular: false
-    },
-    {
-      period: '6 Maanden',
-      total: '€32',
-      monthly: '€5,33/mnd',
-      description: 'Goede prijs-kwaliteit',
-      popular: false
-    },
-    {
-      period: '12 Maanden',
-      total: '€48',
-      monthly: '€4,00/mnd',
-      description: 'Beste deal!',
+      period: 'IPTV Premium',
+      total: '€8',
+      monthly: 'per maand',
+      description: 'Eén tarief, elke maand opnieuw te kiezen',
       popular: true
     }
   ];
@@ -135,10 +121,10 @@ const IPTVZonderContract = () => {
   return (
     <>
       <Helmet>
-        <title>IPTV Zonder Contract - Geen Verplichtingen vanaf €4/mnd | StreamHolland</title>
+        <title>IPTV Zonder Contract - Geen Verplichtingen voor €8/mnd | StreamHolland</title>
         <meta
           name="description"
-          content="IPTV zonder contract vanaf €23. Geen automatische verlenging, geen opzegtermijn. Stop wanneer je wilt. 30.500+ kanalen, iDEAL betaling. Bestel vrijblijvend ➜"
+          content="IPTV zonder contract voor €8 per maand. Geen automatische verlenging, geen opzegtermijn. Stop wanneer je wilt. 30.500+ kanalen, iDEAL betaling. Bestel vrijblijvend ➜"
         />
         <meta
           name="keywords"
@@ -148,7 +134,7 @@ const IPTVZonderContract = () => {
 
         {/* Open Graph */}
         <meta property="og:title" content="IPTV Zonder Contract - Geen Verplichtingen | StreamHolland" />
-        <meta property="og:description" content="IPTV zonder contract vanaf €4/mnd. Geen automatische verlenging, geen opzegtermijn. Bestel vrijblijvend." />
+        <meta property="og:description" content="IPTV zonder contract voor €8/mnd. Geen automatische verlenging, geen opzegtermijn. Bestel vrijblijvend." />
         <meta property="og:url" content="https://streamholland.com/iptv-zonder-contract" />
         <meta property="og:type" content="website" />
 
@@ -261,8 +247,8 @@ const IPTVZonderContract = () => {
               {[
                 {
                   step: '1',
-                  title: 'Kies Je Periode',
-                  description: 'Selecteer 3, 6 of 12 maanden. Hoe langer, hoe goedkoper per maand. Maar zelfs 3 maanden bindt je nergens aan.'
+                  title: 'Bestel Voor Deze Maand',
+                  description: 'Eén tarief: €8 per maand. Geen minimale periode en geen jaarcontract - je bindt je nergens aan.'
                 },
                 {
                   step: '2',
@@ -277,7 +263,7 @@ const IPTVZonderContract = () => {
                 {
                   step: '4',
                   title: 'Contract Stopt Automatisch',
-                  description: 'Na 3, 6 of 12 maanden stopt alles vanzelf. Geen opzegtermijn, geen verlenging, geen verrassingen. Wil je verlengen? Dat kan altijd, maar het gebeurt nooit automatisch.'
+                  description: 'Na de maand stopt alles vanzelf. Geen opzegtermijn, geen verlenging, geen verrassingen. Wil je doorkijken? Dat kan altijd, maar het gebeurt nooit automatisch.'
                 }
               ].map((item, index) => (
                 <motion.div
@@ -353,13 +339,13 @@ const IPTVZonderContract = () => {
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-white mb-4 text-center">
-              Kies Je Periode - Geen Contract
+              Eén Tarief - Geen Contract
             </h2>
             <p className="text-slate-300 text-center mb-12 text-lg">
               Betaal eenmalig, geniet van IPTV, stop automatisch
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="flex justify-center">
               {pricingOptions.map((option, index) => (
                 <motion.div
                   key={index}
@@ -367,7 +353,7 @@ const IPTVZonderContract = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className={`relative bg-gradient-to-br from-brand-black/80 to-brand-black/90 p-8 rounded-xl border-2 ${
+                  className={`relative w-full max-w-sm bg-gradient-to-br from-brand-black/80 to-brand-black/90 p-8 rounded-xl border-2 ${
                     option.popular ? 'border-brand-orange' : 'border-brand-gray/30'
                   } hover:border-brand-orange transition-all duration-300`}
                 >
@@ -412,7 +398,7 @@ const IPTVZonderContract = () => {
 
             <div className="mt-12 text-center">
               <p className="text-slate-300 mb-4">
-                💡 <strong className="text-white">Tip:</strong> Kies 12 maanden voor de beste prijs (slechts €4/mnd), maar weet dat je ook na 12 maanden nergens aan vast zit.
+                💡 <strong className="text-white">Tip:</strong> Je betaalt elke maand opnieuw €8 - stop wanneer je wilt, er zit geen jaarcontract achter.
               </p>
             </div>
           </div>

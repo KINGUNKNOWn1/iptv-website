@@ -89,7 +89,7 @@ const IPTVHolland = () => {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'IPTV Holland - Nederlandse IPTV Provider | StreamHolland',
-    description: 'IPTV Holland: 15.000+ klanten in Nederland ✓ Nederlandse zenders ✓ iDEAL betaling ✓ Servers in Europa ✓ Nederlandse support. Vanaf €4/mnd.',
+    description: 'IPTV Holland: 15.000+ klanten in Nederland ✓ Nederlandse zenders ✓ iDEAL betaling ✓ Servers in Europa ✓ Nederlandse support. Vanaf €8/mnd.',
     url: 'https://streamholland.com/iptv-holland'
   };
 
@@ -153,8 +153,9 @@ const IPTVHolland = () => {
 
   const pricingOptions = [
     {
-      duration: '1 maand',
-      price: '€23',
+      duration: 'IPTV Premium',
+      price: '€8',
+      pricePerMonth: 'per maand',
       features: [
         'Alle 25.000+ zenders',
         'Nederlandse zenders in HD/4K',
@@ -163,40 +164,7 @@ const IPTVHolland = () => {
         '99.9% uptime garantie',
         '24/7 Nederlandse support'
       ],
-      popular: false
-    },
-    {
-      duration: '3 maanden',
-      price: '€45',
-      pricePerMonth: '€15/mnd',
-      savings: 'Bespaar €24',
-      features: [
-        'Alle 25.000+ zenders',
-        'Nederlandse zenders in HD/4K',
-        'iDEAL betaling',
-        'Geen contract',
-        '99.9% uptime garantie',
-        '24/7 Nederlandse support',
-        'Prioriteit support'
-      ],
       popular: true
-    },
-    {
-      duration: '12 maanden',
-      price: '€120',
-      pricePerMonth: '€10/mnd',
-      savings: 'Bespaar €156',
-      features: [
-        'Alle 25.000+ zenders',
-        'Nederlandse zenders in HD/4K',
-        'iDEAL betaling',
-        'Geen contract',
-        '99.9% uptime garantie',
-        '24/7 Nederlandse support',
-        'VIP support',
-        'Gratis extra apparaat'
-      ],
-      popular: false
     }
   ];
 
@@ -247,10 +215,10 @@ const IPTVHolland = () => {
   return (
     <>
       <Helmet>
-        <title>IPTV Holland - #1 Nederlandse IPTV Provider vanaf €4/mnd | StreamHolland</title>
+        <title>IPTV Holland - #1 Nederlandse IPTV Provider vanaf €8/mnd | StreamHolland</title>
         <meta
           name="description"
-          content="IPTV Holland: 15.000+ klanten in Nederland ✓ Nederlandse zenders (NPO, RTL, SBS) ✓ iDEAL betaling ✓ Servers in Europa ✓ Nederlandse support ✓ Gevestigd in Rotterdam. Vanaf €4/mnd."
+          content="IPTV Holland: 15.000+ klanten in Nederland ✓ Nederlandse zenders (NPO, RTL, SBS) ✓ iDEAL betaling ✓ Servers in Europa ✓ Nederlandse support ✓ Gevestigd in Rotterdam. Vanaf €8/mnd."
         />
         <meta
           name="keywords"
@@ -260,7 +228,7 @@ const IPTVHolland = () => {
 
         {/* Open Graph */}
         <meta property="og:title" content="IPTV Holland - #1 Nederlandse IPTV Provider | StreamHolland" />
-        <meta property="og:description" content="15.000+ Nederlandse klanten ✓ Alle Nederlandse zenders ✓ iDEAL betaling ✓ Gevestigd in Rotterdam ✓ 99.9% uptime. Vanaf €4/mnd." />
+        <meta property="og:description" content="15.000+ Nederlandse klanten ✓ Alle Nederlandse zenders ✓ iDEAL betaling ✓ Gevestigd in Rotterdam ✓ 99.9% uptime. Vanaf €8/mnd." />
         <meta property="og:url" content="https://streamholland.com/iptv-holland" />
         <meta property="og:type" content="website" />
 
@@ -605,7 +573,7 @@ const IPTVHolland = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="flex justify-center max-w-6xl mx-auto">
             {pricingOptions.map((option, index) => (
               <motion.div
                 key={index}
@@ -613,7 +581,7 @@ const IPTVHolland = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className={`relative bg-brand-black/80 rounded-2xl p-8 shadow-lg ${
+                className={`relative w-full max-w-sm bg-brand-black/80 rounded-2xl p-8 shadow-lg ${
                   option.popular ? 'ring-4 ring-orange-500 scale-105' : ''
                 }`}
               >

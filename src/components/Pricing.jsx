@@ -31,56 +31,11 @@ const Pricing = () => {
   const plans = [
     {
       name: 'IPTV Premium',
-      duration: '3 maanden',
-      price: '23',
-      period: '/ 3 maanden',
-      popular: false,
-      features: [
-        '24 uur gratis proefperiode',
-        'HD - UHD - SHD',
-        'Meer dan 30.500 kanalen live',
-        'Meer dan 150.000 films en series',
-        'Compatibel met alle apparaten',
-        'Toegang tot alle sportkanalen',
-        'TV-gids met EPG-ondersteuning',
-        'Uitgesteld kijken via Replay en Catchup',
-        'Betrouwbare beschikbaarheid van 99,9%',
-        'Automatische software-updates',
-        'Klantenservice 24/7',
-      ],
-      whatsapp: 'Ik wil het IPTV Premium 3 maanden abonnement bestellen',
-    },
-    {
-      name: 'IPTV Premium',
-      duration: '12 maanden',
-      price: '48',
-      period: '/ 12 maanden',
+      duration: '1 maand',
+      price: '8',
+      period: '/ maand',
       popular: true,
-      savings: 'Bespaar €28 - Beste Deal!',
       features: [
-        '24 uur gratis proefperiode',
-        'HD - UHD - SHD',
-        'Meer dan 30.500 kanalen live',
-        'Meer dan 150.000 films en series',
-        'Compatibel met alle apparaten',
-        'Toegang tot alle sportkanalen',
-        'TV-gids met EPG-ondersteuning',
-        'Uitgesteld kijken via Replay en Catchup',
-        'Betrouwbare beschikbaarheid van 99,9%',
-        'Automatische software-updates',
-        'Prioriteit klantenservice 24/7',
-      ],
-      whatsapp: 'Ik wil het IPTV Premium 12 maanden abonnement bestellen',
-    },
-    {
-      name: 'IPTV Premium',
-      duration: '6 maanden',
-      price: '32',
-      period: '/ 6 maanden',
-      popular: false,
-      savings: 'Bespaar €14',
-      features: [
-        '24 uur gratis proefperiode',
         'HD - UHD - SHD',
         'Meer dan 30.500 kanalen live',
         'Meer dan 150.000 films en series',
@@ -92,7 +47,7 @@ const Pricing = () => {
         'Automatische software-updates',
         'Klantenservice 24/7',
       ],
-      whatsapp: 'Ik wil het IPTV Premium 6 maanden abonnement bestellen',
+      whatsapp: 'Ik wil het IPTV Premium abonnement bestellen (€8/maand)',
     },
   ];
 
@@ -121,7 +76,7 @@ const Pricing = () => {
             viewport={{ once: true }}
             className="text-brand-orange text-lg mb-4 font-semibold"
           >
-            Vanaf 23€ - zonder automatische verlenging
+            €8 per maand - zonder automatische verlenging
           </motion.p>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Kies uw{' '}
@@ -184,7 +139,8 @@ const Pricing = () => {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12 items-center">
+        <div className="flex justify-center mb-12">
+          <div className="w-full max-w-sm">
           {plans.map((plan, index) => (
             <motion.div
               key={index}
@@ -265,6 +221,7 @@ const Pricing = () => {
               </button>
             </motion.div>
           ))}
+          </div>
         </div>
 
         {/* Trust Section */}
@@ -290,7 +247,7 @@ const Pricing = () => {
             </div>
             <div className="flex items-center gap-3">
               <FaCheckCircle className="text-green-500 text-2xl" />
-              <span className="text-gray-300">Gratis Proefperiode</span>
+              <span className="text-gray-300">Geen Verborgen Kosten</span>
             </div>
           </div>
         </motion.div>

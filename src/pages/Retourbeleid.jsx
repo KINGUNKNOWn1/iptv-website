@@ -248,7 +248,7 @@ const Retourbeleid = () => {
                       <CheckCircle className="w-5 h-5 text-green-400" />
                     </div>
                     <div>
-                      <p className="text-gray-300">Uw abonnement stopt automatisch na 3, 6 of 12 maanden</p>
+                      <p className="text-gray-300">Uw abonnement van €8 stopt automatisch na de maand</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -337,7 +337,7 @@ const Retourbeleid = () => {
 
                   <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30">
                     <h3 className="font-bold text-white mb-2">Kan ik tussentijds opzeggen en een deel terugkrijgen?</h3>
-                    <p className="text-gray-300 text-sm">Nee. U betaalt eenmalig voor een vaste periode (3, 6 of 12 maanden). Tussentijdse opzegging met terugbetaling is niet mogelijk. Het abonnement blijft actief tot het einde van de gekozen periode.</p>
+                    <p className="text-gray-300 text-sm">Nee. U betaalt €8 voor een vaste periode van één maand. Tussentijdse opzegging met terugbetaling is niet mogelijk. Het abonnement blijft actief tot het einde van de maand.</p>
                   </div>
 
                   <div className="bg-brand-black/50 rounded-lg p-4 border border-brand-gray/30">

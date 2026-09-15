@@ -27,12 +27,8 @@ const FAQ = () => {
       answer: 'Wij accepteren iDEAL en Bancontact voor veilige en gemakkelijke betalingen. Na betaling ontvangt u direct uw inloggegevens via WhatsApp.',
     },
     {
-      question: 'Is er een gratis proefperiode?',
-      answer: 'Ja! Wij bieden een gratis proefperiode aan zodat u onze service kunt testen voordat u een abonnement neemt. Neem contact met ons op via WhatsApp om uw gratis proef te starten - geen creditcard vereist.',
-    },
-    {
       question: 'Wat gebeurt er na afloop van mijn abonnement?',
-      answer: 'Wij werken NIET met auto-verlenging. Uw abonnement stopt automatisch na de gekozen periode. U ontvangt een herinnering wanneer uw abonnement bijna afloopt, zodat u kunt verlengen als u dat wilt.',
+      answer: 'Wij werken NIET met auto-verlenging. Uw abonnement van €8 per maand stopt automatisch na de maand. U ontvangt een herinnering wanneer uw abonnement bijna afloopt, zodat u eenvoudig kunt verlengen als u dat wilt.',
     },
     {
       question: 'Krijg ik Nederlandse support?',
